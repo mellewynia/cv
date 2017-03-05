@@ -1,4 +1,4 @@
-# Source of my cv/website
+# Source of my cv / resume / website
 
 This project simplifies the way I manage and update my website and cv. That woulde be a nice opportunity to combine interesting technologies!
 
