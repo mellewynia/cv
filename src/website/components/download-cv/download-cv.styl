@@ -1,0 +1,40 @@
+.download-cv
+    display flex
+    margin 10vh 0 10vh 4rem
+
+    @media $tablet-plus
+        justify-content center
+        margin 6vh
+
+.download-cv-button
+    border-radius 1rem
+    padding 0.4rem 2.6rem 1rem
+    background hsla($color-primary-hue, 94%, 61%, 1)
+    box-shadow 0 3px 1px -2px rgba(0,0,0,0.1)
+    color #fff
+    text-shadow $text-shadow
+    font-weight 200
+    font-size $font--xx-large
+    transition 100ms
+    transform scale(1)
+    will-change transform
+
+    &:hover
+        transform scale(1.16)
+        background hsla($color-primary-hue, 100%, 61%, 1)
+        transition 100ms ease-out
+        box-shadow 0 3px 10px -3px rgba(0,0,0,0.1)
+
+    &:active
+        transform scale(1.12)
+        background hsla($color-primary-hue, 100%, 50%, 1)
+        transition 162ms ease-out
+        box-shadow 0 1px 5px -3px rgba(0,0,0,0.16)
+
+.download-cv-button__icon
+    position relative
+    top -0.55rem
+    margin-right 0.2em
+
+.download-cv-button__text
+    letter-spacing 0.1em
