@@ -44,7 +44,7 @@ export default () => {
             fontName: iconFontName,
             path: './src/css/icons/font-icons-web__TEMPLATE_FOR_STYL.txt',
             // `targetPath` is relative to the dest path
-            targetPath: `../../../../${process.env.PRODUCTION === 'true' ? '../' : '' }src/css/icons/font-icons-web__GENERATED_BY_GULP.styl`,
+            targetPath: `../../../src/css/icons/font-icons-web__GENERATED_BY_GULP.styl`,
             fontPath: `/assets/fonts/icons-web`,
         }))
         .pipe(iconfont({
@@ -67,5 +67,5 @@ export default () => {
             title: 'ICONS UPDATED',
             message: 'You may have to reset your browser cache.'
         }))
-        .pipe(gulp.dest( `${process.env.DEST}/assets/fonts/icons-web` ));
+        .pipe(gulp.dest( `${config.paths.source}/fonts/icons-web` ));
 }

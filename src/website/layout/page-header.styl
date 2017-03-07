@@ -4,18 +4,19 @@
 .page-header__intro
     margin 10vh auto 3.8vh
     padding 0 4rem
-    max-width $grid-max-width + 8rem
+    max-width $grid-max-width + 16.8rem
     color hsla($color-primary-hue, 10%, 5%, 1)
     font-size $font--medium
     line-height 1.38em
 
     @media $tablet-plus
         margin calc(16.2vh + 10rem) auto calc(4.2vh + 3.8rem)
+        padding 0 8.4rem
         font-size $font--large
         font-weight 200
         text-shadow $text-shadow
 
-    @media $desktop-plus
+    @media $desktop-xl-plus
         font-size $font--x-large
         font-weight 200
 
@@ -42,6 +43,7 @@
 
 .page-header__nav
     font-size $font--small
+    background #fff
 
     @media $tablet-plus
         position fixed
@@ -63,9 +65,8 @@
     padding 3rem 0 0 3.8rem
     font-size $font--small
 
-    @media $tablet-plus
+    @media $mobile-landscape-plus
         display flex
-        font-size $font--small
 
     @media $desktop-plus
         font-size $font--medium
@@ -90,6 +91,7 @@
     padding 2rem 3rem 0 2.8rem
 
     @media $mobile-landscape-plus
+        padding-right 0
         display flex
 
     @media $desktop-plus
@@ -135,4 +137,6 @@
         text-decoration underline
 
     .___medium > &
-        font-size $font--medium
+        position relative
+        top 0.1rem
+        font-size 1.8rem

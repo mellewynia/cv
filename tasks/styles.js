@@ -1,6 +1,7 @@
 'use strict';
 
 import config from '../gulpfile.config';
+import fs from 'fs';
 
 import gulp from 'gulp';
 import gulpif from 'gulp-if';
@@ -14,6 +15,7 @@ import cleanCSS from 'gulp-clean-css';
 import debug from 'gulp-debug';
 
 export default () => {
+
     return gulp.src([
             `./${config.paths.source}/css/all.styl`,
         ])
@@ -22,7 +24,10 @@ export default () => {
         ))
         .pipe( stylus({
             'include css': true,
-            url: { name: 'url', limit: false }
+            url: { name: 'url', limit: false },
+            rawDefine: {
+                $iconsFont: fs.readFileSync(`./${config.paths.source}/fonts/icons-web/icons-web.woff2`).toString('base64'),
+            },
         }) )
         .on('error', notify.onError( (error) => {
 

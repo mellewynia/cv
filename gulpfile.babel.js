@@ -34,11 +34,11 @@ gulp.task('pug', taskPug);
 import taskStyles from './tasks/styles';
 gulp.task('styles', taskStyles);
 
-import taskFonts from './tasks/fonts';
-gulp.task('fonts', taskFonts);
-
 import taskIcons from './tasks/icons';
 gulp.task('icons', taskIcons);
+
+import taskFonts from './tasks/fonts';
+gulp.task('fonts', ['icons'], taskFonts);
 
 import taskImages from './tasks/images';
 gulp.task('images', taskImages);
@@ -60,14 +60,14 @@ gulp.task('js', taskJS);
 
 gulp.task('watch', () => {
     watch([ `${config.paths.source}/favicon-template-1024x1024.png` ], () => gulp.start('favicons') );
-    watch([ `${config.paths.source}/fonts/**/*` ], () => gulp.start('fonts') );
-    watch([ `${config.paths.source}/icons/**/*`], () => gulp.start('icons') );
+    watch([
+        `${config.paths.source}/fonts/**/*`,
+        `${config.paths.source}/icons/**/*`,
+    ], () => gulp.start('fonts') );
     watch([ `${config.paths.source}/images/**/*` ], () => gulp.start('images') );
     watch([ `${config.paths.source}/media/**/*` ], () => gulp.start('media') );
     watch([ `${config.paths.source}/**/*`, `CV.yaml` ], () => {
-        setTimeout(() => {
-            gulp.start('pug', () => { browserSync.reload(); })
-        }, 262);
+        gulp.start('pug', () => { browserSync.reload(); })
     });
     watch([ `${config.paths.source}/**/*.styl` ], () => gulp.start('styles') );
     watch([ `${config.paths.source}/**/*.js` ], () => gulp.start('js') );
