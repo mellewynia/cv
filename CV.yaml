@@ -1,0 +1,35 @@
+date: '2017-03-04'
+
+'@context': http://schema.org
+'@type': Person
+
+givenName: Melle
+familyName: Wynia
+jobTitle: Creative / front-end developer
+description: Melle is een stressbestendige front-end developer die problemen pro-actief oplost, communicatief vaardig is en een scherp oog voor user experience heeft.
+
+email: hoi@mellewynia.nl
+telephone: 06 41 01 76 11
+url: http://mellewynia.nl
+linkedin: https://www.linkedin.com/in/melle-wynia/
+github: https://github.com/mellewynia/mellewynia.nl
+
+address:
+  '@type': PostalAddress
+  addressCounty: NL
+  addressLocality: Nijmegen
+  addressRegion: Gelderland
+  postalCode: 6538TJ
+  streetAddress: Zwanenveld 8316
+  url: https://goo.gl/maps/g5raMz3YYwP2
+
+organisation:
+  '@type': OwnershipInfo
+  name: Ik ben Melle.
+  description: Front-end developement
+  url: http://mellewynia.nl
+  foundingDate: 2011-04-01 12:00:00
+  kvk: 52401146
+
+  #founder:
+  #TODO: typOfGood

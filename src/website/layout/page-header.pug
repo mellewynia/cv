@@ -1,0 +1,40 @@
+div.page-header
+    blockquote.page-header__intro
+        = CV.description
+        cite.page-header__intro__cite= ` — Aldus ${CV.givenName}`
+    nav.page-header__nav
+        .page-header__nav__info
+            h1.page-header__nav__info__name= `${CV.givenName} ${CV.familyName}`
+            p.page-header__nav__info__jobtitle= CV.jobTitle
+        .page-header__nav__contact
+            a.link-contact(
+                href=`tel:${CV.telephone.replace(/ /g, '')}`
+            ).___medium
+                span.link-contact__icon
+                    span.icon-telephone
+                span.link-contact__text
+                    = CV.telephone
+            a.link-contact(
+                href=`mailto:${CV.email}`
+            )
+                span.link-contact__icon
+                    span.icon-envelope
+                span.link-contact__text.___underlined
+                    = CV.email
+            a.link-contact(
+                href=CV.linkedin
+                title="“Join the great link”"
+                target="_blank"
+            )
+                span.link-contact__icon
+                    span.icon-link
+                span.link-contact__text.___underlined
+                    | connect
+            a.link-contact(
+                href=CV.github
+                target="_blank"
+            )
+                span.link-contact__icon
+                    span.icon-code
+                span.link-contact__text.___underlined
+                    | code

@@ -1,0 +1,142 @@
+.page-header
+    //
+
+.page-header__intro
+    margin 10vh auto 3.8vh
+    padding 0 4rem
+    max-width $grid-max-width + 16.8rem
+    color hsla($color-primary-hue, 10%, 5%, 1)
+    font-size $font--medium
+    line-height 1.38em
+
+    @media $tablet-plus
+        margin calc(16.2vh + 10rem) auto calc(4.2vh + 3.8rem)
+        padding 0 8.4rem
+        font-size $font--large
+        font-weight 200
+        text-shadow $text-shadow
+
+    @media $desktop-xl-plus
+        font-size $font--x-large
+        font-weight 200
+
+.page-header__intro__cite
+    position relative
+    top -0.3rem
+    margin 0 0 0 0.6rem
+    display inline-block
+    color hsla($color-primary-hue, 16%, 55%, 1)
+    font-size $font--xx-small
+    font-style normal
+    letter-spacing 0.1em
+    text-transform uppercase
+    font-weight 500
+    line-height 1
+
+    @media $desktop-plus
+        position static
+        margin 1.4rem 0 0 2.6rem
+        display block
+//
+// INFO
+//
+
+.page-header__nav
+    font-size $font--small
+    background #fff
+
+    @media $tablet-plus
+        position fixed
+        top 0
+        right 0
+        left 0
+
+    @media $desktop-plus
+        display flex
+        min-height 7.4rem
+
+//
+// NAV - INFO
+//
+
+.page-header__nav__info
+    flex 1 1
+
+    padding 3rem 0 0 3.8rem
+    font-size $font--small
+
+    @media $mobile-landscape-plus
+        display flex
+
+    @media $desktop-plus
+        font-size $font--medium
+
+.page-header__nav__info__name
+    font-size inherit
+    font-weight inherit
+
+.page-header__nav__info__jobtitle
+    display block
+    color hsla($color-primary-hue, 16%, 55%, 1)
+
+    @media $mobile-landscape-plus
+        display inline
+        margin-left 0.9em
+
+//
+// NAV - CONTACT
+//
+
+.page-header__nav__contact
+    padding 2rem 3rem 0 2.8rem
+
+    @media $mobile-landscape-plus
+        padding-right 0
+        display flex
+
+    @media $desktop-plus
+        padding 1.6rem 3rem 0 0
+
+//
+// NAV - CONTACT - LINK
+//
+
+.link-contact
+    display flex
+    align-items center
+    color hsla($color-primary-hue, 100%, 61%, 1)
+    font-size $font--small
+    background #fff
+    transition 162ms ease-out
+
+    @media $mobile-portrait
+        padding 0.3rem 1.2rem 0.6rem 0.5rem
+        height 3.8rem
+
+    @media $mobile-landscape-plus
+        padding 0.8rem 1.2rem 1rem 0.5rem
+        height 5.6rem
+
+    &:hover
+        background hsla($color-primary-hue, 100%, 98%, 1)
+        transition none
+
+    &:active
+        background hsla($color-primary-hue, 100%, 96%, 1)
+        color hsla($color-primary-hue, 100%, 50%, 1)
+        transition none
+
+.link-contact__icon
+    font-size 1.8em
+    margin 0.1em
+    line-height 1
+
+.link-contact__text
+
+    &.___underlined
+        text-decoration underline
+
+    .___medium > &
+        position relative
+        top 0.1rem
+        font-size 1.8rem

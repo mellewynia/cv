@@ -1,0 +1,53 @@
+//
+// Breakpoints
+//
+
+$breakpoints        = {
+    m: {
+        slug: mobile,
+        pixels: 0px,
+        pixels_max: 767px,
+    },
+    mp: {
+        slug: mobile-portrait,
+        pixels: 0px,
+        pixels_max: 567px,
+    },
+    ml: {
+        slug: mobile-landscape,
+        pixels: 568px,
+        pixels_max: 767px,
+    },
+    t: {
+        slug: tablet,
+        pixels: 768px,
+        pixels_max: 992px,
+    },
+    d: {
+        slug: desktop,
+        pixels: 992px,
+        pixels_max: 1200px,
+    },
+    dx: {
+        slug: desktop-xl,
+        pixels: 1200px,
+        pixels_max: 1920px,
+    },
+    dxx: {
+        slug: desktop-hd,
+        pixels: 1920px,
+        pixels_max: 10000px,
+    },
+}
+
+//
+// - Define variables such as $mobile and $mobile-plus
+// - Generate responsive grid-columns
+//
+
+$mobile-tablet = "(max-width: " + $breakpoints[t][pixels_max] + ")"
+
+for $abbreviation, $breakpoint in $breakpoints
+
+    define('$' + $breakpoint[slug], "(min-width: " + $breakpoint[pixels] + ") and (max-width: " + $breakpoint[pixels_max] + ")")
+    define('$' + $breakpoint[slug] + '-plus', "(min-width: " + ($breakpoint[pixels]) + ")")

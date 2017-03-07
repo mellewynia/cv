@@ -1,0 +1,7 @@
+{
+    "paths": {
+        "source": "src",
+        "test": "test",
+        "build": "public"
+    }
+}
