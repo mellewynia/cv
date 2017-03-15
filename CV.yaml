@@ -12,7 +12,7 @@ email: hoi@mellewynia.nl
 telephone: 06 41 01 76 11
 url: http://mellewynia.nl
 linkedin: https://www.linkedin.com/in/melle-wynia/
-github: https://github.com/mellewynia/mellewynia.nl
+github: https://github.com/mellewynia/cv
 
 address:
   '@type': PostalAddress
@@ -33,3 +33,200 @@ organisation:
 
   #founder:
   #TODO: typOfGood
+
+
+
+experiences:
+
+
+
+  -
+    type: work
+    name: Front-end projecten bij Vilans
+    jobTitle: Freelance senior front-end developer
+    duur: 2015-10–HEDEN
+    plaats: Utrecht
+    description: Vilans’ missie is om de zorg te verbeteren. Dit doen zij met innovatieve projecten. Websites vormen de hoeksteen. Het succes zit in een agile aanpak, op tijd bijsturen en snel schakelen met de product owners.
+    references:
+      -
+        name: Erik de Jeu
+        jobTitle: projectleider bij Vilans
+        url: https://www.linkedin.com/in/erikdejeu/
+      -
+        name: Anne van Voorthuizen
+        jobTitle: productowner van Zorg voor Beter
+        url: https://www.linkedin.com/in/annevanvoorthuizen
+    skills: [BEM, OOCSS, Agile]
+    number_of_projects: 8
+    projects:
+      -
+        name: Zorg voor Beter
+        skills: [Kanban, Gulp, HTML5, Bootstrap, jQuery, ES6, Stylus, Pug]
+      -
+        name: Online leergang (kennisbundels)
+        skills: [Gulp, HTML5, jQuery, Sass, EJS]
+  
+
+  -
+    type: quote
+    quote: Ik heb als productowner van de site Zorgvoorbeter.nl erg prettig samengewerkt met Melle. In ons team stelde hij creatieve oplossingen voor die ook goed te realiseren waren, met oog voor detail! Technisch kreeg hij alles voor elkaar, én hij communiceert goed met de klant (overleg, terugkoppeling, snelle aanpassingen). Door de goede samenwerking ontstond een mooi eindproduct.
+    cite:
+      name: Anne van Voorthuizen
+      jobTitle: Productowner van Zorg voor Beter
+      company: Vilans
+
+
+
+  -
+    type: work
+    name: Front-end interim bij OSAGE
+    jobTitle: Freelance interim (lead) front-end developer
+    duur: 2016-02–’11
+    plaats: Utrecht
+    description: Begin 2016 nam de front-end workload toe voor Osage terwijl net twee front-enders het bedrijf verlieten. Het gat heb ik ingevuld en geassisteerd in de solicitatieprocedures van een front-end junior en medior.
+    references:
+      -
+        name: Jörgen Steenbergen
+        jobTitle: partner / adviseur en communicatieontwerper
+        url: http://www.osage.nl/medewerkers/jorgen-steenbergen
+      -
+        name: Harrie Kuipers
+        jobTitle: partner / adviseur en interactieontwerper
+        url: http://www.osage.nl/medewerkers/harrie-kuipers
+    skills: [Gulp, ES6, BEM, SMACSS, Flexbox, Mobile First]
+    number_of_projects: 16
+    projects:
+      -
+        name: Checklist schoonmaakbedrijven voor Inspectie SZW
+        url: http://www.checklistschoonmaak.nl/
+        skills: [Grunt, Drag ’n drop, jQuery, JSON, Less, Print, Pug]
+      -
+        name: Gettid
+        skills: [Scrum, Gulp, AngularJS, HTML5, RESTAPI, JSON, Sass, Twig]
+      -
+        name: IoT Dashboard & Beheer
+        skills: [AngularJS, RESTAPI, Tokens, JSON, Less, Pug]
+  
+
+  -
+    type: quote
+    quote: Een gedreven front-end developer, accuraat en een sterke aanvulling op het OSAGE front-end team.
+    cite:
+      name: Jörgen Steenbergen
+      jobTitle: Partner / adviseur en communicatieontwerper
+      company: OSAGE
+
+
+  -
+    type: work
+    name: Front-end van Eve (pet project)
+    jobTitle: Owner, designer & front-end developer
+    duur: 2014–HEDEN
+    skills: [Angular2, RX.JS, TypeScript, RegExps, Unit Testing, Stylus]
+    description: Eve is ‘ontstaan’ om inzicht te krijgen in de effectiviteit van mijn werk. Het is een tracking/management tool geschreven in Angular2 met een onderliggende REST API en bijbehorende authenticatie middels JWT tokens. Belangrijkste features zijn rapporten genereren (voor klant) en statistiek per project eenvoudig genereren. 
+    projects:
+      -
+        name: NPM package mark-todo-item
+        git: https://github.com/mellewynia/mark-todo-item
+        url: https://www.npmjs.com/package/mark-todo-item
+        skills: [Node, ES6, Test Driven Development, Unit Testing, Jasmine]
+      -
+        name: Back-end (REST) API met JWT-authenticatie
+        skills: [RESTAPI, CORS, JWT, OAUTH, JSON, PHP, MYSQL]
+    references: []
+
+
+  -
+    type: work
+    name: Livegang bij start-up Jexia
+    jobTitle: Freelance designer / front-end developer
+    duur: 2015
+    plaats: Twello
+    skills: [Scrum, HTML5, AngularJS, Bootstrap, CSS3]
+    description: Jexia is een start-up waarbij developers eenvoudig API’s kunnen aanmaken. Ten tijde van mijn aantreden moest de live beta functionaliteit afgerond worden. De front-enders heb ik ondersteund bij de ontwikkeling van de user experience. Van de welkomstmail tot profielpagina in webapplicatie. Hierna kon Jexia ‘live’ met early adaptors.
+    projects: []
+    references: []
+
+
+  -
+    type: work
+    name: Website van Nils & Olle
+    jobTitle: Freelance designer / front-end developer
+    duur: 2013–2017
+    skills: [Design, HTML5, Schema.org, jQuery, CSS3, OOCSS, API, JSON, Mollie]
+    description: 'Begin 2013 heb ik de webshop van Nils&Olle geheel vernieuwd, met een door mijzelf ontwikkeld CMS als basis. Dit CMS was een webapplicatie die een RESTAPI aansprak. Hiermee konden alle wensen exact worden uitgevoerd: innovatieve vormgeving, automatische facturing, Mollie-koppeling en live-editing. Het resultaat was een eenvoudig te beheren website waar klanten prettig konden shoppen.'
+    projects: []
+    references: []
+
+
+  -
+    type: work
+    name: Website van Pieter Derks
+    jobTitle: Freelance designer / front-end developer
+    duur: 2012–2017
+    skills: [Design, HTML5, Schema.org, JSON, CSS3, OOCSS, Google Maps, PHP, WordPress]
+    description: Eind 2012 ging het nieuwe seizoen al bijna in en moest de nieuwe website nog worden afgerond voor de premiere, halverwege januari. Direct na de feestdagen is het werk gestart en door korte lijntjes, met Pieter en zijn ontwerper, konden we alle onderdelen naar wens vóór de premiere afronden. Sindsdien heb ik het lopende onderhoud uitgevoerd, ontwerpvernieuwingen doorgevoerd en functionaliteit bijgewerkt.
+    projects: []
+    references: []
+
+
+  -
+    type: quote
+    quote: Als een oplossing nog niet bestaat, verzint Melle er zelf een. Ik snap niks van hoe hij het doet, maar het is altijd helemaal op maat en naar wens!
+    cite:
+      name: Pieter Derks
+      jobTitle: Cabaretier
+      company:
+
+
+  -
+    type: work
+    name: Front-end projecten voor ZZID
+    jobTitle: Freelance senior front-end developer
+    duur: 2011–HEDEN
+    number_of_projects: 32
+    plaats: Amsterdam / Arnhem
+    description: Voor Sjoerd heb ik sinds dag één als freelancer frontends gerealiseerd met focus op concepten, datavisualisatie en intranetpagina’s. Zo hebben we onder andere voor AkzoNobel proccessen interactief inzichtelijk gemaakt.
+    skills: [OOCSS, CSS3]
+    references:
+      -
+        name: Sjoerd Zaalberg van Zelst
+        jobTitle: Interaction designer / developer
+        url: http://zzid.nl
+    projects:
+      -
+        name: Interactieve proces weergave voor intranet
+        skills: [HTML5, XML, jQuery, CSS3]
+      -
+        name: Expertises en personeel zoekfunctie voor intranet
+        skills: [HTML5, XML, jQuery, CSS3]
+
+
+  -
+    type: date
+    date: 1 april, 2011
+    name: Oprichting eenmanszaak bij KvK
+
+
+  -
+    type: work
+    name: LinkU
+    duur: 2010-11–2011-04
+    plaats: Nijmegen
+    jobTitle: In loondienst als front-end developer
+    skills: [Responsive, jQuery, HTML5, CSS3, Sprites]
+    description: Geloof in de potentie van een persoon is soms voldoende om iemand te laten bloeien. LinkU bood mij deze unieke kans. De iPad was net uit. Vanaf dag één kon ik beginnen met een innovatieve nieuws webapp en later een eCommerce website. In korte tijd professionaliseerde ik, leerde ik meerwaarde creëren en deed ik veel nieuwe vaardigheden op.
+    projects: []
+    references: []
+
+
+  -
+    type: date
+    date: 2010
+    name: Politicologie, Radboud Universiteit (gestopt)
+
+
+  -
+    type: date
+    date: 2004–’10
+    name: VWO (Atheneum), RSG Lingecollege Tiel

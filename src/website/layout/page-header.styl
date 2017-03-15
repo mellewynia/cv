@@ -1,31 +1,84 @@
 .page-header
     //
 
+@keyframes SPANNING {
+    0% {
+        transform translate(0vh, 0) skew(-34deg)
+    }
+    50% {
+        transform translate(50%, 0) skew(-34deg)
+    }
+    100% {
+        transform translate(0vh, 0) skew(-34deg)
+    }
+}
+
+@keyframes SPANNING-2 {
+    0% {
+        transform translate(0vh, 0) skew(-34deg)
+    }
+    50% {
+        transform translate(-20%, 0) skew(-34deg)
+    }
+    100% {
+        transform translate(0vh, 0) skew(-34deg)
+    }
+}
+
 .page-header__intro
-    margin 10vh auto 3.8vh
-    padding 0 4rem
-    max-width $grid-max-width + 16.8rem
-    color hsla($color-primary-hue, 10%, 5%, 1)
+    position relative
+    overflow hidden
+    padding 10vh 4rem 3.8vh
+    color hsla($color-primary-hue, 10%, 98%, 1)
     font-size $font--medium
     line-height 1.38em
 
+    background-color hsla(222, 100%, 61%, 1)
+    background-image linear-gradient(38deg, transparent, hsla(222, 100%, 62%, 0.1)), radial-gradient(ellipse farthest-corner at -10% -10% , hsla(222, 100%, 54%, 0.1) 0%, rgba(0, 0, 255, 0) 50%, hsla(222, 100%, 54%, 1) 95%)
+
+    &:before
+        content ''
+        display block
+        position absolute
+        width 26vw
+        top 0
+        bottom 0
+        left 10vw
+        background-image linear-gradient(0deg, hsla(222, 100%, 55%, 0.1), hsla(222, 100%, 71%, 0.2)), radial-gradient(transparent, hsla(222, 100%, 74%, 0.06))
+        transform skew(-34deg)
+        animation SPANNING 30s infinite
+
+    &:after
+        content ''
+        display block
+        position absolute
+        width 38vw
+        top 0
+        bottom 0
+        left 94vw
+        background-image linear-gradient(0deg, hsla(222, 100%, 71%, 0.1), hsla(222, 100%, 55%, 0.2)), radial-gradient(transparent, hsla(222, 100%, 74%, 0.06))
+        transform skew(-34deg)
+        animation SPANNING-2 32s infinite
+
     @media $tablet-plus
-        margin calc(16.2vh + 10rem) auto calc(4.2vh + 3.8rem)
-        padding 0 8.4rem
-        font-size $font--large
+        font-size $font--x-large
         font-weight 200
         text-shadow $text-shadow
 
-    @media $desktop-xl-plus
-        font-size $font--x-large
-        font-weight 200
+.page-header__intro__center
+    position relative
+    z-index 2
+    max-width $grid-max-width
+
+    @media $tablet-plus
+        margin calc(16.2vh + 16.2rem) auto calc(12vh + 3.8rem)
 
 .page-header__intro__cite
     position relative
     top -0.3rem
     margin 0 0 0 0.6rem
     display inline-block
-    color hsla($color-primary-hue, 16%, 55%, 1)
+    color hsla($color-primary-hue, 16%, 84%, 1)
     font-size $font--xx-small
     font-style normal
     letter-spacing 0.1em
@@ -41,19 +94,31 @@
 // INFO
 //
 
+@keyframes SLIDE-NAV-IN {
+    0% {
+        transform translate(0, -100%)
+    }
+    100% {
+        transform translate(0, 0)
+    }
+}
+
 .page-header__nav
     font-size $font--small
     background #fff
 
     @media $tablet-plus
         position fixed
+        z-index 1000
         top 0
         right 0
         left 0
+        animation SLIDE-NAV-IN 1s
 
     @media $desktop-plus
         display flex
-        min-height 7.4rem
+        min-height 7.3rem
+        box-shadow 0 0 1.6rem hsla(222,26%,61%,0.2)
 
 //
 // NAV - INFO
@@ -92,10 +157,11 @@
 
     @media $mobile-landscape-plus
         padding-right 0
+        padding-top 0
         display flex
 
     @media $desktop-plus
-        padding 1.6rem 3rem 0 0
+        padding 1.4rem 3rem 0 0
 
 //
 // NAV - CONTACT - LINK

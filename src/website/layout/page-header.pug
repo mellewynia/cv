@@ -1,7 +1,8 @@
 div.page-header
     blockquote.page-header__intro
-        = CV.description
-        cite.page-header__intro__cite= ` — Aldus ${CV.givenName}`
+        p.page-header__intro__center
+            = CV.description
+            cite.page-header__intro__cite= ` — Aldus ${CV.givenName}`
     nav.page-header__nav
         .page-header__nav__info
             h1.page-header__nav__info__name= `${CV.givenName} ${CV.familyName}`
