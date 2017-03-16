@@ -1,4 +1,4 @@
-date: '2017-03-04'
+date: '2017-03-16'
 
 '@context': http://schema.org
 '@type': Person
@@ -13,6 +13,10 @@ telephone: 06 41 01 76 11
 url: http://mellewynia.nl
 linkedin: https://www.linkedin.com/in/melle-wynia/
 github: https://github.com/mellewynia/cv
+
+rate: €75,00/uur
+availability: Beschikbaar per mei 2017
+availability_short_term: Wel beschikbaar voor zijproject of consult
 
 address:
   '@type': PostalAddress
@@ -105,7 +109,7 @@ experiences:
         skills: [Scrum, Gulp, AngularJS, HTML5, RESTAPI, JSON, Sass, Twig]
       -
         name: IoT Dashboard & Beheer
-        skills: [AngularJS, RESTAPI, Tokens, JSON, Less, Pug]
+        skills: [AngularJS, RESTAPI, Tokens, Google Maps, JSON, Less, Pug]
   
 
   -

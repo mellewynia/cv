@@ -1,8 +1,14 @@
 div.page-header
     blockquote.page-header__intro
+        span.page-header__plane
+            i.icon-plane
         p.page-header__intro__center
             = CV.description
-            cite.page-header__intro__cite= ` — Aldus ${CV.givenName}`
+            small.page-header__intro__info
+                = CV.rate
+                span= ' ' + CV.availability
+                span= ' ' + CV.availability_short_term
+                a(href="http://mellewynia.us15.list-manage.com/subscribe?u=35825e8f7e3b53803f21e27fa&id=aca70bc70c" target="_blank") Blijf op de hoogte
     nav.page-header__nav
         .page-header__nav__info
             h1.page-header__nav__info__name= `${CV.givenName} ${CV.familyName}`

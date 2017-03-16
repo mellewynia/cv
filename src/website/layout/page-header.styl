@@ -18,17 +18,26 @@
         transform translate(0vh, 0) skew(-34deg)
     }
     50% {
-        transform translate(-20%, 0) skew(-34deg)
+        transform translate(60%, 0) skew(-34deg)
     }
     100% {
         transform translate(0vh, 0) skew(-34deg)
     }
 }
 
+@keyframes PLANE {
+    0% {
+        transform translate(0vh, 0) rotate(-6.2deg)
+    }
+    100% {
+        transform translate(200rem, -4rem) rotate(-7.2deg)
+    }
+}
+
 .page-header__intro
     position relative
     overflow hidden
-    padding 10vh 4rem 3.8vh
+    padding 10vh 4rem 2.2rem
     color hsla($color-primary-hue, 10%, 98%, 1)
     font-size $font--medium
     line-height 1.38em
@@ -46,7 +55,7 @@
         left 10vw
         background-image linear-gradient(0deg, hsla(222, 100%, 55%, 0.1), hsla(222, 100%, 71%, 0.2)), radial-gradient(transparent, hsla(222, 100%, 74%, 0.06))
         transform skew(-34deg)
-        animation SPANNING 30s infinite
+        animation SPANNING 60s infinite
 
     &:after
         content ''
@@ -55,12 +64,15 @@
         width 38vw
         top 0
         bottom 0
-        left 94vw
+        left 78vw
         background-image linear-gradient(0deg, hsla(222, 100%, 71%, 0.1), hsla(222, 100%, 55%, 0.2)), radial-gradient(transparent, hsla(222, 100%, 74%, 0.06))
         transform skew(-34deg)
-        animation SPANNING-2 32s infinite
+        animation SPANNING-2 66s infinite
 
     @media $tablet-plus
+        display flex
+        align-items center
+        min-height 74vh
         font-size $font--x-large
         font-weight 200
         text-shadow $text-shadow
@@ -71,25 +83,84 @@
     max-width $grid-max-width
 
     @media $tablet-plus
-        margin calc(16.2vh + 16.2rem) auto calc(12vh + 3.8rem)
+        margin calc(20vh + 4.2rem) auto calc(10vh + 2.6rem)
 
-.page-header__intro__cite
+.page-header__plane
+    display none
+
+    @media $tablet-plus
+        display block
+        position absolute
+        top 20vh
+        right 48vw
+        color #fff
+        transform rotate(-6.2deg) translate(100rem, -4rem)
+        animation PLANE 600s ease-out
+
+        &::before
+            content ''
+            opacity 0.12
+            display block
+            position absolute
+            top 2.85rem
+            left -38rem
+            right 0.8rem
+            height 0.4rem
+            filter blur(0.1rem)
+            background linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.2), rgba(255,255,255,0.3), rgba(255,255,255,0.5), rgba(255,255,255,0.2), #fff)
+
+        > .icon-plane
+            font-size 1rem
+            opacity 0.74
+
+.page-header__intro__info
     position relative
     top -0.3rem
-    margin 0 0 0 0.6rem
-    display inline-block
-    color hsla($color-primary-hue, 16%, 84%, 1)
-    font-size $font--xx-small
+    margin 1.8rem -2rem 0 0
+    display block
+    color hsla($color-primary-hue, 26%, 92%, 1)
+    font-size $font--x-small
     font-style normal
-    letter-spacing 0.1em
-    text-transform uppercase
+    letter-spacing 0.025em
     font-weight 500
     line-height 1
 
+    > span
+        //
+
+    @media $mobile-tablet
+        > span
+            display block
+            padding 0.8rem 0 0 0
+
+        > a
+            display none
+
     @media $desktop-plus
         position static
-        margin 1.4rem 0 0 2.6rem
-        display block
+        margin 2.6rem 0 0 0.2rem
+        letter-spacing 0.03em
+
+        > span
+            &:before
+                content ' — '
+
+        > a
+            margin 0 0 0 1rem
+            padding 0.1rem 0.6rem 0.2rem 0.7rem
+            border 0.1rem solid hsla($color-primary-hue, 26%, 94%, 0.14)
+            border-radius 9rem
+            color inherit
+            transition 162ms ease-out
+
+            &:hover
+                border-color hsla($color-primary-hue, 26%, 94%, 0.38)
+                transition none
+
+            &:active
+                background hsla($color-primary-hue, 26%, 94%, 0.1)
+                transition none
+
 //
 // INFO
 //
@@ -114,11 +185,11 @@
         right 0
         left 0
         animation SLIDE-NAV-IN 1s
+        box-shadow 0 0 1.6rem hsla(222,38%,61%,0.2)
 
     @media $desktop-plus
         display flex
         min-height 7.3rem
-        box-shadow 0 0 1.6rem hsla(222,26%,61%,0.2)
 
 //
 // NAV - INFO

@@ -18,8 +18,8 @@
 @font-face {
     font-family: "icons-web";
     src: unquote("url(data:application/font-woff2;charset=utf-8;base64," + $iconsFont + ")") format('woff2'),
-        url('/assets/fonts/icons-web/icons-web.woff?2017-3-10T12-1-44-0') format('woff'),
-        url('/assets/fonts/icons-web/icons-web.ttf?2017-3-10T12-1-44-0') format('truetype');
+        url('/assets/fonts/icons-web/icons-web.woff?2017-3-16T12-18-27-0') format('woff'),
+        url('/assets/fonts/icons-web/icons-web.ttf?2017-3-16T12-18-27-0') format('truetype');
 }
 
 [class^="icon-"],
@@ -45,7 +45,8 @@ $icons = {
     envelope: "\E003",
     link-out: "\E004",
     link: "\E005",
-    telephone: "\E006",
+    plane: "\E006",
+    telephone: "\E007",
 }
 
 //
@@ -72,7 +73,11 @@ $icons = {
     content: "\E005";
 }
 
-.icon-telephone:before {
+.icon-plane:before {
     content: "\E006";
+}
+
+.icon-telephone:before {
+    content: "\E007";
 }
 
