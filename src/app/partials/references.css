@@ -5,9 +5,9 @@
 
 
 .reference {
-    margin: 0.26rem 0;
+    margin: 0.6rem 0;
     font-size: 1.2rem;
-    line-height: 1.7rem;
+    line-height: 1.4rem;
     color: hsla(222, 16%, 55%, 1);
 
     > a {

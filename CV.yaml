@@ -1,4 +1,4 @@
-date: '2017-03-16'
+date: '2017-03-20'
 
 '@context': http://schema.org
 '@type': Person
@@ -15,7 +15,7 @@ linkedin: https://www.linkedin.com/in/melle-wynia/
 github: https://github.com/mellewynia/cv
 
 rate: €75,00/uur
-availability: Beschikbaar per mei 2017
+availability: Beschikbaar per april 2017
 availability_short_term: Wel beschikbaar voor zijproject of consult
 
 address:
@@ -34,9 +34,6 @@ organisation:
   url: http://mellewynia.nl
   foundingDate: 2011-04-01 12:00:00
   kvk: 52401146
-
-  #founder:
-  #TODO: typOfGood
 
 
 
@@ -127,7 +124,8 @@ experiences:
     jobTitle: Owner, designer & front-end developer
     duur: 2014–HEDEN
     skills: [Angular2, RX.JS, TypeScript, RegExps, Unit Testing, Stylus]
-    description: Eve is ‘ontstaan’ om inzicht te krijgen in de effectiviteit van mijn werk. Het is een tracking/management tool geschreven in Angular2 met een onderliggende REST API en bijbehorende authenticatie middels JWT tokens. Belangrijkste features zijn rapporten genereren (voor klant) en statistiek per project eenvoudig genereren. 
+    description: Eve is ‘ontstaan’ om inzicht te krijgen in de effectiviteit van mijn werk. Het is een tracking/management tool geschreven in Angular2 met een onderliggende REST API en bijbehorende authenticatie middels JWT tokens. Belangrijkste features zijn rapporten genereren (voor klant) en statistiek per project eenvoudig genereren.
+    number_of_projects: 4
     projects:
       -
         name: NPM package mark-todo-item
@@ -141,13 +139,45 @@ experiences:
 
 
   -
+    type: profile
+    image: /media/me.jpg
+    meta: [6 juni 1991,7+ jaar ervaring,151 projecten,39 klanten]
+    details:
+      -
+        type: Mobiliteit
+        content: vanuit Nijmegen, rijbewijs B + Auto, NS Business Card
+      -
+        type: Talen
+        content: uitstekend Nederlands en Engels, spreken en schrijven
+      -
+        type: Vrijetijdsbesteding
+        content: koken, fietsen, meetups en start-up superpowerme.io
+    tags: [Creatief, Grondig, Gedreven, Geduldig, Communicatief]
+    intro: Melle is een toegewijd front-end developer met uitgebreide Javascript kennis. Hij staat je bij zodat je projecten op tijd en naar wens live gaan. Melle werkt betrouwbaar, nauwkeurig en schakelt snel.
+    story: Op 1 april 2011 heeft hij zijn eenmanszaak gestart vanuit zijn passie om mooie, bruikbare websites op te leveren die resultaten genereren. Daarbij focuste Melle zich op totaaloplossingen. Gedurende de jaren verschoof de focus naar front-end development waarbij hij terecht kwam op interim-achtige posities. Hierbij draait het erom om projecten op schema, binnen budget en naar tevredenheid van de PO en/of projectmanagers uit te voeren. Bij dergelijke uitdagingen bloeit hij op. Gedurende de projectijd, van doorgaans 3 maanden tot een jaar, biedt een agile werkwijze vaak de uitkomst volgens scrum of kanban, zodat de focus altijd ligt op de output met hoogste value. Dit leidt tot goed werkende websites en -apps die met enthousiasme worden ontvangen door de eindgebruikers.
+
+
+
+  -
     type: work
     name: Livegang bij start-up Jexia
     jobTitle: Freelance designer / front-end developer
     duur: 2015
     plaats: Twello
     skills: [Scrum, HTML5, AngularJS, Bootstrap, CSS3]
-    description: Jexia is een start-up waarbij developers eenvoudig API’s kunnen aanmaken. Ten tijde van mijn aantreden moest de live beta functionaliteit afgerond worden. De front-enders heb ik ondersteund bij de ontwikkeling van de user experience. Van de welkomstmail tot profielpagina in webapplicatie. Hierna kon Jexia ‘live’ met early adaptors.
+    description: Jexia is een start-up waarbij developers eenvoudig API’s kunnen aanmaken. Ten tijde van mijn aantreden moest de live beta functionaliteit afgerond worden. De front-enders heb ik ondersteund bij de ontwikkeling van de user experience. Van de welkomstmail tot profielpagina in webapplicatie. Hierna kon Jexia ‘live’ met early adaptors. 
+    projects: []
+    references: []
+
+
+  -
+    type: work
+    name: Intranet webapp bij TamTam
+    jobTitle: Freelance front-end developer
+    duur: 2015-10–’12
+    plaats: Den Haag
+    skills: [Scrum, HTML5, AngularJS, jQuery, Regex, CSS3]
+    description: Bij de ontwikkeling van de intranet webapplicatie (kruizing tussen LinkedIn en Facebook) van een klant van TamTam was een front-end developer nodig om het scrum team te versterken. Mijn voornaamste taak was het ondersteunen en aanvullen van de partij die de back-end deed. Gedurende een aantal sprints hebben we de pagina’s en componenten opgeleverd en creatieve oplossingen gevonden binnen het bestaande framework.
     projects: []
     references: []
 
@@ -157,7 +187,8 @@ experiences:
     name: Website van Nils & Olle
     jobTitle: Freelance designer / front-end developer
     duur: 2013–2017
-    skills: [Design, HTML5, Schema.org, jQuery, CSS3, OOCSS, API, JSON, Mollie]
+    skills: [Design, HTML5, Schema.org, jQuery, CSS3, API, JSON, Mollie]
+    number_of_projects: 2
     description: 'Begin 2013 heb ik de webshop van Nils&Olle geheel vernieuwd, met een door mijzelf ontwikkeld CMS als basis. Dit CMS was een webapplicatie die een RESTAPI aansprak. Hiermee konden alle wensen exact worden uitgevoerd: innovatieve vormgeving, automatische facturing, Mollie-koppeling en live-editing. Het resultaat was een eenvoudig te beheren website waar klanten prettig konden shoppen.'
     projects: []
     references: []
@@ -188,7 +219,7 @@ experiences:
     name: Front-end projecten voor ZZID
     jobTitle: Freelance senior front-end developer
     duur: 2011–HEDEN
-    number_of_projects: 32
+    number_of_projects: 33
     plaats: Amsterdam / Arnhem
     description: Voor Sjoerd heb ik sinds dag één als freelancer frontends gerealiseerd met focus op concepten, datavisualisatie en intranetpagina’s. Zo hebben we onder andere voor AkzoNobel proccessen interactief inzichtelijk gemaakt.
     skills: [OOCSS, CSS3]

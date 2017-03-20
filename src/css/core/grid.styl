@@ -45,7 +45,7 @@ $breakpoints        = {
 // - Generate responsive grid-columns
 //
 
-$mobile-tablet = "(max-width: " + $breakpoints[t][pixels_max] + ")"
+$mobile-tablet = "(max-width: " + ($breakpoints[t][pixels_max] - 1px) + ")"
 
 for $abbreviation, $breakpoint in $breakpoints
 
