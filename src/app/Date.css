@@ -1,0 +1,36 @@
+
+.date {
+    margin: calc(10vh + 3.8rem) 0 calc(16vh + 3.8rem) 0;
+
+    + .date {
+        margin-top: -10vh;
+    }
+
+    > h2 {
+        position: relative;
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-align: center;
+
+        &:before {
+            content: '';
+            position: absolute;
+            display: block;
+            z-index: -1;
+            top: 0.8rem;
+            left: 0;
+            right: 0;
+            height: 0.6rem;
+            background: repeating-linear-gradient(
+                135deg,
+                hsla(222, 38%, 96%, 1), hsla(222, 38%, 96%, 1) 0.25rem /* black stripe */,
+                #fff, #fff 0.75rem /* white stripe */
+            );
+        }
+
+        > span {
+            padding: 0 1rem;
+            background: #fff;
+        }
+    }
+}
