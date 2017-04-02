@@ -1,0 +1,139 @@
+@import "./variables.css";
+
+@import "./partials/*.css";
+
+.work {
+    max-width: calc(var(--width-narrow) + 8rem);
+    padding: 0 2.6rem;
+    margin: calc(10vh + 3.8rem) auto calc(10vh + 3.8rem) auto;
+    font-size: var(--font-size--medium--mobile);
+
+    @media (width >= 568px) {
+        padding: 0 4rem;
+    }
+
+    @media (width >= 768px) {
+        font-size: var(--font-size--medium);
+    }
+}
+
+.work__name {
+    margin: 1.3rem 0 1.3rem 0;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 1.1;
+    text-shadow: var(--text-shadow);
+
+    @media (width >= 768px) {
+        margin-top: 0.4rem;
+        font-size: 4.2rem;
+        font-weight: 200;
+        text-indent: -0.2rem;
+    }
+}
+
+.work__meta {
+    line-height: 1.38;
+    margin: 0.4rem 0;
+    font-size: 1.2rem;
+
+    @media (width >= 768px) {
+        font-size: inherit;
+    }
+}
+
+.work__description {
+    margin: 1.6rem 0;
+    line-height: 1.38;
+}
+
+.work__projects {
+    margin: 1.3rem 0 1.3rem -2.2rem;
+
+    @media (width >= 568px) {
+        margin: 1.3rem 0;
+    }
+}
+
+.work__projects__project {
+    position: relative;
+    padding: 0 0 0 2.2rem;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0.6rem;
+        left: 0.8rem;
+        display: block;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 99rem;
+        border: 0.2rem solid hsla(222, 16%, 84%, 1);
+
+        @media (width >= 568px) {
+            top: 0.5rem;
+            left: 0;
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+}
+
+
+
+
+
+
+.tag {
+    padding: 0 0.4rem 0.1rem;
+    border-radius: 0.3rem;
+    font-size: 1.1rem;
+    background: hsla(222, 0%, 97%, 1);
+    color: hsla(222, 16%, 26%, 1);
+    top: -0.1rem;
+    position: relative;
+
+    @media (width >= 768px) {
+        padding: 0.1rem 0.4rem 0.1rem;
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
+.btn-goto {
+    display: inline-block;
+    position: relative;
+    top: -0.3rem;
+    margin: 0 0 0 0.5rem;
+    color: hsla(222, 89%, 74%, 1);
+    font-size: 1.2rem;
+
+    &:hover {
+        color: hsla(222, 100%, 61%, 1);
+        /*transform: scale(1.06);*/
+    }
+
+    &:active {
+        color: hsla(222, 100%, 50%, 1);
+    }
+
+    > span {
+        /* Used for text */
+        text-decoration: underline;
+        font-weight: 500;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+}
+
+
+.project {
+    margin: 1.6rem 0;
+}
+
+.project__name {
+    font-size: inherit; /* Compensates for <h5> tag */
+    font-weight: 400;
+}
