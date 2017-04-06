@@ -2,6 +2,7 @@
 import React from 'react';
 import {render} from 'react-dom';
 
+import Skills from './Skills.jsx';
 import ExperienceWork from './ExperienceWork.jsx';
 import Quote from './Quote.jsx';
 import Date from './Date.jsx';
@@ -13,6 +14,7 @@ console.log(CV);
 class App extends React.Component {
   render () {
     return <div>
+      <Skills skills={CV.skills} />
       {CV.experiences.map((experience, i) => {
         switch(experience.type) {
           case 'work':

@@ -265,3 +265,134 @@ experiences:
     type: date
     date: 2004–’10
     name: VWO (Atheneum), RSG Lingecollege Tiel
+
+
+
+
+
+skills: 
+
+
+  -
+    name: Adobe XB
+    full: 
+    exp: 3
+    use: 1
+    col: 0.5
+    prominance: 0.1
+    rowSpan: 1
+  -
+    name: HTML5
+    full: 
+    exp: 5
+    use: 1
+    col: 1.5
+    prominance: 0.5
+  -
+    name: CSS3
+    full: Cascading Style Sheets 3
+    exp: 5
+    use: 1
+    cat: css
+    col: 3
+    rowSpan: 2
+    prominance: 1
+  -
+    name: JS
+    full: JavaScript
+    exp: 5
+    use: 1
+    cat: js
+    col: 5
+    prominance: 2
+    rowSpan: 3
+  -
+    name: Bootstrap
+    full: Bootstrap v3, v4
+    exp: 3
+    use: 0.5
+    col: 2
+  -
+    name: ES6
+    full: EcmaScript 6
+    exp: 4
+    use: 0.3
+    cat: js
+    col: 5
+  -
+    name: ES7
+    full: EcmaScript 7
+    exp: 2
+    use: 0.1
+    cat: js
+    col: 5
+  -
+    name: TS
+    full: TypeScript
+    exp: 3
+    use: 0.2
+    cat: js
+    col: 5
+  -
+    name: NG2
+    full: Angular2
+    exp: 4
+    use: 0.1
+    cat: js
+    col: 7
+  -
+    name: NG
+    full: AngularJS
+    exp: 3
+    use: 0.4
+    cat: js
+    col: 7
+  -
+    name: Vue
+    full: Vue.js
+    exp: 2
+    use: 0.1
+    cat: js
+    col: 7
+  -
+    name: Webapp
+    full: TypeScript
+    exp: 5
+    use: 0.4
+    cat: deliverable
+    col: 9
+  -
+    name: Websites
+    full: TypeScript
+    exp: 5
+    use: 0.6
+    cat: deliverable
+    col: 9
+  -
+    name: SEO
+    full: Search Engine Optimalisation
+    exp: 5
+    use: 0.6
+    cat: deliverable
+    col: 9.5
+  -
+    name: Schema.org
+    full: 
+    exp: 4
+    use: 0.2
+    cat: deliverable
+    col: 9.5
+  -
+    name: Microformats
+    full: 
+    exp: 5
+    use: 0.3
+    cat: deliverable
+    col: 9
+  -
+    name: PageSpeed
+    full: Google PageSpeed
+    exp: 5
+    use: 0.6
+    cat: deliverable
+    col: 9
