@@ -116,9 +116,9 @@
 .page-header__intro__info
     position relative
     top -0.3rem
-    margin 1.8rem -2rem 0 0
+    margin 1.9rem 0 0 0.2rem
     display block
-    color hsla($color-primary-hue, 26%, 92%, 1)
+    color #fff
     font-size $font--x-small
     font-style normal
     letter-spacing 0.025em
@@ -138,28 +138,50 @@
 
     @media $desktop-plus
         position static
-        margin 2.6rem 0 0 0.2rem
+        margin 1.2rem 0 0 0.2rem
         letter-spacing 0.03em
 
         > span
             &:before
                 content ' — '
 
-        > a
-            margin 0 0 0 1rem
-            padding 0.1rem 0.6rem 0.2rem 0.7rem
-            border 0.1rem solid hsla($color-primary-hue, 26%, 94%, 0.14)
-            border-radius 9rem
-            color inherit
-            transition 162ms ease-out
+.page-header__ctas
+    display none
+    margin 3.2rem 0 0 -0.1rem
 
-            &:hover
-                border-color hsla($color-primary-hue, 26%, 94%, 0.38)
-                transition none
+    @media $desktop-plus
+        display block
 
-            &:active
-                background hsla($color-primary-hue, 26%, 94%, 0.1)
-                transition none
+    > a
+        margin 0 1.1rem 0 0
+        padding 0.8rem 2.3rem 0.9rem 2.3rem
+        border 0.1rem solid hsla($color-primary-hue, 26%, 94%, 0.2)
+        border-radius 9rem
+        color inherit
+        transition 162ms ease-out
+        font-size 80%
+
+        > i
+             position relative
+             top -0.2rem
+             margin 0 0.2rem 0 0
+
+        > u
+            display inline-block
+            position relative
+            top -0.2rem
+            left -0.3rem
+            text-decoration none
+            font-size 90%
+
+        &:hover
+            border-color hsla($color-primary-hue, 26%, 94%, 0.62)
+            background hsla($color-primary-hue, 26%, 94%, 0.038)
+            transition none
+
+        &:active
+            background hsla($color-primary-hue, 26%, 94%, 0.16)
+            transition none
 
 //
 // INFO

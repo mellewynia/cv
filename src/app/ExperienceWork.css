@@ -109,10 +109,11 @@
     margin: 0 0 0 0.5rem;
     color: hsla(222, 89%, 74%, 1);
     font-size: 1.2rem;
+    transition: 162ms ease-out;
 
     &:hover {
         color: hsla(222, 100%, 61%, 1);
-        /*transform: scale(1.06);*/
+        transition: none;
     }
 
     &:active {
