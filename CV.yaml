@@ -15,8 +15,8 @@ linkedin: https://www.linkedin.com/in/melle-wynia/
 github: https://github.com/mellewynia/cv
 
 rate: €75,00/uur
-availability: Beschikbaar per april 2017
-availability_short_term: Wél beschikbaar voor zijproject of consult!
+availability: Beschikbaar per mei 2017
+availability_short_term: Wél beschikbaar voor zijproject of consult
 
 address:
   '@type': PostalAddress
@@ -121,7 +121,7 @@ experiences:
   -
     type: work
     name: SVG/Audio animatie voor Knops
-    jobTitle: 
+    jobTitle: Freelance front-end javascript developer
     duur: 2017 (maart)
     skills: [Vue.js, SVG, Responsive, Howler.js, Web Audio API] 
     url: http://knops.co

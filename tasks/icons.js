@@ -37,6 +37,8 @@ export default () => {
 
     latestDate = `${latestDate.getUTCFullYear()}-${latestDate.getUTCMonth() + 1}-${latestDate.getUTCDate()}T${latestDate.getUTCHours() + 1}-${latestDate.getUTCMinutes()}-${latestDate.getUTCSeconds()}-${latestDate.getUTCMilliseconds()}`;
 
+    //console.log(latestDate);
+
     return gulp.src( `${config.paths.source}/icons/**` )
         .pipe(iconfontCss({
             // `cssClass` is being abused for a timestamp, to prevent cache issues!
