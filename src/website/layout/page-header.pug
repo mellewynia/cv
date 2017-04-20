@@ -8,7 +8,6 @@ div.page-header
                 = CV.rate
                 span= ' ' + CV.availability
                 span= ' ' + CV.availability_short_term
-                a(href="http://mellewynia.us15.list-manage.com/subscribe?u=35825e8f7e3b53803f21e27fa&id=aca70bc70c" target="_blank") Blijf op de hoogte
     nav.page-header__nav
         .page-header__nav__info
             h1.page-header__nav__info__name= `${CV.givenName} ${CV.familyName}`
@@ -17,31 +16,31 @@ div.page-header
             a.link-contact(
                 href=`tel:${CV.telephone.replace(/ /g, '')}`
             ).___medium
-                span.link-contact__icon
-                    span.icon-telephone
-                span.link-contact__text
+                i.link-contact__icon
+                    i.icon-telephone
+                span
                     = CV.telephone
             a.link-contact(
                 href=`mailto:${CV.email}`
             )
-                span.link-contact__icon
-                    span.icon-envelope
-                span.link-contact__text.___underlined
+                i.link-contact__icon
+                    i.icon-envelope
+                u
                     = CV.email
             a.link-contact(
                 href=CV.linkedin
                 title="“Join the great link”"
                 target="_blank"
             )
-                span.link-contact__icon
-                    span.icon-link
-                span.link-contact__text.___underlined
+                i.link-contact__icon
+                    i.icon-link
+                u
                     | connect
             a.link-contact(
                 href=CV.github
                 target="_blank"
             )
-                span.link-contact__icon
-                    span.icon-code
-                span.link-contact__text.___underlined
+                i.link-contact__icon
+                    i.icon-code
+                u
                     | github

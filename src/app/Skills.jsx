@@ -29,6 +29,20 @@ class Skills extends React.Component {
           </li>
         })}
       </ul>
+      {/* OTHER APPROACH */}
+      <ul className="skills-super">
+        {this.props.skills.map((skill, i) => {
+          return <li
+            className={`skill ___type-${skill.cat}`}
+            key={i}
+            style={{
+              fontSize: `${0.8 + (0.5 * skill.use * skill.exp)}em`,
+            }}
+          >
+            {skill.name}
+          </li>;
+        })}
+      </ul>
     </section>
   }
 }

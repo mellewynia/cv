@@ -114,11 +114,8 @@
             opacity 0.74
 
 .page-header__intro__info
-    position relative
-    top -0.3rem
-    margin 1.8rem -2rem 0 0
     display block
-    color hsla($color-primary-hue, 26%, 92%, 1)
+    color #fff
     font-size $font--x-small
     font-style normal
     letter-spacing 0.025em
@@ -129,6 +126,10 @@
         //
 
     @media $mobile-tablet
+        position relative
+        top -0.3rem
+        margin 1.9rem 0 0 0.2rem
+
         > span
             display block
             padding 0.8rem 0 0 0
@@ -138,28 +139,12 @@
 
     @media $desktop-plus
         position static
-        margin 2.6rem 0 0 0.2rem
+        margin 1.3rem 0 0 0.3rem
         letter-spacing 0.03em
 
         > span
             &:before
                 content ' — '
-
-        > a
-            margin 0 0 0 1rem
-            padding 0.1rem 0.6rem 0.2rem 0.7rem
-            border 0.1rem solid hsla($color-primary-hue, 26%, 94%, 0.14)
-            border-radius 9rem
-            color inherit
-            transition 162ms ease-out
-
-            &:hover
-                border-color hsla($color-primary-hue, 26%, 94%, 0.38)
-                transition none
-
-            &:active
-                background hsla($color-primary-hue, 26%, 94%, 0.1)
-                transition none
 
 //
 // INFO
@@ -254,9 +239,24 @@
         padding 0.8rem 1.2rem 1rem 0.5rem
         height 5.6rem
 
+    > span
+        position relative
+        top 0.1rem
+        font-size 1.8rem
+
+    > u
+        text-decoration none
+        line-height 1.1
+        box-shadow 0 1px 0 0 hsla($color-primary-hue, 100%, 61%, 0.38)
+        transition 162ms ease-out
+
     &:hover
         background hsla($color-primary-hue, 100%, 98%, 1)
         transition none
+
+        > u
+            box-shadow 0 1px 0 0 hsla($color-primary-hue, 100%, 61%, 1)
+            transition none
 
     &:active
         background hsla($color-primary-hue, 100%, 96%, 1)
@@ -267,13 +267,3 @@
     font-size 1.8em
     margin 0.1em
     line-height 1
-
-.link-contact__text
-
-    &.___underlined
-        text-decoration underline
-
-    .___medium > &
-        position relative
-        top 0.1rem
-        font-size 1.8rem

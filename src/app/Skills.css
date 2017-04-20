@@ -28,7 +28,28 @@
     background: hsla(222, 0%, 97%, 1);
 
     &.___type-js {
-        background: hsla(222, 100%, 61%, 1);
-        color: #fff;
+        background: #f7df1e;
+        color: #000;
+    }
+}
+
+.skill-expert {
+    display: block;
+    text-align: center;
+}
+
+
+
+
+.skills-super {
+    /*
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    */
+    height: 200px;
+
+    > li {
+        float:left;
     }
 }

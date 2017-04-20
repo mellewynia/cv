@@ -22,6 +22,9 @@ class ExperienceWork extends React.Component {
         {this.props.experience.skills.map((skill, i) => {
           return <span key={i}> <span className="tag">{skill}</span></span>;
         })}
+        {/* Optional experience url */}
+        {this.props.experience.url !== undefined ?
+        <a className="btn-goto" href={this.props.experience.url} target="_blank"><u>Website</u><i className="icon-link-out"></i></a> : ''}
       </p>
       <p className="work__description" >
         {this.props.experience.description}
@@ -33,23 +36,23 @@ class ExperienceWork extends React.Component {
                 <div className="project">
                   <h5 className="project__name">
                     {project.name}
-                    {/* Optional website url */}
-                    {project.url !== '' && project.url !== undefined ? <a className="btn-goto" href={project.url} target="_blank">
-                      <span className="button-goto__text">Website</span><i className="icon-link-out"></i>
-                    </a> : <span/> }
-                    {/* Optional git(hub) url */}
-                    {project.git !== '' && project.git !== undefined ?
-                      <a className="btn-goto" href={project.git} target="_blank">
-                        <span>Git</span>
-                        <i className="icon-code"></i>
-                      </a>
-                      : ''
-                    }
                   </h5>
                   <span className="project__skills">
                     {project.skills.map((skill, i) => {
                       return <span key={i}><span className="tag">{skill}</span> </span>
                     })}
+                    {/* Optional website url */}
+                    {project.url !== '' && project.url !== undefined ? <a className="btn-goto" href={project.url} target="_blank">
+                      <u>Website</u><i className="icon-link-out"></i>
+                    </a> : <span/> }
+                    {/* Optional git(hub) url */}
+                    {project.git !== '' && project.git !== undefined ?
+                      <a className="btn-goto" href={project.git} target="_blank">
+                        <u>GitHub</u>
+                        <i className="icon-code"></i>
+                      </a>
+                      : ''
+                    }
                   </span>
                 </div>
               </li>;

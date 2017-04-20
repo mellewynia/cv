@@ -1,4 +1,4 @@
-date: '2017-04-01'
+date: '2017-04-06'
 
 '@context': http://schema.org
 '@type': Person
@@ -15,8 +15,8 @@ linkedin: https://www.linkedin.com/in/melle-wynia/
 github: https://github.com/mellewynia/cv
 
 rate: €75,00/uur
-availability: Beschikbaar per april 2017
-availability_short_term: Wel beschikbaar voor zijproject of consult
+availability: Beschikbaar per mei 2017
+availability_short_term: Wél beschikbaar voor zijproject of consult
 
 address:
   '@type': PostalAddress
@@ -102,12 +102,12 @@ experiences:
         url: http://www.checklistschoonmaak.nl/
         skills: [Grunt, Drag ’n drop, jQuery, JSON, Less, Print, Pug]
       -
-        name: Gettid
+        name: Gettid — Centraal huisstijlbeheer, geschikt voor grote organisaties
         skills: [Scrum, Gulp, AngularJS, HTML5, RESTAPI, JSON, Sass, Twig]
       -
         name: IoT Dashboard & Beheer
         skills: [AngularJS, RESTAPI, Tokens, Google Maps, JSON, Less, Pug]
-  
+
 
   -
     type: quote
@@ -116,6 +116,19 @@ experiences:
       name: Jörgen Steenbergen
       jobTitle: Partner / adviseur en communicatieontwerper
       company: OSAGE
+
+
+  -
+    type: work
+    name: SVG/Audio animatie voor Knops
+    jobTitle: Freelance front-end javascript developer
+    duur: 2017 (maart)
+    skills: [Vue.js, SVG, Responsive, Howler.js, Web Audio API] 
+    url: http://knops.co
+    description: Ontwerpbureau Today uit Utrecht kwam met een spoedopdracht. Of er een interactieve audio visual component voor de homepage kon worden ontwikkeld. De gebruiker regelt zelf het geluidsniveau. Zoals bij het echte product. Per geluidsniveau is er één mp3. Deze tracks lopen synchroon. Door middel van korte lijnen, hebben we de deadline (kickstarter datum) gehaald.
+    number_of_projects: 1
+    projects: []
+    references: []
 
 
   -
@@ -141,7 +154,7 @@ experiences:
   -
     type: profile
     image: /media/me.jpg
-    meta: [6 juni 1991,7+ jaar ervaring,152 projecten,40 klanten]
+    meta: [6 juni 1991,7+ jaar ervaring,153 projecten,41 klanten]
     details:
       -
         type: Mobiliteit
@@ -152,7 +165,7 @@ experiences:
       -
         type: Vrijetijdsbesteding
         content: koken, fietsen, meetups en start-up superpowerme.io
-    tags: [Creatief, Grondig, Gedreven, Geduldig, Communicatief. Nieuwsgierig]
+    tags: [Creatief, Grondig, Gedreven, Geduldig, Communicatief, Nieuwsgierig]
     intro: Melle is een toegewijd front-end developer met uitgebreide Javascript kennis. Hij staat je bij zodat je projecten op tijd en naar wens live gaan. Melle werkt betrouwbaar, nauwkeurig en schakelt snel.
     story: Op 1 april 2011 heeft hij zijn eenmanszaak gestart vanuit zijn passie om mooie, bruikbare websites op te leveren die resultaten genereren. Daarbij focuste Melle zich op totaaloplossingen. Gedurende de jaren verschoof de focus naar front-end development waarbij hij terecht kwam op interim-achtige posities. Hierbij draait het erom om projecten op schema, binnen budget en naar tevredenheid van de PO en/of projectmanagers uit te voeren. Bij dergelijke uitdagingen bloeit hij op. Gedurende de projectijd, van doorgaans 3 maanden tot een jaar, biedt een agile werkwijze vaak de uitkomst volgens scrum of kanban, zodat de focus altijd ligt op de output met hoogste value. Dit leidt tot goed werkende websites en -apps die met enthousiasme worden ontvangen door de eindgebruikers.
 
@@ -274,9 +287,74 @@ skills:
 
 
   -
+    name: Scrum
+    full: 
+    exp: 3
+    use: 1
+    col: 0.5
+    prominance: 0.1
+    rowSpan: 1
+    subs: ['Jira', 'Asana']
+  -
+    name: Kanban
+    full: 
+    exp: 3
+    use: 1
+    col: 0.5
+    prominance: 0.1
+    rowSpan: 1
+  -
+    name: Git
+    full: 
+    exp: 2
+    use: 1
+    col: 0.5
+    prominance: 0.1
+    rowSpan: 1
+  -
+    name: Nederlands
+    full: 
+    exp: 3
+    use: 1
+    col: 0.5
+    prominance: 0.1
+    rowSpan: 1
+  -
+    name: Engels
+    full: 
+    exp: 3
+    use: 1
+    col: 0.5
+    prominance: 0.1
+    rowSpan: 1
+  -
     name: Adobe XB
     full: 
     exp: 3
+    use: 1
+    col: 0.5
+    prominance: 0.1
+    rowSpan: 1
+  -
+    name: Sketch
+    full: 
+    exp: 5
+    use: 1
+    col: 0.5
+    prominance: 0.1
+    rowSpan: 1
+  -
+    name: Adobe Illustrator
+    full: 
+    exp: 1
+    use: 1
+    col: 0.5
+    prominance: 0.1
+    rowSpan: 1
+  -
+    name: Adobe Photoshop
+    full: 
+    exp: 1
     use: 1
     col: 0.5
     prominance: 0.1
@@ -289,6 +367,13 @@ skills:
     col: 1.5
     prominance: 0.5
   -
+    name: Web Audio API
+    full: 
+    exp: 3
+    use: 1
+    col: 2
+    prominance: 0.3
+  -
     name: CSS3
     full: Cascading Style Sheets 3
     exp: 5
@@ -297,6 +382,32 @@ skills:
     col: 3
     rowSpan: 2
     prominance: 1
+  -
+    name: Flexbox
+    exp: 5
+    use: 1
+    cat: css
+    col: 3
+    rowSpan: 1
+    prominance: 1
+  -
+    name: Iconfonts
+    full: Iconfonts
+    exp: 4
+    use: 1
+    cat: css
+    col: 3
+    rowSpan: 1
+    prominance: 0.4
+  -
+    name: Grid
+    full: Grid
+    exp: 2
+    use: 1
+    cat: css
+    col: 3
+    rowSpan: 1
+    prominance: 0.4
   -
     name: JS
     full: JavaScript
@@ -348,6 +459,13 @@ skills:
     cat: js
     col: 7
   -
+    name: RX.JS
+    full: Vue.js
+    exp: 2
+    use: 0.6
+    cat: js
+    col: 7
+  -
     name: Vue
     full: Vue.js
     exp: 2
@@ -355,44 +473,58 @@ skills:
     cat: js
     col: 7
   -
+    name: React.js
+    full: React.js
+    exp: 1.3
+    use: 1.5
+    cat: js
+    col: 7
+  -
+    name: React.js
+    full: React.js
+    exp: 1.3
+    use: 1.5
+    cat: js
+    col: 7
+  -
     name: Webapp
-    full: TypeScript
+    full: 
     exp: 5
     use: 0.4
     cat: deliverable
     col: 9
   -
     name: Websites
-    full: TypeScript
+    full: 
     exp: 5
     use: 0.6
     cat: deliverable
-    col: 9
+    col: 8
   -
     name: SEO
     full: Search Engine Optimalisation
     exp: 5
     use: 0.6
     cat: deliverable
-    col: 9.5
+    col: 8
   -
     name: Schema.org
     full: 
     exp: 4
     use: 0.2
     cat: deliverable
-    col: 9.5
+    col: 8
   -
     name: Microformats
     full: 
     exp: 5
     use: 0.3
     cat: deliverable
-    col: 9
+    col: 8
   -
     name: PageSpeed
     full: Google PageSpeed
     exp: 5
     use: 0.6
     cat: deliverable
-    col: 9
+    col: 8
