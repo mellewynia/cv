@@ -14,7 +14,7 @@ console.log(CV);
 class App extends React.Component {
   render () {
     return <div>
-      <Skills skills={CV.skills} />
+      {/*<Skills skills={CV.skills} />*/}
       {CV.experiences.map((experience, i) => {
         switch(experience.type) {
           case 'work':

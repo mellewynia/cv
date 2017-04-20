@@ -1,4 +1,4 @@
-date: '2017-04-06'
+date: '2017-04-20'
 
 '@context': http://schema.org
 '@type': Person
@@ -15,7 +15,7 @@ linkedin: https://www.linkedin.com/in/melle-wynia/
 github: https://github.com/mellewynia/cv
 
 rate: €75,00/uur
-availability: Beschikbaar per mei 2017
+availability: Beschikbaar per juli 2017
 availability_short_term: Wél beschikbaar voor zijproject of consult
 
 address:
@@ -39,6 +39,19 @@ organisation:
 
 experiences:
 
+
+
+  -
+    type: work
+    name: Front-end webapp bij Facet IT
+    jobTitle: Freelance senior ux / front-end developer
+    duur: 2017-03–HEDEN
+    plaats: Arnhem
+    description: Beschrijving en details volgen binnenkort!
+    skills: [Angular2+, Bootstrap 4, API, Unit Testing, End-to-end testing]
+    number_of_projects: 1
+    references: []
+    projects: []
 
 
   -
@@ -154,7 +167,7 @@ experiences:
   -
     type: profile
     image: /media/me.jpg
-    meta: [6 juni 1991,7+ jaar ervaring,153 projecten,41 klanten]
+    meta: [6 juni 1991,7+ jaar ervaring,154 projecten,42 klanten]
     details:
       -
         type: Mobiliteit
