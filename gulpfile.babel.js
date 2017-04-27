@@ -38,7 +38,7 @@ import taskIcons from './tasks/icons';
 gulp.task('icons', taskIcons);
 
 import taskFonts from './tasks/fonts';
-gulp.task('fonts', ['icons'], taskFonts);
+gulp.task('fonts', taskFonts);
 
 import taskImages from './tasks/images';
 gulp.task('images', taskImages);
@@ -60,10 +60,8 @@ gulp.task('js', taskJS);
 
 gulp.task('watch', () => {
     watch([ `${config.paths.source}/favicon-template-1024x1024.png` ], () => gulp.start('favicons') );
-    watch([
-        `${config.paths.source}/fonts/**/*`,
-        `${config.paths.source}/icons/**/*`,
-    ], () => gulp.start('fonts') );
+    watch([ `${config.paths.source}/fonts/**/*` ], () => gulp.start('fonts') );
+    watch([ `${config.paths.source}/icons/**/*`,], () => gulp.start('icons') )
     watch([ `${config.paths.source}/images/**/*` ], () => gulp.start('images') );
     watch([ `${config.paths.source}/media/**/*` ], () => gulp.start('media') );
     watch([ `${config.paths.source}/**/*`, `CV.yaml` ], () => {

@@ -1,6 +1,6 @@
 # Source of my cv / resume / website
 
-This project simplifies the way I manage and update my website and cv. That woulde be a nice opportunity to combine interesting technologies!
+> This project simplifies the way I manage and update my website and cv. That woulde be a nice opportunity to combine interesting technologies!
 
 Go to [mellewynia.nl](http://mellewynia.nl) for the results so far. The /public folder is the output.
 
