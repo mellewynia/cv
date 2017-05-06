@@ -21,11 +21,7 @@
             left: 0;
             right: 0;
             height: 0.6rem;
-            background: repeating-linear-gradient(
-                135deg,
-                hsla(222, 38%, 96%, 1), hsla(222, 38%, 96%, 1) 0.25rem /* black stripe */,
-                #fff, #fff 0.75rem /* white stripe */
-            );
+            background: hsla(222, 38%, 96%, 1);
         }
 
         > span {

@@ -31,22 +31,14 @@ class App extends React.Component {
     }
 
     let header_slide = false;
+    let auto_scrolled = true;
 
     window.addEventListener('scroll', (event) => {
 
-      requestAnimationFrame(() => {
-        const newScrollTop = getScrollTop();
+      const newScrollTop = getScrollTop();
 
-        this.setState((prevState, props) => {
-          return {scrollTop: newScrollTop}
-        })
-
-        if (headerSlide(newScrollTop) !== header_slide) {
-          document.getElementById('page-header__intro')
-                  .setAttribute('class', 'page-header__intro' + (headerSlide(newScrollTop) ? ' __is-slided-up': '') )
-          header_slide = headerSlide(newScrollTop);
-        }
-        //console.log(getScrollTop())
+      this.setState((prevState, props) => {
+        return {scrollTop: newScrollTop}
       })
     })
   }

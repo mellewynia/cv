@@ -13,27 +13,6 @@
     }
 }
 
-@keyframes SPANNING-2 {
-    0% {
-        transform translate(0vh, 0) skew(-34deg)
-    }
-    50% {
-        transform translate(60%, 0) skew(-34deg)
-    }
-    100% {
-        transform translate(0vh, 0) skew(-34deg)
-    }
-}
-
-@keyframes PLANE {
-    0% {
-        transform translate(0vh, 0) rotate(-6.2deg)
-    }
-    100% {
-        transform translate(200rem, -4rem) rotate(-7.2deg)
-    }
-}
-
 .page-header__intro
     position relative
     overflow hidden
@@ -44,13 +23,14 @@
     line-height 1.38em
 
     background-color hsla(222, 100%, 61%, 1)
-    background-image linear-gradient(38deg, transparent, hsla(222, 100%, 62%, 0.1)), radial-gradient(ellipse farthest-corner at -10% -10% , hsla(222, 100%, 54%, 0.1) 0%, rgba(0, 0, 255, 0) 50%, hsla(222, 100%, 54%, 1) 95%)
-    transition: 162ms ease-out;
+    background-image:
+        linear-gradient(38deg, transparent, hsla(222, 100%, 62%, 0.1));
 
-    &.__is-slided-up {
-        margin-top -20vh
-        transition: 262ms ease-out;
-    }
+    @media $tablet-plus
+        font-size $font--x-large
+        font-weight 200
+        text-shadow $text-shadow
+
 
     &:before
         content ''
@@ -74,23 +54,26 @@
         left 78vw
         background-image linear-gradient(0deg, hsla(222, 100%, 71%, 0.1), hsla(222, 100%, 55%, 0.2)), radial-gradient(transparent, hsla(222, 100%, 74%, 0.06))
         transform skew(-34deg)
-        animation SPANNING-2 66s infinite
-
-    @media $tablet-plus
-        display flex
-        align-items center
-        min-height 74vh
-        font-size $font--x-large
-        font-weight 200
-        text-shadow $text-shadow
+        animation SPANNING 62s 4s infinite
 
 .page-header__intro__center
     position relative
     z-index 2
     max-width $grid-max-width
+    transition: 262ms ease;
+    will-change: height;
 
     @media $tablet-plus
-        margin calc(20vh + 4.2rem) auto calc(10vh + 2.6rem)
+        margin calc(25vh + 2.2rem) auto calc(12.6vh + 0.6rem)
+
+@keyframes PLANE {
+    0% {
+        transform translate(0vh, 0) rotate(-6.2deg)
+    }
+    100% {
+        transform translate(200rem, -24rem) rotate(-7.2deg)
+    }
+}
 
 .page-header__plane
     display none
@@ -101,19 +84,19 @@
         top 20vh
         right 48vw
         color #fff
-        transform rotate(-6.2deg) translate(100rem, -4rem)
+        transform translate(200rem, -24rem) rotate(-7.2deg)
         animation PLANE 600s ease-out
+        will-change: transform;
 
         &::before
             content ''
             opacity 0.12
             display block
             position absolute
-            top 2.85rem
+            top 2.9rem
             left -38rem
             right 0.8rem
             height 0.4rem
-            filter blur(0.1rem)
             background linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.2), rgba(255,255,255,0.3), rgba(255,255,255,0.5), rgba(255,255,255,0.2), #fff)
 
         > .icon-plane
@@ -161,6 +144,9 @@
     0% {
         transform translate(0, -100%)
     }
+    62% {
+        transform translate(0, -100%)
+    }
     100% {
         transform translate(0, 0)
     }
@@ -176,12 +162,20 @@
         top 0
         right 0
         left 0
-        animation SLIDE-NAV-IN 1s
-        box-shadow 0 0 1.6rem hsla(222,38%,61%,0.2)
+        animation SLIDE-NAV-IN 1.38s
+        transform translate(0, 0)
+        animation-timing-function ease
+        will-change opacity, transform
+        box-shadow 0 0 1.6rem hsla(222,26%,61%,0.2)
 
     @media $desktop-plus
         display flex
         min-height 7.3rem
+
+    @supports ( backdrop-filter: blur(5px) ) {
+        backdrop-filter blur(5px)
+        background rgba(255, 255, 255, 0.97)
+    }
 
 //
 // NAV - INFO
@@ -193,15 +187,15 @@
     padding 3rem 0 0 3.8rem
     font-size $font--small
 
-    @media $mobile-landscape-plus
-        display flex
-
     @media $desktop-plus
         font-size $font--medium
 
 .page-header__nav__info__name
     font-size inherit
     font-weight inherit
+
+    @media $mobile-landscape-plus
+        display inline
 
 .page-header__nav__info__jobtitle
     display block
@@ -221,7 +215,6 @@
     @media $mobile-landscape-plus
         padding-right 0
         padding-top 0
-        display flex
 
     @media $desktop-plus
         padding 1.4rem 3rem 0 0
@@ -235,7 +228,7 @@
     align-items center
     color hsla($color-primary-hue, 100%, 61%, 1)
     font-size $font--small
-    background #fff
+    background hsla($color-primary-hue, 100%, 98%, 0)
     transition 162ms ease-out
 
     @media $mobile-portrait
@@ -245,6 +238,7 @@
     @media $mobile-landscape-plus
         padding 0.8rem 1.2rem 1rem 0.5rem
         height 5.6rem
+        display inline-flex
 
     > span
         position relative
@@ -254,7 +248,7 @@
     > u
         text-decoration none
         line-height 1.1
-        box-shadow 0 1px 0 0 hsla($color-primary-hue, 100%, 61%, 0.38)
+        border-bottom 1px solid hsla($color-primary-hue, 100%, 61%, 0.38)
         transition 162ms ease-out
 
     &:hover
@@ -262,7 +256,7 @@
         transition none
 
         > u
-            box-shadow 0 1px 0 0 hsla($color-primary-hue, 100%, 61%, 1)
+            border-bottom 1px solid hsla($color-primary-hue, 100%, 61%, 1)
             transition none
 
     &:active

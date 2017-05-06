@@ -20,7 +20,7 @@ html
 
     body
 
-        .page-layout
+        .page-layout#page-layout
             header.page-layout__header
                 include page-header
 
@@ -31,9 +31,6 @@ html
                     include ../components/download-cv/download-cv
 
                 div( id="app" )
-
-            footer.page-layout__footer
-                include page-footer
 
         script( type="application/ld+json" )
             != JSON.stringify(CV, 4)
