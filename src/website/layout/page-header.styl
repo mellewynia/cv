@@ -37,6 +37,7 @@
 .page-header__intro
     position relative
     overflow hidden
+    margin 0
     padding 10vh 4rem 2.2rem
     color hsla($color-primary-hue, 10%, 98%, 1)
     font-size $font--medium
@@ -44,6 +45,12 @@
 
     background-color hsla(222, 100%, 61%, 1)
     background-image linear-gradient(38deg, transparent, hsla(222, 100%, 62%, 0.1)), radial-gradient(ellipse farthest-corner at -10% -10% , hsla(222, 100%, 54%, 0.1) 0%, rgba(0, 0, 255, 0) 50%, hsla(222, 100%, 54%, 1) 95%)
+    transition: 162ms ease-out;
+
+    &.__is-slided-up {
+        margin-top -20vh
+        transition: 262ms ease-out;
+    }
 
     &:before
         content ''
