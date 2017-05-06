@@ -1,16 +1,9 @@
 div.page-header
-    blockquote.page-header__intro
+    blockquote.page-header__intro#page-header__intro
         span.page-header__plane
             i.icon-plane
         p.page-header__intro__center
             = CV.description
-            small.page-header__ctas
-                a(href=`tel:${CV.telephone.replace(/ /g, '')}`)
-                    i.icon-telephone
-                    = CV.telephone
-                a(href=`mailto:${CV.email}`)
-                    i.icon-envelope
-                    u= CV.email
             small.page-header__intro__info
                 = CV.rate
                 span= ' ' + CV.availability
@@ -23,31 +16,31 @@ div.page-header
             a.link-contact(
                 href=`tel:${CV.telephone.replace(/ /g, '')}`
             ).___medium
-                span.link-contact__icon
-                    span.icon-telephone
-                span.link-contact__text
+                i.link-contact__icon
+                    i.icon-telephone
+                span
                     = CV.telephone
             a.link-contact(
                 href=`mailto:${CV.email}`
             )
-                span.link-contact__icon
-                    span.icon-envelope
-                span.link-contact__text.___underlined
+                i.link-contact__icon
+                    i.icon-envelope
+                u
                     = CV.email
             a.link-contact(
                 href=CV.linkedin
                 title="“Join the great link”"
                 target="_blank"
             )
-                span.link-contact__icon
-                    span.icon-link
-                span.link-contact__text.___underlined
+                i.link-contact__icon
+                    i.icon-link
+                u
                     | connect
             a.link-contact(
                 href=CV.github
                 target="_blank"
             )
-                span.link-contact__icon
-                    span.icon-code
-                span.link-contact__text.___underlined
+                i.link-contact__icon
+                    i.icon-code
+                u
                     | github

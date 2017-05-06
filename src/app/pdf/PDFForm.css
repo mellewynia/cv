@@ -1,0 +1,60 @@
+
+.pdf-form {
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    right: 6.2vw;
+    padding: 1.6rem 2.6rem 1rem 2.6rem;
+    border-radius:  0.62rem 0.62em 0 0;
+    box-shadow: 0 0.8rem 1.6rem hsla(222, 38%, 61%, 0.2);
+    background: #fff;
+    transform: translate(0, 138%);
+    transition: 262ms ease-out transform;
+
+    @media (width <= 768px) {
+        display: none;
+    }
+
+    &.___is-shown {
+        transform: translate(0, 0);
+    }
+
+    > button {
+        margin: -4.2rem 0 0.3rem 0;
+        padding: 1.2rem 2rem;
+        background: hsla(222, 100%, 61%, 1);
+        border-radius: 0.4rem;
+        cursor: pointer;
+        font-size: 4.2rem;
+        color: #fff;
+        transition: 162ms linear;
+        font-weight: 200;
+
+        &:hover {
+            background: hsla(222, 100%, 58%, 1);
+        }
+
+        &:active {
+            background: hsla(222, 100%, 50%, 1);
+        }
+
+        &:focus {
+            outline: 0;
+        }
+
+        &.___is-loading {
+            background: hsla(222, 50%, 40%, 1);
+        }
+
+        > i {
+            position: relative;
+            top: -0.2rem;
+        }
+    }
+
+    > small {
+        display: block;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+    }
+}

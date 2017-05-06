@@ -105,27 +105,36 @@
 .btn-goto {
     display: inline-block;
     position: relative;
-    top: -0.3rem;
+    top: -0.2rem;
     margin: 0 0 0 0.5rem;
     color: hsla(222, 89%, 74%, 1);
     font-size: 1.2rem;
     transition: 162ms ease-out;
 
+    > u {
+        /* Used for text */
+        display: inline-block;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 0.9;
+        text-transform: uppercase;
+        text-decoration: none;
+        box-shadow: 0 1px 0 0 hsla(222, 100%, 61%, 0.38);
+        transition: 162ms ease-out;
+    }
+
     &:hover {
         color: hsla(222, 100%, 61%, 1);
         transition: none;
+
+        > u {
+            box-shadow: 0 1px 0 0 hsla(222, 100%, 61%, 1);
+            transition: none;
+        }
     }
 
     &:active {
         color: hsla(222, 100%, 50%, 1);
-    }
-
-    > span {
-        /* Used for text */
-        text-decoration: underline;
-        font-weight: 500;
-        font-size: 1rem;
-        text-transform: uppercase;
     }
 }
 
