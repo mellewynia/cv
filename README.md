@@ -9,12 +9,9 @@ Go to [mellewynia.nl](http://mellewynia.nl) for the results so far. The /public 
 - ☑️ One source for all information (/CV.yaml)
 - ☑️ Static website with a...
 - ☑️ ... React.js app which:
-    - ☑️ bootstraps on the static website,
-    - ☑️ renders experiences/quotes/milestones and
-    - ◻️ allows users to filter
+    - ☑️ bootstraps on the static website and
+    - ☑️ renders experiences/quotes/milestones.
 - ☑️🍒 Implement Schema.org: `application/ld+json`
-- ☑️🍒 Google Pagespeed 90_+_/100 ([run Google Pagespeed now](https://developers.google.com/speed/pagespeed/insights/?url=mellewynia.nl&tab=desktop))
+- ☑️🍒 Google Pagespeed 90+/100 ([try Google Pagespeed yourself](https://developers.google.com/speed/pagespeed/insights/?url=https://mellewynia.nl&tab=desktop))
 - ☑️ Generate PDF version (of CV) (in browser❔)
-- ◻️🍒 Generate TXT version (of CV) (in browser❔)
-- ◻️🍒 Generate DOC version (of CV) (in browser❔)
 

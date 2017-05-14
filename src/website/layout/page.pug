@@ -9,6 +9,7 @@ html
         meta( http-equiv="X-UA-Compatible" content="IE=edge" )
 
         title=title
+        meta( name="description" content=`${CV.rate} (${CV.availability}) — ${CV.description}` )
 
         meta( name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" )
 
@@ -34,10 +35,11 @@ html
 
             include page-footer
 
-        script( type="application/ld+json" )
-            != JSON.stringify(CV, 4)
-
         script( async src="/app/bundle.js" type="text/javascript" )
+
+        //-
+            script( type="application/ld+json" )
+                != JSON.stringify(CV, 4)
 
         script.
             (function() {

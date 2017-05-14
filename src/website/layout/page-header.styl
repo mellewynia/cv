@@ -26,6 +26,7 @@
     background-image:
         linear-gradient(38deg, transparent, hsla(222, 100%, 62%, 0.1));
 
+
     @media $tablet-plus
         font-size $font--x-large
         font-weight 200
@@ -63,6 +64,9 @@
     transition: 262ms ease;
     will-change: height;
 
+    @media (min-width: 360px)
+        margin calc(25vh + 2.2rem) 0 0
+
     @media $tablet-plus
         margin calc(25vh + 2.2rem) auto calc(12.6vh + 0.6rem)
 
@@ -78,7 +82,7 @@
 .page-header__plane
     display none
 
-    @media $tablet-plus
+    @media (min-width: 360px)
         display block
         position absolute
         top 20vh
@@ -93,7 +97,9 @@
             opacity 0.12
             display block
             position absolute
-            top 2.9rem
+            top 1.2rem
+            @media (min-width: 768px)
+                top 2.9rem
             left -38rem
             right 0.8rem
             height 0.4rem
@@ -118,7 +124,7 @@
     @media $mobile-tablet
         position relative
         top -0.3rem
-        margin 1.9rem 0 0 0.2rem
+        margin 1.9rem -1rem 0 0.2rem
 
         > span
             display block

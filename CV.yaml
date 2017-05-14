@@ -1,17 +1,17 @@
-date: '2017-05-06'
+date: '2017-05-15'
 
 '@context': http://schema.org
 '@type': Person
 
 givenName: Melle
 familyName: Wynia
-jobTitle: Creative / front-end developer
+jobTitle: Creative / front-end javascript developer
 description: Melle is een stressbestendige front-end developer die problemen pro-actief oplost, communicatief vaardig is en een scherp oog voor user experience heeft.
 
 email: hoi@mellewynia.nl
 telephone: 06 41 01 76 11
-url: http://mellewynia.nl
-linkedin: https://www.linkedin.com/in/melle-wynia/
+url: https://mellewynia.nl
+linkedin: https://www.linkedin.com/in/melle-wynia
 github: https://github.com/mellewynia/cv
 
 rate: €75,00/uur
@@ -43,7 +43,8 @@ experiences:
 
   -
     type: work
-    name: Front-end webapp bij Facet IT
+    featured: true
+    name: Front-end webapp bij Facet
     jobTitle: Freelance senior ux / front-end developer
     duur: 2017-03–HEDEN
     plaats: Arnhem
@@ -180,7 +181,7 @@ experiences:
         content: koken, fietsen, meetups en start-up superpowerme.io
     tags: [Creatief, Grondig, Gedreven, Geduldig, Communicatief, Nieuwsgierig]
     intro: Melle is een toegewijd front-end developer met uitgebreide Javascript kennis. Hij staat je bij zodat je projecten op tijd en naar wens live gaan. Melle werkt betrouwbaar, nauwkeurig en schakelt snel.
-    story: Op 1 april 2011 heeft hij zijn eenmanszaak gestart vanuit zijn passie om mooie, bruikbare websites op te leveren die resultaten genereren. Daarbij focuste Melle zich op totaaloplossingen. Gedurende de jaren verschoof de focus naar front-end development waarbij hij terecht kwam op interim-achtige posities. Hierbij draait het erom om projecten op schema, binnen budget en naar tevredenheid van de PO en/of projectmanagers uit te voeren. Bij dergelijke uitdagingen bloeit hij op. Gedurende de projectijd, van doorgaans 3 maanden tot een jaar, biedt een agile werkwijze vaak de uitkomst volgens scrum of kanban, zodat de focus altijd ligt op de output met hoogste value. Dit leidt tot goed werkende websites en -apps die met enthousiasme worden ontvangen door de eindgebruikers.
+    story: Op 1 april 2011 heeft hij zijn eenmanszaak gestart vanuit zijn passie om mooie, bruikbare websites op te leveren die resultaten genereren. Daarbij focuste Melle zich op totaaloplossingen. Gedurende de jaren verschoof de focus naar front-end development waarbij hij terecht kwam op interim-achtige posities. Hierbij draait het erom om projecten op schema, binnen budget en naar tevredenheid van de PO en/of projectmanagers uit te voeren. Bij dergelijke uitdagingen bloeit hij op. Gedurende de projecttijd, van doorgaans 3 maanden tot een jaar, biedt een agile werkwijze vaak de uitkomst volgens scrum of kanban, zodat de focus altijd ligt op de output met hoogste value. Dit leidt tot goed werkende websites en -apps die met enthousiasme worden ontvangen door de eindgebruikers.
 
 
 
@@ -247,7 +248,7 @@ experiences:
     duur: 2011–HEDEN
     number_of_projects: 33
     plaats: Amsterdam / Arnhem
-    description: Voor Sjoerd heb ik sinds dag één als freelancer frontends gerealiseerd met focus op concepten, datavisualisatie en intranetpagina’s. Zo hebben we onder andere voor AkzoNobel proccessen interactief inzichtelijk gemaakt.
+    description: Voor Sjoerd heb ik sinds dag één als freelancer frontends gerealiseerd met focus op concepten, datavisualisatie en intranetpagina’s. Zo hebben we onder andere voor AkzoNobel proccessen interactief inzichtelijk gemaakt.
     skills: [OOCSS, CSS3]
     references:
       -
