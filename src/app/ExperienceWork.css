@@ -37,6 +37,11 @@
     margin: 0.4rem 0;
     font-size: 1.2rem;
 
+    strong {
+        color: hsl(222, 100%, 61%);
+        font-weight: bold;
+    }
+
     @media (width >= 768px) {
         font-size: inherit;
     }

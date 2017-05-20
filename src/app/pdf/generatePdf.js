@@ -85,24 +85,17 @@ export default function (NPM_PACKAGE, CV) {
                 {
                     text: [
                         {
-                            text: 'https://www.',
+                            text: 'https://',
                             style: { color: $colorGreyest }
                         },
-                        `${CV.linkedin.replace(/^https:\/\/www\./, '')}`
+                        `${CV.linkedin.replace(/^https:\/\//, '')}`
                     ],
                     link: `${CV.linkedin}`,
                     style: { fontSize: 11, color: $colorText },
-                    marginLeft: -66,
+                    marginLeft: -38,
                     marginBottom: 14
                 },
-                {
-                    text: `KvK / bedrijfsnaam`,
-                    style: 'meta'
-                },
-                {
-                    text: `${CV.organisation.kvk} / Ik ben Melle. Front-end development`,
-                    marginBottom: 14
-                },
+                /*
                 {
                     text: `Tarief`,
                     style: 'meta'
@@ -114,6 +107,7 @@ export default function (NPM_PACKAGE, CV) {
                     text: `Een (dba-proof) modelovereenkomst staat voor opdrachtgevers (kant-en-)klaar`,
                     style: 'meta',
                 },
+                */
             ],
             style: { fontSize: 11 },
             marginBottom: 28
@@ -164,30 +158,40 @@ export default function (NPM_PACKAGE, CV) {
             switch(experience.type) {
                 case 'work':
 
-                    console.log(getSkills(experience.skills));
+                    //console.log(getSkills(experience.skills));
 
                     let meta = (getSkills(experience.skills))
-                    meta.unshift(`${experience.duur} — ${experience.plaats ? `${experience.plaats}  — ` : `` }`);
+                    meta.unshift(`${experience.plaats ? `${experience.plaats}  — ` : `` }`)
+                    if (/–heden$/gi.test(experience.duur)) {
+                        meta.unshift(' — ')
+                        meta.unshift({
+                            text: '–HEDEN',
+                            style: { fontWeight: 'bold', color: $color }
+                        })
+                        meta.unshift(experience.duur.replace(/–heden$/gi, ''))
+                    } else {
+                        meta.unshift(`${experience.duur} — `)
+                    }
 
-                    console.log(meta);
+                    //console.log(meta);
 
                     content.push({
                         stack: [
                             {
                                 text: experience.name,
                                 style: {fontSize: 22, lineHeight: 0.92,  font: 'Open Sans Light'},
-                                marginBottom: 5,
+                                marginBottom: 6,
                                 marginLeft: -1.25
                             },
                             {
                                 text: experience.jobTitle,
                                 style: {fontSize: 11},
-                                marginBottom: 2
+                                marginBottom: 1
                             },
                             {
                                 text: meta,
                                 style: {fontSize: 11 },
-                                marginBottom: 4,
+                                marginBottom: 6,
                                 marginRight: -40
                             },
                             {
@@ -242,17 +246,10 @@ export default function (NPM_PACKAGE, CV) {
                         stack: [
                             {
                                 text: `${CV.givenName} ${CV.familyName} — ${CV.jobTitle}`,
-                                marginBottom: 2
+                                marginBottom: 1
                             },
                             {
-                                text: [
-                                    'Dit CV is gegenereerd via: ',
-                                    {
-                                        text: CV.url,
-                                        link: CV.url,
-                                        style: { color: $color }
-                                    }
-                                ]
+                                text: `KvK ${CV.organisation.kvk} / ${CV.organisation.name} ${CV.organisation.description}`
                             }
                         ],
                         marginTop: 42,
@@ -264,7 +261,7 @@ export default function (NPM_PACKAGE, CV) {
                         stack: [
                             {
                                 text: `Pagina ${currentPage.toString()} van ${pageCount.toString()}`,
-                                marginBottom: 2
+                                marginBottom: 1
                             },
                             `${CV.date} / ${NPM_PACKAGE.version}`
                         ],

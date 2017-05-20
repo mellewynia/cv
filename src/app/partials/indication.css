@@ -1,0 +1,26 @@
+
+@keyframes SPINNER {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.indication {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    border: 0.2rem solid transparent;
+    border-radius: 50%;
+    transition: 100ms ease-out;
+    transform: rotate(0deg);
+
+    &.___is-loading {
+        border-color: #fff;
+        border-right-color: transparent;
+        border-top-color: transparent;
+        animation: SPINNER 0.74s linear infinite;
+    }
+}

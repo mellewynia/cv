@@ -16,8 +16,15 @@ class ExperienceWork extends React.Component {
         {this.props.experience.jobTitle}
       </p>
       <p className="work__meta">
-        {this.props.experience.duur} {this.props.experience.plaats !== undefined ? '— ' + this.props.experience.plaats : ''}
-        { this.props.experience.number_of_projects > 1 ? <span> — {this.props.experience.number_of_projects} projecten</span> : <span/> }
+        {/–HEDEN$/gi.test(this.props.experience.duur) ?
+            <span>{this.props.experience.duur.replace(/–HEDEN$/gi, '')}<strong>–HEDEN</strong> </span>
+            : this.props.experience.duur
+        }
+        {this.props.experience.plaats !== undefined ? '— ' + this.props.experience.plaats : ''}
+        { this.props.experience.number_of_projects > 1 ?
+            <span> — {this.props.experience.number_of_projects} projecten</span>
+            : <span/>
+        }
         &nbsp;
         {this.props.experience.skills.map((skill, i) => {
           return <span key={i}> <span className="tag">{skill}</span></span>;

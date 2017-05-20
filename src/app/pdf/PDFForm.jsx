@@ -111,7 +111,12 @@ class PDFForm extends React.Component {
               className={ this.state.loading ? '___is-loading' : '' }
               title="Genereer PDF-versie van mijn CV!"
             >
-                <i className="icon-download"></i>
+                <span className="icon-holder">
+                    { this.state.loading ?
+                        <span className="indication ___is-loading"></span>
+                        : <i className="icon-download"></i>
+                    }
+                </span>
                 CV
             </button>
             <small>
