@@ -17,7 +17,7 @@ class ExperienceWork extends React.Component {
       </p>
       <p className="work__meta">
         {/–HEDEN$/gi.test(this.props.experience.duur) ?
-            <span>{this.props.experience.duur.replace(/–HEDEN$/gi, '')}<strong>–HEDEN</strong> </span>
+            <span>{this.props.experience.duur.replace(/–HEDEN$/gi, '')}<span  className="now">–HEDEN</span> </span>
             : this.props.experience.duur
         }
         {this.props.experience.plaats !== undefined ? '— ' + this.props.experience.plaats : ''}

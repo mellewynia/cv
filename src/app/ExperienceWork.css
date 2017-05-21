@@ -32,14 +32,26 @@
     }
 }
 
+@keyframes NOW {
+    0% {
+        opacity: 1;
+    }
+    6% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .work__meta {
     line-height: 1.38;
     margin: 0.4rem 0;
     font-size: 1.2rem;
 
-    strong {
+    span.now {
         color: hsl(222, 100%, 61%);
-        font-weight: bold;
+        animation: 1380ms linear NOW infinite;
     }
 
     @media (width >= 768px) {
