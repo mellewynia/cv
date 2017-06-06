@@ -1,4 +1,4 @@
-date: '2017-05-20'
+date: '2017-06-06'
 
 '@context': http://schema.org
 '@type': Person
@@ -15,7 +15,7 @@ linkedin: https://linkedin.com/in/melle-wynia
 github: https://github.com/mellewynia/cv
 
 rate: €75,00/uur
-availability: Beschikbaar per juli 2017
+availability: Beschikbaar per augustus 2017
 availability_short_term: Wél beschikbaar voor zijproject of consult
 
 address:
@@ -44,15 +44,21 @@ experiences:
   -
     type: work
     featured: true
-    name: Front-end webapp bij Facet
-    jobTitle: Freelance senior ux / front-end developer
+    name: Front-end Angular platform bij Facet Informatisering
+    jobTitle: Freelance lead ux / front-end javascript developer
     duur: 2017-03–HEDEN
     plaats: Arnhem
-    description: Beschrijving en details volgen binnenkort!
-    skills: [Angular2+, Bootstrap 4, API, Unit Testing, End-to-end testing]
+    description: "Het doel is eenvoudig: talloze (async) datastromen tot een bruikbare interface brengen die snel en intuïtief werkt. Van de dossiersweergave tot het matchen van de zorgvraag en medewerkerscapaciteit – in één tijdsframe. Angular biedt een stevige basis met handige uitbreidingen zoals state beheer met ngrx."
+    skills: [Scrum, Angular2+, Bootstrap 4, Restful API]
     number_of_projects: 1
     references: []
-    projects: []
+    projects:
+      -
+        name: High-end (front-end) platform met cliënten-, medewerkers- en planmodule
+        skills: [Angular CLI, Angular, ngrx, '@Effects', Bootstrap 4, TypeScript Unit Testing, End-to-end testing]
+      -
+        name: Documentatie Angular front-end (met styleguide) en RESTAPI back-end
+        skills: [Gitbook, Compodoc]
 
 
   -
@@ -75,10 +81,10 @@ experiences:
     number_of_projects: 8
     projects:
       -
-        name: Zorg voor Beter
-        skills: [Kanban, Gulp, HTML5, Bootstrap, jQuery, ES6, Stylus, Pug]
+        name: High-end website (front-end) voor Zorg voor Beter
+        skills: [Kanban, PageSpeed, Gulp, HTML5, Bootstrap, jQuery, ES6, Stylus, Pug]
       -
-        name: Online leergang (kennisbundels)
+        name: Platform (front-end) voor online kennisbundels
         skills: [Gulp, HTML5, jQuery, Sass, EJS]
   
 
@@ -112,15 +118,15 @@ experiences:
     number_of_projects: 16
     projects:
       -
-        name: Checklist schoonmaakbedrijven voor Inspectie SZW
+        name: Website (front-end) Checklist schoonmaakbedrijven (Inspectie SZW)
         url: http://www.checklistschoonmaak.nl/
         skills: [Grunt, Drag ’n drop, jQuery, JSON, Less, Print, Pug]
       -
-        name: Gettid — Centraal huisstijlbeheer, geschikt voor grote organisaties
-        skills: [Scrum, Gulp, AngularJS, HTML5, RESTAPI, JSON, Sass, Twig]
+        name: Webapplicatie (front-end) Gettid — Centraal beheer en inzage huisstijl
+        skills: [SAAS, Scrum, Gulp, AngularJS, HTML5, RESTAPI, JSON, Sass, Twig]
       -
-        name: IoT Dashboard & Beheer
-        skills: [AngularJS, RESTAPI, Tokens, Google Maps, JSON, Less, Pug]
+        name: Webapplicatie (front-end) voor beheer Internet of Things apparaten
+        skills: [Google Maps, AngularJS, RESTAPI, Tokens, JSON, Less, Pug]
 
 
   -

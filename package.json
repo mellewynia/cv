@@ -1,7 +1,7 @@
 {
   "name": "melle-wynia-cv-resume-website",
   "author": "Melle Wynia",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "description": "This project simplifies the way I manage and update my website and cv: https://mellewynia.nl",
   "main": "gulpfile.babel.js",
   "scripts": {
