@@ -1,4 +1,4 @@
-date: '2017-06-06'
+date: '2017-07-12'
 
 '@context': http://schema.org
 '@type': Person
@@ -14,8 +14,8 @@ url: https://mellewynia.nl
 linkedin: https://linkedin.com/in/melle-wynia
 github: https://github.com/mellewynia/cv
 
-rate: €75,00/uur
-availability: Beschikbaar per augustus 2017
+rate: €80,00/uur
+availability: Beschikbaar per oktober 2017
 availability_short_term: Wél beschikbaar voor zijproject of consult
 
 address:
@@ -55,7 +55,7 @@ experiences:
     projects:
       -
         name: High-end (front-end) platform met cliënten-, medewerkers- en planmodule
-        skills: [Angular CLI, Angular, ngrx, '@Effects', Bootstrap 4, TypeScript Unit Testing, End-to-end testing]
+        skills: [Angular CLI, Angular, ngrx, '@Effects', TypeScript, Unit Testing, End-to-end testing, BEM, Bootstrap 4]
       -
         name: Documentatie Angular front-end (met styleguide) en RESTAPI back-end
         skills: [Gitbook, Compodoc]
