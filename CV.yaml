@@ -1,4 +1,4 @@
-date: '2017-07-12'
+date: '2017-09-15'
 
 '@context': http://schema.org
 '@type': Person
@@ -21,10 +21,10 @@ availability_short_term: Wél beschikbaar voor zijproject of consult
 address:
   '@type': PostalAddress
   addressCounty: NL
-  addressLocality: Nijmegen
+  addressLocality: NIJMEGEN
   addressRegion: Gelderland
-  postalCode: 6538TJ
-  streetAddress: Zwanenveld 8316
+  postalCode: 6546XA
+  streetAddress: Leuvensbroek 1019
   url: https://goo.gl/maps/g5raMz3YYwP2
 
 organisation:
@@ -174,7 +174,7 @@ experiences:
   -
     type: profile
     image: /media/me.jpg
-    meta: [6 juni 1991,7+ jaar ervaring,154 projecten,42 klanten]
+    meta: [6 juni 1991,7+ jaar ervaring,156 projecten,42 klanten]
     details:
       -
         type: Mobiliteit

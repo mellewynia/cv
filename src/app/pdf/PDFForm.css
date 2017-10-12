@@ -1,4 +1,17 @@
 
+
+@keyframes SLIDE {
+    0% {
+        transform: translate(0, 100%);
+    }
+    62% {
+        transform: translate(0, 100%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
 .pdf-form {
     position: fixed;
     z-index: 10;
@@ -8,18 +21,13 @@
     border-radius:  0.62rem 0.62em 0 0;
     box-shadow: 0 0.2rem 0.4rem hsla(222, 38%, 61%, 0.2);
     background: #fff;
-    transform: translate(0, 100%);
     transition: 380ms 28ms ease transform;
-    will-change: transform, scroll-position;
+    animation: SLIDE 2s ;
 
     @media (width <= 768px) {
         display: none;
     }
 
-    &.___is-shown {
-        transform: translate(0, 0);
-        transition: 262ms 100ms ease transform;
-    }
 
     > button {
         margin: 0 0 0.3rem 0;

@@ -104,7 +104,8 @@ class PDFForm extends React.Component {
 
     render () {
         return <div
-          className={'pdf-form' + (this.show() ? ' ___is-shown' : '') }
+          className={'pdf-form ___is-shown'}
+          // className={'pdf-form' + (this.show() ? ' ___is-shown' : '') }
         >
             <button
               onClick={this.generatePDF.bind(this)}
