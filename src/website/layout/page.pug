@@ -25,6 +25,8 @@ html
             header.page-layout__header
                 include page-header
 
+            include page-footer
+
             main.page-layout__main
                 block main
 
@@ -32,8 +34,6 @@ html
                     include ../components/download-cv/download-cv
 
                 div( id="app" )
-
-            include page-footer
 
         script( async src="/app/bundle.js" type="text/javascript" )
 

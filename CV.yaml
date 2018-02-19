@@ -1,4 +1,4 @@
-date: '2017-10-12'
+date: 'Monday 2017-02-19'
 
 '@context': http://schema.org
 '@type': Person
@@ -15,8 +15,8 @@ linkedin: https://linkedin.com/in/melle-wynia
 github: https://github.com/mellewynia/cv
 
 rate: €80,00/uur
-availability: Beschikbaar per januari 2018
-availability_short_term: Wél beschikbaar voor zijproject of consult
+availability: Beschikbaar per juli 2018
+availability_short_term: Beschikbaar voor zijproject of consult
 
 address:
   '@type': PostalAddress
@@ -45,13 +45,21 @@ experiences:
     type: work
     featured: true
     name: Front-end Angular platform bij Facet Informatisering
-    jobTitle: Freelance lead ux / front-end javascript developer
+    jobTitle: Freelance lead ux / front-end javascript (Angular) developer
     duur: 2017-03–HEDEN
     plaats: Arnhem
     description: "Het doel is eenvoudig: talloze (async) datastromen tot een bruikbare interface brengen die snel en intuïtief werkt. Van de dossiersweergave tot het matchen van de zorgvraag en medewerkerscapaciteit – in één tijdsframe. Angular biedt een stevige basis met handige uitbreidingen zoals state beheer met ngrx."
     skills: [Scrum, Angular2+, Bootstrap 4, Restful API]
     number_of_projects: 1
-    references: []
+    references:
+      -
+        name: Alfred ter Horst
+        jobTitle: directeur en partner van Facet Informatisering B.V.
+        url: https://www.linkedin.com/in/alfred-ter-horst-7bb12716/
+      -
+        name: Eelco van der Veen
+        jobTitle: IT specialist en partner van Facet Informatisering B.V.
+        url: https://www.linkedin.com/in/eelco-van-der-veen-b8b2907/
     projects:
       -
         name: High-end (front-end) platform met cliënten-, medewerkers- en planmodule
@@ -59,6 +67,9 @@ experiences:
       -
         name: Documentatie Angular front-end (met styleguide) en RESTAPI back-end
         skills: [Gitbook, Compodoc]
+      -
+        name: Op zoek naar een vaste baan als front-end developer? Neem contact op!
+        skills: []
 
 
   -
@@ -102,7 +113,7 @@ experiences:
     type: work
     name: Front-end interim bij OSAGE
     jobTitle: Freelance interim (lead) front-end developer
-    duur: 2016-02–’11
+    duur: 2016-02–HEDEN
     plaats: Utrecht
     description: Begin 2016 nam de front-end workload toe voor Osage terwijl net twee front-enders het bedrijf verlieten. Het gat heb ik ingevuld en geassisteerd in de solicitatieprocedures van een front-end junior en medior.
     references:
@@ -114,19 +125,23 @@ experiences:
         name: Harrie Kuipers
         jobTitle: partner / adviseur en interactieontwerper
         url: http://www.osage.nl/medewerkers/harrie-kuipers
-    skills: [Gulp, ES6, BEM, SMACSS, Flexbox, Mobile First]
+    skills: [Gulp, ES6, SMACSS, Flexbox, Mobile First]
     number_of_projects: 16
     projects:
       -
+        name: Bijzonderdere componenten (front-end) van website Tweede Kamer
+        url: http://www.tweedekamer.nl/
+        skills: [Drag ’n drop, JSON, BEM, Less]
+      -
         name: Website (front-end) Checklist schoonmaakbedrijven (Inspectie SZW)
         url: http://www.checklistschoonmaak.nl/
-        skills: [Grunt, Drag ’n drop, jQuery, JSON, Less, Print, Pug]
+        skills: [Grunt, Drag ’n drop, jQuery, JSON, BEM, Less, Print, Pug]
       -
         name: Webapplicatie (front-end) Gettid — Centraal beheer en inzage huisstijl
-        skills: [SAAS, Scrum, Gulp, AngularJS, HTML5, RESTAPI, JSON, Sass, Twig]
+        skills: [SAAS, Scrum, Gulp, AngularJS, HTML5, RESTAPI, JSON, BEM, Sass, Twig]
       -
         name: Webapplicatie (front-end) voor beheer Internet of Things apparaten
-        skills: [Google Maps, AngularJS, RESTAPI, Tokens, JSON, Less, Pug]
+        skills: [Google Maps, AngularJS, RESTAPI, Tokens, JSON, BEM, Less, Pug]
 
 
   -
