@@ -3,14 +3,14 @@
 
     <section-intro/>
 
-    <article v-for="item of timeline" :key="item.body">
-      <section-quote v-if="item.type === 'quote'" v-bind:quote="item.item" />
-      <div v-if="item.type === 'artikel'">
+    <template v-for="item of timeline">
+      <section-quote :key="item.body" v-if="item.type === 'quote'" v-bind:quote="item.item" />
+      <div :key="item.body" v-else-if="item.type === 'artikel'">
         <nuxt-link :to="'/artikelen/' + item.item.slug">
           {{ item.item.title }}
         </nuxt-link>
       </div>
-    </article>
+    </template>
 
     <article>
       <small><nuxt-link to="">UPDATES</nuxt-link> MAANDAG 12 MAART, 2018</small><br/>

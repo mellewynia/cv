@@ -3,7 +3,6 @@ const fs = require('fs')
 const fm = require('front-matter')
 
 function getContents () {
-
   const contents = {
     clients: [],
     quotes: [],

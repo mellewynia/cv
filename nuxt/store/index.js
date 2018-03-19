@@ -9,6 +9,11 @@ const createStore = () => {
       dateUpdate: process.env.dateUpdate,
       general,
       contents: process.env.contents
+    },
+    getters: {
+      getClientById: (state) => (id) => {
+        return state.contents.clients.find(client => client.id === id)
+      }
     }
   })
 }

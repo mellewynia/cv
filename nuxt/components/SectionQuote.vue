@@ -1,21 +1,30 @@
 
 <template>
-  <blockquote v-if="quote" class="quote">
+  <blockquote class="quote" :class="{ ___large: quote.body.length < 150 }" >
     <p>
-      {{ quote.body }}
+      {{ client }} {{ quote.body }}
       <cite>
         — {{ quote.name }} – {{ quote.jobTitle }}
-        {{ quote.id_client ? `bij ${quote.id_client}` : `` }}
+        <template v-if="quote.id_client">
+          bij {{ getClientById(quote.id_client).name }}
+        </template>
       </cite>
     </p>
   </blockquote>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   props: ['quote'],
+  computed: {
+    ...mapGetters([
+      'getClientById'
+    ])
+  },
   data: () => {
-    // console.log(this.quote)
+    console.log()
 
     return {}
   }
