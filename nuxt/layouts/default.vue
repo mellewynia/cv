@@ -17,6 +17,8 @@ export default {
 
 <style lang="scss">
 
+@import '../static/css/fonts/open-sans';
+
 html {
 
   --max-width: 95rem;
@@ -29,15 +31,18 @@ html {
   --font--x-large: 3.8rem;
   --font--xx-large: 6.2rem;
 
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Open Sans Web", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 10px;
-  /*
+  /* TODO
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   */
   box-sizing: border-box;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 body {

@@ -106,7 +106,9 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', href: '/favicon.png' },
-      { rel: 'stylesheet', as: 'style', href: '/css/icons/icons-web.css' }
+      // TODO: add lazy loading
+      { rel: 'stylesheet', href: '/css/icons/icons-web.css' }, // , as: 'style'
+      { rel: 'stylesheet', href: '/css/fonts/raleway.css' } //, as: 'style'
     ]
   },
   /**
