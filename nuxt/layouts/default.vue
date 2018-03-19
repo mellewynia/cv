@@ -1,19 +1,49 @@
 <template>
   <div>
+    <app-header/>
     <nuxt/>
   </div>
 </template>
 
-<style>
+<script>
+import AppHeader from '~/components/AppHeader.vue'
+
+export default {
+  components: {
+    AppHeader
+  }
+}
+</script>
+
+<style lang="scss">
+
 html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
+
+  --max-width: 95rem;
+
+  --font--xx-small: 1.1rem;
+  --font--x-small: 1.2rem;
+  --font--small: 1.5rem;
+  --font--medium: 1.7rem;
+  --font--large: 2.6rem;
+  --font--x-large: 3.8rem;
+  --font--xx-large: 6.2rem;
+
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 10px;
+  /*
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  */
   box-sizing: border-box;
+}
+
+body {
+  @media (min-width: 1024px) {
+    padding-top: 7.3rem;
+  }
 }
 
 *, *:before, *:after {
@@ -21,32 +51,7 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+a {
   text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
 }
 </style>

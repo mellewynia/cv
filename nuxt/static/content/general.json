@@ -1,9 +1,7 @@
 {
-  "date": "Monday 2018-03-11",
-
   "@context": "http://schema.org",
   "@type": "Person",
-  
+
   "givenName": "Melle",
   "familyName": "Wynia",
   "jobTitle": "Creative / front-end javascript developer",
@@ -14,7 +12,7 @@
   "url": "https://mellewynia.nl",
   "linkedin": "https://linkedin.com/in/melle-wynia",
   "github": "https://github.com/mellewynia/cv",
-  
+
   "rate": "€80,00/uur",
   "availability": "Beschikbaar per juli 2018",
   "availability_short_term": "Beschikbaar voor zijproject of consult",

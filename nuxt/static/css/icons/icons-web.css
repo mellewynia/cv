@@ -1,0 +1,53 @@
+
+@font-face {
+    font-family: "icons-web";
+    src: url('icons-web.woff2?2017-05-06T09-56-33+02-00') format('woff2'),
+        url('icons-web.woff?2017-05-06T09-56-33+02-00') format('woff2'),
+        url('icons-web.ttf?2017-05-06T09-56-33+02-00') format('truetype');
+}
+
+[class^="icon-"],
+[class*=" icon-"],
+.icon-base-pseudo {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "icons-web";
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    speak: none;
+    text-decoration: none;
+    text-transform: none;
+    line-height: 1;
+}
+
+.icon-code:before {
+    content: "\E001";
+}
+
+.icon-download:before {
+    content: "\E002";
+}
+
+.icon-envelope:before {
+    content: "\E003";
+}
+
+.icon-link-out:before {
+    content: "\E004";
+}
+
+.icon-link:before {
+    content: "\E005";
+}
+
+.icon-plane:before {
+    content: "\E006";
+}
+
+.icon-telephone:before {
+    content: "\E007";
+}
+
