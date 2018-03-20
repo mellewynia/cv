@@ -90,7 +90,7 @@ function getContents () {
 const contents = getContents()
 
 const updateDate = new Date()
-const dateUpdate = [updateDate.getFullYear(), updateDate.getMonth() - 1, updateDate.getDate()]
+const dateUpdate = [updateDate.getFullYear(), updateDate.getMonth(), updateDate.getDate()]
 
 module.exports = {
   /*

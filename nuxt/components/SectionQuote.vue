@@ -2,7 +2,7 @@
 <template>
   <blockquote class="quote" :class="{ ___large: quote.body.length < 150 }" >
     <p>
-      {{ client }} {{ quote.body }}
+      {{ quote.body }}
       <cite>
         — {{ quote.name }} – {{ quote.jobTitle }}
         <template v-if="quote.id_client">
@@ -22,11 +22,6 @@ export default {
     ...mapGetters([
       'getClientById'
     ])
-  },
-  data: () => {
-    console.log()
-
-    return {}
   }
 }
 </script>

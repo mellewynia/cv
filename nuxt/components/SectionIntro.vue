@@ -2,7 +2,7 @@
 <template>
   <section>
     <blockquote>
-      <i class="icon-plane"></i>
+      <span class="plane"><i class="icon-plane"></i></span>
       <p>
         {{ $store.state.general.description }}
         <small>
@@ -33,6 +33,47 @@ export default {
     100% {
         transform: translate(0vh, 0) skew(-34deg);
     }
+}
+
+@keyframes PLANE {
+  0% {
+    transform: translate(0vh, 0) rotate(-6.2deg);
+  }
+  100% {
+    transform: translate(200rem, -24rem) rotate(-7.2deg);
+  }
+}
+
+.plane {
+  display: none;
+
+  @media (min-width: 360px) {
+    display: block;
+    position: absolute;
+    top: 13.8vh;
+    right: 48vw;
+    color: #fff;
+    transform: translate(200rem, -24rem) rotate(-7.2deg);
+    animation: PLANE 600s ease-out;
+    will-change: transform;
+  }
+
+  &::before {
+    content: '';
+    opacity: 0.12;
+    display: block;
+    position: absolute;
+    top: 2.9rem;
+    left: -38rem;
+    right: 0.8rem;
+    height: 0.4rem;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.2), rgba(255,255,255,0.3), rgba(255,255,255,0.5), rgba(255,255,255,0.2), #fff);
+  }
+
+  > .icon-plane {
+    font-size: 1rem;
+    opacity: 0.74;
+  }
 }
 
 section {

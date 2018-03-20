@@ -6,6 +6,7 @@
         <small class="site-header__title__name__jobtitle">
           {{ $store.state.general.jobTitle }}
         </small>
+        <span class="site-header__title__name__update">— laatst geüpdated op {{ $store.state.dateUpdate[2] }}-{{ $store.state.dateUpdate[1] + 1 }}-{{ $store.state.dateUpdate[0] }}</span>
       </nuxt-link>
     </h1>
     <nav class="site-header__contact">
@@ -13,7 +14,7 @@
         <li>
           <a :href="'tel: ' + $store.state.general.telephone.replace(/ /g, '')">
             <i class="icon-telephone"></i>
-            <u>{{ $store.state.general.telephone }}</u>
+            {{ $store.state.general.telephone }}
           </a>
         </li>
         <li>
@@ -47,7 +48,7 @@ export default {
 
 .site-header {
   display: flex;
-  padding: 0 0 0 3.8rem;
+  padding: 1.2rem 2rem 0 3.8rem;
   background: #fff;
   font-size: var(--font--small);
 
@@ -81,6 +82,7 @@ export default {
 //
 
 .site-header__title {
+  position: relative;
   align-self: center;
   font-size: inherit;
   font-weight: inherit;
@@ -95,6 +97,7 @@ export default {
   display: flex;
   align-items: center;
   line-height: 1.1;
+  padding: 1.6rem 0;
 
   > u {
     text-decoration: none;
@@ -126,14 +129,35 @@ export default {
 }
 
 .site-header__title__name__jobtitle {
-  margin: 0 0 0 1rem;
-  color: hsla(222,16%,55%,1);
+  margin: 0 0 0 1.4rem;
+  color: hsla(222, 16%, 55%, 1);
   font-size: inherit;
+}
+
+.site-header__title__name__update {
+  opacity: 0.62;
+  position: absolute;
+  top: 0.1rem;
+  right: 0;
+  font-size: var(--font--xx-small);
+  color: #7a859f;
 }
 
 //
 // Contact
 //
+
+@keyframes SLIDE-NAV-IN {
+    0% {
+        transform: translate(0, -100%);
+    }
+    16% {
+        transform: translate(0, -100%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
 
 .site-header__nav {
   flex: 1 1;
@@ -142,6 +166,8 @@ export default {
 
   margin: 0 0 0 1rem;
   color: hsla(222,16%,55%,1);
+
+  animation: SLIDE-NAV-IN 1.38s;
 
   ul {
     display: flex;
@@ -171,7 +197,8 @@ export default {
       > a {
         display: flex;
         align-items: center;
-        padding: .8rem 1.2rem 1rem .5rem;
+        margin: 1px 0;
+        padding: .8rem .9rem 1rem .9rem;
         color: hsla(222, 100%, 61%, 1);
         font-size: var(--font-small);
         background: hsla(222, 100%, 98%, 0);
@@ -179,14 +206,16 @@ export default {
 
         > i { // .icon-*
           position: relative;
-          top: 0.1rem;
+          top: -0.1rem;
           font-size: 2.8rem;
         }
 
         > u {
+          margin: 0 0 0 .3rem;
           text-decoration: none;
           line-height: 1.1;
           border-bottom: 1px solid hsla(222, 100%, 61%, 0.38);
+          font-size: var(--font--small);
           transition: 262ms ease-out;
         }
 
