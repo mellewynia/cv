@@ -1,6 +1,6 @@
 ---
 
-date: [2017,7,20]
+date: [2016,7,20]
 
 name: Jörgen Steenbergen
 jobTitle: Partner / adviseur en communicatieontwerper
