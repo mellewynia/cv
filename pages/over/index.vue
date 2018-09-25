@@ -1,12 +1,14 @@
 
 <template>
   <main>
+    <!--
     <style>
     :root {
       --color: blue;
       --width-narrow: 38rem;
     }
     </style>
+    -->
     <nuxt-link to="/artikelen"></nuxt-link>
     <article class="content">
       <p>
