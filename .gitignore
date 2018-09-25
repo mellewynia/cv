@@ -1,7 +1,14 @@
-.DS_Store
-.idea
+# dependencies
+node_modules
 
-/node_modules
-/src/output
+# logs
+npm-debug.log
 
-/test
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+
+# Ideas that are not ready for the world yet...
+/-TODO

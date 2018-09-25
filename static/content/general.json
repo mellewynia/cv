@@ -1,0 +1,39 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+
+  "givenName": "Melle",
+  "familyName": "Wynia",
+  "jobTitle": "Creative / front-end javascript developer",
+  "description": "Melle is een stressbestendige front-end developer die problemen pro-actief oplost, communicatief vaardig is en een scherp oog voor user experience heeft.",
+
+  "email": "hoi@mellewynia.nl",
+  "telephone": "06 41 01 76 11",
+  "url": "https://mellewynia.nl",
+  "linkedin": "https://linkedin.com/in/melle-wynia",
+  "github": "https://github.com/mellewynia/cv",
+
+  "rate": "€90,00/uur",
+  "availability": "Beschikbaar per november 2018",
+  "availability_short_term": "Beschikbaar voor zijproject of consult",
+
+  "address": {
+    "@type": "PostalAddress",
+    "addressCounty": "NL",
+    "addressLocality": "NIJMEGEN",
+    "addressRegion": "Gelderland",
+    "postalCode": "6546XA",
+    "streetAddress": "Leuvensbroek 1019",
+    "url": "https://goo.gl/maps/g5raMz3YYwP2"
+  },
+
+  "organisation": {
+    "@type": "OwnershipInfo",
+    "name": "Ik ben Melle B.V.",
+    "description": "Front-end developement",
+    "url": "http://mellewynia.nl",
+    "foundingDate": "2011-04-01 08:00:00 -0400",
+    "kvk": 71965858
+  }
+
+}
