@@ -1,6 +1,13 @@
 
 <template>
   <main>
+    <style>
+    :root {
+      --color: blue;
+      --width-narrow: 38rem;
+    }
+    </style>
+    <nuxt-link to="/artikelen"></nuxt-link>
     <article class="content">
       <p>
         Wie is?
@@ -67,6 +74,7 @@ export default {
   margin: calc(10vh + 3.8rem) auto calc(10vh + 3.8rem) auto;
   font-size: var(--font--medium--mobile);
   line-height: 162%;
+  background: var(--color);
 
   @media (min-width: 568px) {
     padding: 0 4rem;

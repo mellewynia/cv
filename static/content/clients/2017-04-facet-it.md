@@ -19,6 +19,10 @@ references:
     name: Eelco van der Veen
     jobTitle: IT specialist en partner van Facet Informatisering B.V.
     url: https://www.linkedin.com/in/eelco-van-der-veen-b8b2907/
+  -
+    name: Coen Cuijpers
+    jobTitle: Front-end developer bij Facet Informatisering B.V.
+    url: https://www.linkedin.com/in/coencuijpers/
 
 projects:
   -
@@ -27,9 +31,6 @@ projects:
   -
     name: Documentatie Angular front-end (met styleguide) en RESTAPI back-end
     skills: [Gitbook, Compodoc]
-  -
-    name: Op zoek naar een vaste baan als front-end developer? Neem contact op!
-    skills: []
 
 number_of_projects: 4
 
