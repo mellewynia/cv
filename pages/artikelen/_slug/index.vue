@@ -22,7 +22,7 @@ export default {
   },
   async asyncData ({params}) {
     const fileContent = await import(`!!json-loader!front-matter-loader!~/static/content/artikelen/${params.slug}.md`).catch(error => {
-      console.log('niet goed gegaan')
+      console.log(`Artikel kon niet worden opgebouwd: ${params.slug.md}`)
       console.error(error)
       return {
         loading: false,

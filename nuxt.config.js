@@ -54,6 +54,11 @@ function getContents () {
     const file = fs.readFileSync(`./static/content/artikelen/${fileName}`, 'utf-8')
     const content = fm(file)
 
+    // Prevent creating .gitkeep article
+    if (/^\./.test(fileName)) {
+      return
+    }
+
     const slug = fileName.replace(/\.md$/, '')
 
     contents.artikelen.push({
