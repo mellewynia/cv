@@ -20,17 +20,17 @@
     </style>
     <script src="https://unpkg.com/css-vars-ponyfill@1"></script>
     <script>cssVars({watch: true});</script>
-    <app-header/>
+    <site-header/>
     <nuxt/>
   </div>
 </template>
 
 <script>
-import AppHeader from '~/components/AppHeader.vue'
+import SiteHeader from '~/layouts/components/site-header.vue'
 
 export default {
   components: {
-    AppHeader
+    SiteHeader
   }
 }
 </script>
