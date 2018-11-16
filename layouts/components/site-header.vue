@@ -6,7 +6,7 @@
         <small class="site-header__title__name__jobtitle">
           {{ $store.state.general.jobTitle }}
         </small>
-        <span class="site-header__title__name__update">— laatst geüpdated op {{ $store.state.dateUpdate[2] }}-{{ $store.state.dateUpdate[1] + 1 }}-{{ $store.state.dateUpdate[0] }}</span>
+        <span class="site-header__title__name__update">— laatst geüpdatet op {{ $store.state.dateUpdate[2] }}-{{ $store.state.dateUpdate[1] + 1 }}-{{ $store.state.dateUpdate[0] }}</span>
       </nuxt-link>
     </h1>
     <nav class="site-header__contact">
