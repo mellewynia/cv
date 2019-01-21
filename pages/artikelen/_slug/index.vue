@@ -21,16 +21,15 @@ export default {
     return true
   },
   async asyncData ({params}) {
-    const fileContent = await import(`!!json-loader!front-matter-loader!~/static/content/artikelen/${params.slug}.md`).catch(error => {
-      console.log(`Artikel kon niet worden opgebouwd: ${params.slug.md}`)
-      console.error(error)
-      return {
-        loading: false,
-        artikel: false
-      }
-    })
-
-    console.log('no error ;)')
+    const fileContent = await import(`!!json-loader!front-matter-loader!~/static/content/artikelen/${params.slug}.md`)
+      .catch(error => {
+        console.log(`Artikel kon niet worden opgebouwd: ${params.slug.md}`)
+        console.error(error)
+        return {
+          loading: false,
+          artikel: false
+        }
+      })
 
     return {
       loading: false,

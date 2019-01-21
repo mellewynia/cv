@@ -13,9 +13,9 @@
   "linkedin": "https://linkedin.com/in/melle-wynia",
   "github": "https://github.com/mellewynia/cv",
 
-  "rate": "€90,00/uur",
-  "availability": "Beschikbaar per februari 2019",
-  "availability_short_term": "Beschikbaar voor zijproject of consult",
+  "rate": "€95,00/uur",
+  "availability": "Beschikbaar per juni 2019",
+  "availability_short_term": "",
 
   "address": {
     "@type": "PostalAddress",
@@ -31,7 +31,7 @@
     "@type": "OwnershipInfo",
     "name": "Ik ben Melle B.V.",
     "description": "Front-end developement",
-    "url": "http://mellewynia.nl",
+    "url": "https://mellewynia.nl",
     "foundingDate": "2011-04-01 08:00:00 -0400",
     "kvk": 71965858
   }
