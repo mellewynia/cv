@@ -50,8 +50,29 @@ export default {
     line-height: 100%;
   }
 
+  h3 {
+    margin: 2.6rem 0 0 0;
+  }
+
+  h4 {
+    margin: 2.6rem 0 0 0;
+  }
+
+  pre {
+    background: #eee;
+    overflow-x: scroll;
+    font-size: 1.3rem;
+  }
+
   p {
     margin: 2.6rem 0 0 0;
+  }
+
+  ul {
+    li {
+      list-style: disc;
+      margin: 0 0 0 2rem;
+    }
   }
 
   .image.___left {

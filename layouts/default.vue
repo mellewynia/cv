@@ -15,6 +15,9 @@
         --font--x-large: 3.8rem;
         --font--xx-large: 6.2rem;
 
+        --c-m: hsl(222, 100%, 61%);
+        --c-m-bg: #f5f8ff;
+
         --text-shadow: 0.1rem 0.1rem 0 rgba(0, 0, 0, .16);
       }
     </style>
@@ -54,6 +57,9 @@ html {
 }
 
 body {
+  padding-top: 10rem;
+  overflow-x: hidden;
+
   @media (min-width: 1024px) {
     padding-top: 7.3rem;
   }
