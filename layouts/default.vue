@@ -60,7 +60,7 @@ body {
   padding-top: 10rem;
   overflow-x: hidden;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     padding-top: 7.3rem;
   }
 }

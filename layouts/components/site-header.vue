@@ -81,6 +81,7 @@ export default {
   height: 10rem;
 
   @media (min-width: 768px ) {
+    display: flex;
     padding: 1.2rem 2rem 0 3.8rem;
     animation: SLIDE-NAV-IN 1.38s;
     transform: translate(0, 0);
@@ -89,7 +90,6 @@ export default {
   }
 
   @media (min-width: 992px) {
-    display: flex;
     height: 7.3rem;
     font-size: var(--font--medium);
   }
@@ -121,7 +121,7 @@ export default {
   line-height: 1.1;
   padding: 1.6rem 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     display: flex;
   }
 
@@ -160,7 +160,7 @@ export default {
   color: hsla(222, 16%, 55%, 1);
   font-size: var(--font--xx-small);
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     margin-left: 1.4rem;
     font-size: var(--font--medium);
   }
@@ -175,7 +175,7 @@ export default {
   font-size: var(--font--xx-small);
   color: #7a859f;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     display: block;
   }
 }
@@ -249,6 +249,7 @@ export default {
 
         @media (min-width: 768px) {
           margin: 1px 0 0 0;
+          border-radius: 0;
           padding: .8rem .9rem 1rem .9rem;
           background: hsla(222, 100%, 98%, 0);
         }
