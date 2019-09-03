@@ -6,7 +6,7 @@
     <!--<section-update />-->
 
     <section class="meta">
-        <span>© 2007–2018 Melle Wynia</span>
+        <span>© 2007–2019 Melle Wynia</span>
         <span>KvK {{ $store.state.general.organisation.kvk }} / {{ $store.state.general.organisation.name }}</span>
         <span>{{ $store.state.general.address.streetAddress }} {{ $store.state.general.address.postalCode }} {{ $store.state.general.address.addressLocality }}</span>
     </section>
@@ -48,13 +48,13 @@ export default {
 
 <style lang="scss" scoped>
 
-  .meta {
-    padding: 1rem 1.4rem 0;
-    font-size: var(--font--x-small);
-    color: hsla(222, 10%, 74%, 1);
+.meta {
+  padding: 1rem 1.4rem 0;
+  font-size: var(--font--x-small);
+  color: hsla(222, 10%, 74%, 1);
 
-    > span {
-      margin: 0 1.2rem 0 0;
-    }
+  > span {
+    margin: 0 1.2rem 0 0;
   }
+}
 </style>

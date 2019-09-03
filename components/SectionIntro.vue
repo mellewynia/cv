@@ -46,6 +46,8 @@ export default {
 
 .plane {
   display: none;
+  font-size: 1rem;
+  line-height: 1;
 
   @media (min-width: 360px) {
     display: block;
@@ -58,12 +60,16 @@ export default {
     will-change: transform;
   }
 
+  @media (min-width: 768px) {
+    top: 13.8vh;
+  }
+
   &::before {
     content: '';
     opacity: 0.12;
     display: block;
     position: absolute;
-    top: 2.9rem;
+    top: 0.4rem;
     left: -38rem;
     right: 0.8rem;
     height: 0.4rem;
@@ -71,7 +77,6 @@ export default {
   }
 
   > .icon-plane {
-    font-size: 1rem;
     opacity: 0.74;
   }
 }
