@@ -6,7 +6,7 @@
     <!--<section-update />-->
 
     <section class="meta">
-        <span>© 2007–2018 Melle Wynia</span>
+        <span>© 2007–2019 Melle Wynia</span>
         <span>KvK {{ $store.state.general.organisation.kvk }} / {{ $store.state.general.organisation.name }}</span>
         <span>{{ $store.state.general.address.streetAddress }} {{ $store.state.general.address.postalCode }} {{ $store.state.general.address.addressLocality }}</span>
     </section>

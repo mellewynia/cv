@@ -4,7 +4,7 @@ name: Facet IT
 id: facet-it
 
 date: [2017,3,1, 8,15,0]
-endDate: null
+endDate: [2018,10,30, 0,0,0]
 
 jobTitle: Freelance lead ux / front-end javascript (Angular) developer
 skills: [Scrum, Angular2+, Bootstrap 4, Restful API]
@@ -38,4 +38,3 @@ number_of_projects: 4
 
 Het doel is eenvoudig: talloze (async) datastromen tot een bruikbare interface brengen die snel en intuïtief werkt. Van de dossiersweergave tot het matchen van de zorgvraag en medewerkerscapaciteit – in één tijdsframe. Angular biedt een stevige basis met handige uitbreidingen zoals state beheer met ngrx.
 
-PS: Ben je op zoek naar een vaste baan als front-end developer? Neem contact op.
