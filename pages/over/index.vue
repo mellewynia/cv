@@ -11,7 +11,7 @@
           Melle Wynia
         </h1>
         <p>
-          6 juni 1991 — <span class="now">8+ jaar ervaring</span> — 156 projecten — 42 klanten
+          6 juni 1991 — <span class="now">10+ jaar ervaring</span> — 156 projecten — 42 klanten
         </p>
         <p>
           Mobiliteit: vanuit Nijmegen, rijbewijs B + Auto, NS Business Card<br>
