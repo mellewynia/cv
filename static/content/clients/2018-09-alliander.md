@@ -4,7 +4,7 @@ name: Alliander
 id: alliander
 
 date: [2018,8,1, 8,15,0]
-endDate: null
+endDate: [2020,5,30, 16,0,0]
 
 jobTitle: Freelance lead ux / front-end javascript (Angular) developer
 skills: [Scrum, Angular 7+, Java, Rest API, Cybersecurity]
