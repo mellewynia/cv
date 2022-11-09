@@ -17,7 +17,7 @@
     "front-matter": "^2.3.0",
     "front-matter-loader": "^0.2.0",
     "json-loader": "^0.5.7",
-    "nuxt": "^1.0.0",
+    "nuxt": "^2.15.8",
     "sass-loader": "^6.0.7",
     "vuex": "^3.0.1"
   },
