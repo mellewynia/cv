@@ -5,11 +5,6 @@
       <span class="plane"><i class="icon-plane"></i></span>
       <p>
         {{ $store.state.general.description }}
-        <small>
-          {{ $store.state.general.rate }}
-          <span>{{ $store.state.general.availability }}</span>
-          <span>{{ $store.state.general.availability_short_term }}</span>
-        </small>
       </p>
     </blockquote>
   </section>

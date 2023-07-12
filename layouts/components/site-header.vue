@@ -7,7 +7,7 @@
       </button>
       -->
       <h1 class="site-header__title">
-        <nuxt-link class="site-header__title__name" to="/over">
+        <nuxt-link class="site-header__title__name" to="/">
           <u>{{ $store.state.general.givenName }} {{ $store.state.general.familyName }}</u>
           <small class="site-header__title__name__jobtitle">
             {{ $store.state.general.jobTitle }}

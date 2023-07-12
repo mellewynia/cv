@@ -1,9 +1,106 @@
-<template>
-  <div>
 
+<template>
+  <main>
     <section-intro />
 
-    <!--<section-update />-->
+    <section class="cta-blocks">
+      <div class="cta-block">
+        <h2>Inhuur</h2>
+        <p class="meta-info">
+          Beschikbaar per november 2023<br>
+          v.a. €110,00 / uur (i.o. 32-40u zzp inhuur)
+        </p>
+        <p>
+          Elke dag betrokkenheid als lead developer, architect in één of meerdere teams.
+        </p>
+        <p>
+          <nuxt-link to="/over" class="cta-link"><u>Leer meer over Melle (en CV)</u></nuxt-link>
+        </p>
+      </div>
+      <div class="cta-block">
+        <h2>Consultancy</h2>
+        <p class="meta-info">
+          Beschikbaar in herst 2023<br>
+          v.a. €1.500 / maand (i.o. abonnement)
+        </p>
+        <p>
+          Hands-on bij vernieuwing, outsourcing, (cybersec/a11y) audits.
+          Beperkte inzet, blijvend resultaat.
+        </p>
+        <p>
+          <nuxt-link to="/consultancy" class="cta-link"><u>Bekijk de mogelijkheden</u></nuxt-link>
+        </p>
+      </div>
+      <div class="cta-block">
+        <h2 class="cta-block__">Workshops</h2>
+        <p class="meta-info">
+          Beschikbaarheid: informeer<br>
+          Kosten: informeer
+        </p>
+        <p>
+          Geef jouw team in één dagdeel nieuwe energie, inzichten en tools.
+        </p>
+        <p>
+          <nuxt-link to="/versterking" class="cta-link"><u>Zet Melle &amp; Co power-up in</u></nuxt-link>
+        </p>
+      </div>
+    </section>
+
+    <div class="content ___little-spacing-top ___little-spacing-bottom">
+      <h2>Recent</h2>
+    </div>
+
+    <div v-for="item of timeline" :key="item.id">
+      <div v-if="item.type === 'client' && item.item.date && item.item.date[0] > 2019" class="content ___compact-spacing-top ___compact-spacing-bottom">
+        <h3 class="___text-inherit ___little-margin-top ___no-margin-after">
+          {{item.item.name}}
+          <nuxt-link to="/over#cv" class="btn-goto"><u>cv</u><i class="icon-link-out"></i></nuxt-link>
+        </h3>
+        <p class="___small-margin-top ___text-small">
+          {{item.item.date[0]}}-{{item.item.date[1]}}<span v-if="item.item.endDate === null" class="now">–HEDEN</span><span v-else>–{{item.item.endDate[0]}}-{{item.item.endDate[1]}}</span>
+          &nbsp;
+          {{item.item.jobTitle}}
+        </p>
+      </div>
+      <div v-if="item.type === 'artikel' && item.item.type === 'link'" class="content ___compact-spacing-top ___compact-spacing-bottom">
+        <div>
+          <h3 class="___text-inherit ___little-margin-top ___no-margin-after">
+            <a :href="item.item.url">
+              {{ item.item.title }}
+            </a>
+          </h3>
+          <p class="___small-margin-top ___text-small">
+            {{ item.item.date[0] }}-{{ item.item.date[1] }}-{{ item.item.date[2] }}
+            &nbsp;
+            {{ item.item.publisher }}
+          </p>
+        </div>
+      </div>
+    </div>
+      <!-- <div v-if="item.type === 'client'" :key="item.body" class="content ___little-spacing-top ___little-spacing-bottom">
+        <h3>{{item.item.name}}</h3>
+        <p class="___small-margin-top ___text-small">{{item.item.jobTitle}}</p>
+        <p class="___small-margin-top ___text-small">
+          <template>{{ item.item.date[0] }}-{{ item.item.date[1] + 1 }}</template>
+          <span class="now" v-if="item.item.endDate === null">–HEDEN</span>
+          <template v-else-if="item.item.endDate !== undefined">–{{ item.item.endDate[0] }}-{{ item.item.endDate[1] + 1 }}</template>
+        </p>
+        <span v-for="(skill, i) of item.item.skills" :key="i"><span class="tag">{{ skill }}</span>&nbsp;</span>
+        <ul v-if="item.item.projects" class="client__projects">
+          <li v-for="(project, i) of item.item.projects" :key="i" class="client-project">
+            {{ project.name }}
+            <a v-if="project.url" class="btn-goto" :href="project.url" target="_blank"><u>Website</u><i class="icon-link-out"></i></a>
+            <span v-for="(skill, i) of project.skills" :key="i"><span class="tag">{{ skill }}</span>&nbsp;</span>
+          </li>
+        </ul>
+      </div> -->
+      <!-- <section-quote :key="item.body" v-if="item.type === 'quote'" v-bind:quote="item.item" /> -->
+      <!-- <section-client :key="item.body" v-if="item.type === 'client'" v-bind:client="item.item" /> -->
+      <!-- <div v-else-if="item.type === 'artikel'" :key="item.body">
+        <nuxt-link :to="'/artikelen/' + item.item.slug">
+          {{ item.item.title }}
+        </nuxt-link>
+      </div> -->
 
     <section class="meta">
         <span>© 2007–2023 Melle Wijnia</span>
@@ -11,17 +108,8 @@
         <span>{{ $store.state.general.address.streetAddress }} {{ $store.state.general.address.postalCode }} {{ $store.state.general.address.addressLocality }}</span>
     </section>
 
-    <template v-for="item of timeline">
-      <section-quote :key="item.body" v-if="item.type === 'quote'" v-bind:quote="item.item" />
-      <section-client :key="item.body" v-if="item.type === 'client'" v-bind:client="item.item" />
-      <div :key="item.body" v-else-if="item.type === 'artikel'">
-        <nuxt-link :to="'/artikelen/' + item.item.slug">
-          {{ item.item.title }}
-        </nuxt-link>
-      </div>
-    </template>
-
-  </div>
+    <section-content />
+  </main>
 </template>
 
 <script>
@@ -29,13 +117,17 @@ import SectionIntro from '~/components/SectionIntro'
 import SectionClient from '~/components/SectionClient'
 import SectionQuote from '~/components/SectionQuote'
 import SectionUpdate from '~/components/SectionUpdate'
+import SectionContent from '~/components/SectionContent'
+import SectionNotification from '~/components/SectionNotification'
 
 export default {
   components: {
+    SectionContent,
     SectionIntro,
     SectionClient,
     SectionQuote,
-    SectionUpdate
+    SectionUpdate,
+    SectionNotification
   },
   data () {
     return {
@@ -47,14 +139,65 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .meta {
+  padding: 16px 22.4px 0;
   padding: 1rem 1.4rem 0;
   font-size: var(--font--x-small);
-  color: hsla(222, 10%, 74%, 1);
+  color: #b6bac3;
+}
 
-  > span {
-    margin: 0 1.2rem 0 0;
+.meta > span {
+  margin: 0 1.2rem 0 0;
+}
+
+.cta-blocks {
+  position: relative;
+  margin: -22.4px 64px 35.2px 64px;
+  margin: -1.4rem 4rem 2.2rem 4rem;
+  z-index: 1;
+  max-width: var(--max-width);
+}
+
+@media screen and (min-width: 768px) {
+  .cta-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1.6rem;
+    margin: -62px auto 0 auto;
+    position: relative;
   }
 }
+.cta-blocks > * {
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 10, .1);
+            box-shadow: 0 1px 2px rgba(0, 0, 10, .1);
+    border-radius: 0.4rem;
+    padding: 32px 38.4px;
+    padding: 2rem 2.4rem;
+    background: #fff;
+    margin: 0 0 19.2px 0;
+    margin: 0 0 1.2rem 0;
+}
+@media screen and (min-width: 768px) {
+.cta-blocks > * {
+        width: 33%;
+        min-height: 138px;
+        -webkit-box-shadow: 0 4px 10px rgba(0, 0, 10, .1);
+                box-shadow: 0 4px 10px rgba(0, 0, 10, .1);
+}
+}
+.cta-block {
+  font-size: var(--font--small);
+}
+.cta-block > h2 {
+    font-weight: 400;
+    margin: 0 0 12.8px 0;
+    margin: 0 0 0.8rem 0;
+    font-size: var(--font--medium);
+}
+.cta-block p {
+    margin: 0 0 9.6px 0;
+    margin: 0 0 0.6rem 0;
+}
+
 </style>

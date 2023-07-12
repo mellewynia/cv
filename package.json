@@ -2,7 +2,7 @@
   "name": "nuxt-test",
   "version": "1.0.0",
   "description": "Nuxt.js project",
-  "author": "Melle Wynia <contact@mellewynia.nl>",
+  "author": "Melle Wijnia <contact@mellewynia.nl>",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -31,7 +31,7 @@
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-standard": "^3.0.1",
     "eslint-plugin-vue": "^4.0.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^9.0.0",
     "standard": "^11.0.0"
   }
 }

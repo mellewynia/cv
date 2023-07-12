@@ -5,17 +5,13 @@
   "givenName": "Melle",
   "familyName": "Wijnia",
   "jobTitle": "Front-end javascript developer / consultant",
-  "description": "Melle is een stressbestendige front-end developer die problemen pro-actief oplost, communicatief vaardig is en een scherp oog voor user experience heeft.",
+  "description": "Melle is een ervaren front-end developer (10+ jaar) die problemen pro-actief oplost, communicatief vaardig is en een scherp oog voor user experience heeft.",
 
   "email": "hi@mellewynia.nl",
   "telephone": "06 41 01 76 11",
   "url": "https://mellewynia.nl",
   "linkedin": "https://linkedin.com/in/melle-wynia",
   "github": "https://github.com/mellewynia/cv",
-
-  "rate": "€145,00/uur (bespreekbaar)",
-  "availability": "Beschikbaar per november 2023",
-  "availability_short_term": "Part-time inzet eerder mogelijk",
 
   "address": {
     "@type": "PostalAddress",

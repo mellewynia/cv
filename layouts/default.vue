@@ -147,4 +147,46 @@ span.now {
   animation: 1380ms linear NOW infinite;
 }
 
+.cta-link {
+  color: hsla(222, 100%, 61%, 1);
+
+  > u {
+    margin: 0 ;
+    text-decoration: none;
+    line-height: 1.1;
+    border-bottom: 1px solid hsla(222, 100%, 61%, 0.38);
+    font-size: var(--font--small);
+    transition: 262ms ease-out;
+
+    &.___tablet-plus {
+      display: none;
+
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
+  }
+
+  &:hover {
+    // background: hsla(222, 100%, 98%, 1);
+    transition: none;
+
+    > u {
+        border-bottom: 1px solid hsla(222, 100%, 61%, 1);
+        transition: none;
+    }
+  }
+
+  &:active {
+    // background: hsla(222, 100%, 96%, 1);
+    color: hsla(222, 100%, 50%, 1);
+    transition: none;
+  }
+}
+
+p.meta-info {
+  font-size: var(--font--x-small);
+  color: hsla(222, 10%, 62%, 1);
+}
+
 </style>
