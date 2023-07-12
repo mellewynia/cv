@@ -57,7 +57,7 @@ html {
 }
 
 body {
-  padding-top: 10rem;
+  padding-top: 9.2rem;
   overflow-x: hidden;
 
   @media (min-width: 768px) {

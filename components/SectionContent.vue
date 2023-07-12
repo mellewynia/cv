@@ -11,20 +11,13 @@ export default {
 </script>
 
 <style lang="scss">
-.content {
+.content,
+.content-container {
   max-width: calc(var(--width-narrow) + 8rem);
   margin: calc(10vh + 3.8rem) auto calc(10vh + 3.8rem) auto;
-  font-size: var(--font--medium--mobile);
-  padding: 0 4rem;
-  line-height: 162%;
-  background: var(--color);
 
   @media (min-width: 568px) {
     padding: 0 4rem;
-  }
-
-  @media (min-width: 768px) {
-    font-size: var(--font--medium);
   }
 
   &.___compact-spacing-top {
@@ -41,6 +34,17 @@ export default {
 
   &.___little-spacing-bottom {
     margin-bottom: 3.8rem;
+  }
+}
+
+.content {
+  font-size: var(--font--medium--mobile);
+  padding: 0 4rem;
+  line-height: 162%;
+  background: var(--color);
+
+  @media (min-width: 768px) {
+    font-size: var(--font--medium);
   }
 
   // inline

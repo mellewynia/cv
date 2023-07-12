@@ -18,26 +18,19 @@
       <nav class="site-header__contact">
         <ul>
           <li>
-            <a :href="'tel: ' + $store.state.general.telephone.replace(/ /g, '')">
-              <i class="icon-telephone"></i>
-              {{ $store.state.general.telephone }}
-            </a>
+            <nuxt-link to="/" class="nav-item">Diensten</nuxt-link>
           </li>
           <li>
-            <a :href="'mailto: ' + $store.state.general.email">
-              <i class="icon-envelope"></i>
-              <u class="___tablet-plus">{{ $store.state.general.email }}</u>
-            </a>
+            <nuxt-link to="/over" class="nav-item">Over</nuxt-link>
           </li>
           <li>
-            <a :href="$store.state.general.linkedin" target="_blank" title="“Join the great link”">
-              <i class="icon-link"></i>
-            </a>
+            <nuxt-link to="/cv-frontend-developer" class="nav-item">CV</nuxt-link>
           </li>
           <li>
-            <a :href="$store.state.general.github" target="_blank">
-              <i class="icon-code"></i>
-            </a>
+            <nuxt-link to="/contact-frontend-developer" class="nav-item">Contact</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/artikelen" class="nav-item">Artikelen</nuxt-link>
           </li>
         </ul>
       </nav>
@@ -78,7 +71,7 @@ export default {
   box-shadow: 0 0 1.6rem hsla(222,26%,61%,0.2);
   font-size: var(--font--small);
   will-change: opacity, transform;
-  height: 10rem;
+  height: 9.2rem;
 
   @media (min-width: 768px ) {
     display: flex;
@@ -221,7 +214,7 @@ export default {
   flex: 1 1 auto;
 
   list-style: none;
-  padding: 0.7rem 0 1rem 0;
+  padding: 0.7rem 0 0 0;
 
   @media (min-width: 768px) {
     padding: 0;
@@ -232,6 +225,7 @@ export default {
   ul {
     display: flex;
     list-style: none;
+    margin: 0 0 0 -0.6rem;
 
     > li {
       display: flex;
@@ -241,10 +235,9 @@ export default {
         align-items: center;
         margin: 1px 0.3rem 0 0;
         padding: .6rem .6rem 0.6rem .6rem;
-        border-radius: 2rem;
+        border-radius: 0.3rem;
         color: hsla(222, 100%, 61%, 1);
         font-size: var(--font-small);
-        background: hsla(222, 100%, 96%, 1);
         transition: 262ms ease-out;
 
         @media (min-width: 768px) {
@@ -252,29 +245,6 @@ export default {
           border-radius: 0;
           padding: .8rem .9rem 1rem .9rem;
           background: hsla(222, 100%, 98%, 0);
-        }
-
-        > i { // .icon-*
-          position: relative;
-          top: -0.1rem;
-          font-size: 2.8rem;
-        }
-
-        > u {
-          margin: 0 0 0 .3rem;
-          text-decoration: none;
-          line-height: 1.1;
-          border-bottom: 1px solid hsla(222, 100%, 61%, 0.38);
-          font-size: var(--font--small);
-          transition: 262ms ease-out;
-
-          &.___tablet-plus {
-            display: none;
-
-            @media (min-width: 768px) {
-              display: block;
-            }
-          }
         }
 
         &:hover {
@@ -287,7 +257,8 @@ export default {
           }
         }
 
-        &:active {
+        &:active,
+        &.nuxt-link-exact-active {
           background: hsla(222, 100%, 96%, 1);
           color: hsla(222, 100%, 50%, 1);
           transition: none;
