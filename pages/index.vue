@@ -102,12 +102,6 @@
         </nuxt-link>
       </div> -->
 
-    <section class="meta">
-        <span>© 2007–2023 Melle Wijnia</span>
-        <span>KvK {{ $store.state.general.organisation.kvk }} / {{ $store.state.general.organisation.name }}</span>
-        <span>{{ $store.state.general.address.streetAddress }} {{ $store.state.general.address.postalCode }} {{ $store.state.general.address.addressLocality }}</span>
-    </section>
-
     <section-content />
   </main>
 </template>

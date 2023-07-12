@@ -43,6 +43,10 @@ export default {
   line-height: 162%;
   background: var(--color);
 
+  &:empty {
+    display: none;
+  }
+
   @media (min-width: 768px) {
     font-size: var(--font--medium);
   }
@@ -52,6 +56,23 @@ export default {
   a {
     color: #3874ff;
     text-decoration: underline;
+
+    &.___block {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 0.4rem 0;
+
+      &.___big {
+        font-size: var(--font--base);
+      }
+
+      > [class^="icon-"] {
+        font-size: 162%;
+        width: 2.8rem;
+      }
+    }
   }
 
   // blocks

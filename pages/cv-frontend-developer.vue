@@ -4,19 +4,20 @@
     <nuxt-link to="/artikelen"></nuxt-link>
     <article class="content ___little-spacing-bottom">
         <h1>
-          CV Front-end developer Melle Wijnia
+          CV
         </h1>
 
     </article>
 
     <div class="content ___little-spacing-top ___little-spacing-bottom">
-      <h2 id="cv">CV</h2>
+      <h2>Melle Wijnia</h2>
+      <h3>Front-end developer / consultant</h3>
     </div>
 
     <section-notification>
       <p>
-        Graag cv met referenties in PDF ontvangen?
-        Neem contact op: hi@mellewynia.nl
+        Graag uitgebreid cv mét referenties in PDF ontvangen?
+        Neem contact op: cv@mellewynia.nl
       </p>
     </section-notification>
 

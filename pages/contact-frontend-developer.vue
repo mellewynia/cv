@@ -7,40 +7,44 @@
         <h1>
           Contact
         </h1>
-        <!-- <p>
-          Melle is een toegewijd front-end developer met uitgebreide Javascript kennis. Hij staat je bij zodat je projecten op tijd en naar wens live gaan. Melle werkt nauwkeurig en schakelt snel.
-        </p> -->
+        <p>
+          <a class="___block" :href="'tel: ' + $store.state.general.telephone.replace(/ /g, '')">
+            <i class="icon-telephone"></i>
+            {{ $store.state.general.telephone }}
+          </a>
+          <a class="___block" :href="'mailto: ' + $store.state.general.email">
+            <i class="icon-envelope"></i>
+            {{ $store.state.general.email }}
+          </a>
+        </p>
+        <p>
+          <a class="___block" :href="$store.state.general.linkedin" target="_blank" title="“Join the great link”">
+            <i class="icon-link"></i>
+            LinkedIn
+          </a>
+          <a class="___block" :href="$store.state.general.github" target="_blank">
+            <i class="icon-code"></i>
+            Github
+          </a>
+        </p>
       </div>
-      <div class="content-container">
+      <div class="content ___little-spacing-top ___little-spacing-bottom">
+        <h2>
+          Bedrijfsgegevens
+        </h2>
+        <p>
+          Ik ben Melle B.V.<br />
+          KvK 75849844
+        </p>
+        <p>
+          Leuvensbroek 1019<br />
+          6546 XA NIJMEGEN
+        </p>
+      </div>
+      <!-- <div class="content-container">
         <div class="site-header__contact">
-          <ul>
-            <li>
-              <a :href="'tel: ' + $store.state.general.telephone.replace(/ /g, '')">
-                <i class="icon-telephone"></i>
-                {{ $store.state.general.telephone }}
-              </a>
-            </li>
-            <li>
-              <a :href="'mailto: ' + $store.state.general.email">
-                <i class="icon-envelope"></i>
-                {{ $store.state.general.email }}
-              </a>
-            </li>
-            <li>
-              <a :href="$store.state.general.linkedin" target="_blank" title="“Join the great link”">
-                <i class="icon-link"></i>
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a :href="$store.state.general.github" target="_blank">
-                <i class="icon-code"></i>
-                Github
-              </a>
-            </li>
-          </ul>
         </div>
-      </div>
+      </div> -->
     </article>
     <section-content />
   </main>

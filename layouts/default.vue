@@ -25,15 +25,18 @@
     <script>cssVars({watch: true});</script>
     <site-header/>
     <nuxt/>
+    <site-footer/>
   </div>
 </template>
 
 <script>
 import SiteHeader from '~/layouts/components/site-header.vue'
+import SiteFooter from '~/layouts/components/site-footer.vue'
 
 export default {
   components: {
-    SiteHeader
+    SiteHeader,
+    SiteFooter
   }
 }
 </script>
