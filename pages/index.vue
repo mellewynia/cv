@@ -18,7 +18,7 @@
         </p>
       </div>
       <div class="cta-block">
-        <h2>Consultancy</h2>
+        <h2>Versterking (consultancy)</h2>
         <p class="meta-info">
           Beschikbaar in herst 2023<br>
           v.a. €1.500 / maand (i.o. abonnement)
@@ -28,7 +28,7 @@
           Beperkte inzet, blijvend resultaat.
         </p>
         <p>
-          <nuxt-link to="/consultancy" class="cta-link"><u>Bekijk de mogelijkheden</u></nuxt-link>
+          <nuxt-link to="/frontend-versterking-consultancy" class="cta-link"><u>Bekijk de mogelijkheden</u></nuxt-link>
         </p>
       </div>
       <div class="cta-block">
@@ -41,7 +41,7 @@
           Geef jouw team in één dagdeel nieuwe energie, inzichten en tools.
         </p>
         <p>
-          <nuxt-link to="/versterking" class="cta-link"><u>Zet Melle &amp; Co power-up in</u></nuxt-link>
+          <nuxt-link to="/frontend-workshops" class="cta-link"><u>Zet Melle &amp; Co power-up in</u></nuxt-link>
         </p>
       </div>
     </section>
@@ -149,12 +149,12 @@ export default {
     margin: 0 0 1.2rem 0;
 }
 @media screen and (min-width: 768px) {
-.cta-blocks > * {
-        width: 33%;
-        min-height: 138px;
-        -webkit-box-shadow: 0 4px 10px rgba(0, 0, 10, .1);
-                box-shadow: 0 4px 10px rgba(0, 0, 10, .1);
-}
+  .cta-blocks > * {
+    width: 33%;
+    min-height: 138px;
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 10, .1);
+            box-shadow: 0 2px 6px rgba(0, 0, 10, .1);
+  }
 }
 .cta-block {
   font-size: var(--font--small);
