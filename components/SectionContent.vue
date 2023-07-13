@@ -160,8 +160,8 @@ export default {
 
   .image.___left {
     float: left;
-    width: 50%;
-    margin-left: -25%;
+    width: 200px;
+    margin-left: -16%;
     margin-top: 3.2rem;
     margin-right: 3.3rem;
     margin-bottom: 2rem;

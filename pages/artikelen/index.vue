@@ -2,7 +2,7 @@
 <template>
   <main>
 
-    <div class="content ___little-spacing-top ___little-spacing-bottom">
+    <div class="content ___little-spacing-bottom">
       <h1>Artikelen</h1>
     </div>
 
