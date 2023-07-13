@@ -77,30 +77,6 @@
         </div>
       </div>
     </div>
-      <!-- <div v-if="item.type === 'client'" :key="item.body" class="content ___little-spacing-top ___little-spacing-bottom">
-        <h3>{{item.item.name}}</h3>
-        <p class="___small-margin-top ___text-small">{{item.item.jobTitle}}</p>
-        <p class="___small-margin-top ___text-small">
-          <template>{{ item.item.date[0] }}-{{ item.item.date[1] + 1 }}</template>
-          <span class="now" v-if="item.item.endDate === null">–HEDEN</span>
-          <template v-else-if="item.item.endDate !== undefined">–{{ item.item.endDate[0] }}-{{ item.item.endDate[1] + 1 }}</template>
-        </p>
-        <span v-for="(skill, i) of item.item.skills" :key="i"><span class="tag">{{ skill }}</span>&nbsp;</span>
-        <ul v-if="item.item.projects" class="client__projects">
-          <li v-for="(project, i) of item.item.projects" :key="i" class="client-project">
-            {{ project.name }}
-            <a v-if="project.url" class="btn-goto" :href="project.url" target="_blank"><u>Website</u><i class="icon-link-out"></i></a>
-            <span v-for="(skill, i) of project.skills" :key="i"><span class="tag">{{ skill }}</span>&nbsp;</span>
-          </li>
-        </ul>
-      </div> -->
-      <!-- <section-quote :key="item.body" v-if="item.type === 'quote'" v-bind:quote="item.item" /> -->
-      <!-- <section-client :key="item.body" v-if="item.type === 'client'" v-bind:client="item.item" /> -->
-      <!-- <div v-else-if="item.type === 'artikel'" :key="item.body">
-        <nuxt-link :to="'/artikelen/' + item.item.slug">
-          {{ item.item.title }}
-        </nuxt-link>
-      </div> -->
 
     <section-content />
   </main>

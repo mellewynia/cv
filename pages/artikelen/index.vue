@@ -42,11 +42,3 @@ export default {
   }
 }
 </script>
-
-<style>
-main {
-  max-width: var(--width-narrow);
-  background: var(--color);
-  min-height: 200px;
-}
-</style>
