@@ -18,19 +18,19 @@
       <nav class="site-header__contact">
         <ul>
           <li>
-            <nuxt-link to="/" class="nav-item">Diensten</nuxt-link>
+            <nuxt-link to="/" class="nav-item"><span>Diensten</span></nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/over" class="nav-item">Over</nuxt-link>
+            <nuxt-link to="/over" class="nav-item"><span>Over</span></nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/cv-frontend-developer" class="nav-item">CV</nuxt-link>
+            <nuxt-link to="/cv-frontend-developer" class="nav-item"><span>CV</span></nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/contact-frontend-developer" class="nav-item">Contact</nuxt-link>
+            <nuxt-link to="/contact-frontend-developer" class="nav-item"><span>Contact</span></nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/artikelen" class="nav-item">Artikelen</nuxt-link>
+            <nuxt-link to="/artikelen" class="nav-item"><span>Artikelen</span></nuxt-link>
           </li>
         </ul>
       </nav>
@@ -245,15 +245,24 @@ export default {
           border-radius: 0;
           padding: .8rem .9rem 1rem .9rem;
           background: hsla(222, 100%, 98%, 0);
+
+          > span {
+            border-bottom: 2px solid transparent;
+            margin-bottom: 2px;
+          }
         }
 
         &:hover {
           background: hsla(222, 100%, 98%, 1);
           transition: none;
 
-          > u {
-              border-bottom: 1px solid hsla(222, 100%, 61%, 1);
-              transition: none;
+          @media (min-width: 768px) {
+            background: transparent;
+
+            > span {
+              border-bottom: 2px solid currentColor;
+              transition: 262ms ease-out;
+            }
           }
         }
 
@@ -262,6 +271,15 @@ export default {
           background: hsla(222, 100%, 96%, 1);
           color: hsla(222, 100%, 50%, 1);
           transition: none;
+
+          @media (min-width: 768px) {
+            background: transparent;
+            color: #000;
+
+            > span {
+              border-bottom: 2px solid currentColor;
+            }
+          }
         }
       }
     }
