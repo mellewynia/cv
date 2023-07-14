@@ -66,7 +66,7 @@ export default {
   top: 0;
   right: 0;
   left: 0;
-  padding: 1.1rem 0 0 4rem;
+  padding: 0 0 0 4rem;
   background: #fff;
   box-shadow: 0 0 1.6rem hsla(222,26%,61%,0.2);
   font-size: var(--font--small);
@@ -75,7 +75,7 @@ export default {
 
   @media (min-width: 768px ) {
     display: flex;
-    padding: 1.2rem 2rem 0 3.8rem;
+    padding: 0 2rem 0 3.8rem;
     animation: SLIDE-NAV-IN 1.38s;
     transform: translate(0, 0);
     animation-timing-function: ease;
@@ -234,51 +234,41 @@ export default {
         display: flex;
         align-items: center;
         margin: 1px 0.3rem 0 0;
-        padding: .6rem .6rem 0.6rem .6rem;
-        border-radius: 0.3rem;
+        padding: .6rem 0 0.2rem 0;
         color: hsla(222, 100%, 61%, 1);
         font-size: var(--font-small);
-        transition: 262ms ease-out;
 
         @media (min-width: 768px) {
           margin: 1px 0 0 0;
-          border-radius: 0;
+          padding: .8rem 0.1rem 0.8rem 0.1rem;
+        }
+
+        > span {
           padding: .8rem .9rem 1rem .9rem;
           background: hsla(222, 100%, 98%, 0);
+          transition: 262ms ease-out;
+          border-radius: 0.3rem;
 
-          > span {
-            border-bottom: 2px solid transparent;
-            margin-bottom: 2px;
+          @media (min-width: 768px) {
+            margin: 1px 0 0 0;
+            padding: .9rem 1.2rem 1rem 1.2rem;
           }
         }
 
         &:hover {
-          background: hsla(222, 100%, 98%, 1);
           transition: none;
 
-          @media (min-width: 768px) {
-            background: transparent;
-
-            > span {
-              border-bottom: 2px solid currentColor;
-              transition: 262ms ease-out;
-            }
+          > span {
+            background: hsla(222, 100%, 98%, 1);
           }
         }
 
         &:active,
         &.nuxt-link-exact-active {
-          background: hsla(222, 100%, 96%, 1);
-          color: hsla(222, 100%, 50%, 1);
-          transition: none;
-
-          @media (min-width: 768px) {
-            background: transparent;
-            color: #000;
-
-            > span {
-              border-bottom: 2px solid currentColor;
-            }
+          > span {
+            background: hsla(222, 100%, 96%, 1);
+            color: hsla(222, 100%, 50%, 1);
+            transition: none;
           }
         }
       }
