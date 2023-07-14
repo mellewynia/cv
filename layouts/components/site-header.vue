@@ -246,7 +246,7 @@ export default {
         > span {
           padding: .8rem .9rem 1rem .9rem;
           background: hsla(222, 100%, 98%, 0);
-          transition: 262ms ease-out;
+          transition: 380ms ease-in-out;
           border-radius: 0.3rem;
 
           @media (min-width: 768px) {
@@ -263,11 +263,16 @@ export default {
           }
         }
 
-        &:active,
         &.nuxt-link-exact-active {
           > span {
             background: hsla(222, 100%, 96%, 1);
             color: hsla(222, 100%, 50%, 1);
+            transition: 380ms ease-in;
+          }
+        }
+
+        &:active {
+          > span {
             transition: none;
           }
         }

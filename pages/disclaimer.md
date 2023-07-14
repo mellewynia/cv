@@ -1,5 +1,5 @@
 ## **Disclaimer voor mellewynia.nl**
-Melle Wijnia (Kamer van Koophandel: 71965858) verleent u hierbij toegang tot mellewynia.nl ("de Website") en publiceert hier ter informatie en vermaak teksten, afbeeldingen en andere materialen voor particuliere, niet-commerciële doeleinden.
+Melle Wijnia (Kamer van Koophandel: 75849844) verleent u hierbij toegang tot mellewynia.nl ("de Website") en publiceert hier ter informatie en vermaak teksten, afbeeldingen en andere materialen voor particuliere, niet-commerciële doeleinden.
 
 Melle Wijnia behoudt zich daarbij het recht voor op elk moment de inhoud aan te passen of onderdelen te verwijderen zonder daarover aan u mededeling te hoeven doen.
 
