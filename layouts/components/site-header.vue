@@ -246,7 +246,7 @@ export default {
         > span {
           padding: .8rem .9rem 1rem .9rem;
           background: hsla(222, 100%, 98%, 0);
-          transition: 380ms ease-in-out;
+          transition: 260ms ease-in-out;
           border-radius: 0.3rem;
 
           @media (min-width: 768px) {
@@ -267,7 +267,7 @@ export default {
           > span {
             background: hsla(222, 100%, 96%, 1);
             color: hsla(222, 100%, 50%, 1);
-            transition: 380ms ease-in;
+            transition: 260ms ease-in;
           }
         }
 
