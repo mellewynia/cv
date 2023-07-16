@@ -1,13 +1,12 @@
 ---
 image: /media/me-2023.jpg
 intro: |
-  Melle is een toegewijd front-end developer met uitgebreide Javascript kennis.
+  Melle is een toegewijd front-end developer met uitgebreide ervaring (momenteel lead bij de Volksbank) en diepgaande kennis van onder andere JavaScript, Angular en Cybersecurity.
   Hij staat je bij zodat je projecten op tijd en naar wens live gaan.
-  Melle werkt nauwkeurig en schakelt snel.
 profile: |
   Melle is een toegewijd front-end developer met uitgebreide Javascript kennis.
   Hij staat je bij zodat je projecten op tijd en naar wens live gaan. Melle werkt nauwkeurig en schakelt snel.
-profileKeywords: Creatief, Grondig, Gedreven, Geduldig, Communicatief, Nieuwsgierig
+profileKeywords: Nieuwsgierig, Gedreven, Communicatief, Grondig, Geduldig
 hobbies: Koken, fietsen, meetups en start-ups
 mobility: Vanuit Nijmegen, rijbewijs B + Auto, NS Business Card
 languages: Uitstekend Nederlands en Engels, spreken en schrijven

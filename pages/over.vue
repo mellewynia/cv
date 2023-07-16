@@ -43,6 +43,7 @@
 
 <script>
 import SectionContent from '~/components/SectionContent'
+
 import { cleanNewLinesMarkdownBody } from '~/plugins/utils'
 
 export default {
