@@ -75,7 +75,8 @@ export default {
 
   @media print {
     page-break-inside: avoid;
-    margin: 3rem auto 3rem auto;
+    margin: 0 auto 3rem auto;
+    padding-top: 2rem;
   }
 
   @media (min-width: 568px) {
