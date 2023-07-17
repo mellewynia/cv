@@ -52,11 +52,11 @@
 
     <div v-for="item of timeline" :key="item.id">
       <div v-if="item.type === 'client' && item.item.date && item.item.date[0] > 2019" class="content ___compact-spacing-top ___compact-spacing-bottom">
-        <h3 class="___text-inherit ___little-margin-top ___no-margin-after">
+        <h3 class="___text-inherit ___little-margin-top">
           {{item.item.name}}
           <nuxt-link to="/over#cv" class="btn-goto"><u>cv</u><i class="icon-link-out"></i></nuxt-link>
         </h3>
-        <p class="___small-margin-top ___text-small">
+        <p class="___text-small">
           {{item.item.date[0]}}-{{item.item.date[1]}}<span v-if="item.item.endDate === null" class="now">–HEDEN</span><span v-else>–{{item.item.endDate[0]}}-{{item.item.endDate[1]}}</span>
           &nbsp;
           {{item.item.jobTitle}}
@@ -64,12 +64,12 @@
       </div>
       <div v-if="item.type === 'artikel' && item.item.type === 'link'" class="content ___compact-spacing-top ___compact-spacing-bottom">
         <div>
-          <h3 class="___text-inherit ___little-margin-top ___no-margin-after">
+          <h3 class="___text-inherit ___little-margin-top">
             <a :href="item.item.url">
               {{ item.item.title }}
             </a>
           </h3>
-          <p class="___small-margin-top ___text-small">
+          <p class="___text-small">
             {{ item.item.date[0] }}-{{ item.item.date[1] }}-{{ item.item.date[2] }}
             &nbsp;
             {{ item.item.publisher }}

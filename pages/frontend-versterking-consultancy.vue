@@ -15,6 +15,11 @@ import SectionContent from '~/components/SectionContent'
 export default {
   components: {
     SectionContent
+  },
+  head () {
+    return {
+      title: 'Versterking - Melle Wijnia'
+    }
   }
 }
 </script>

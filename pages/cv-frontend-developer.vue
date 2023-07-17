@@ -92,6 +92,11 @@ export default {
     SectionUpdate,
     SectionNotification
   },
+  head () {
+    return {
+      title: 'CV Frontend developer - Melle Wijnia'
+    }
+  },
   data () {
     return {
       date: new Date(...process.env.dateUpdate),

@@ -56,6 +56,11 @@ export default {
       timeline: process.env.contents.timeline
     }
   },
+  head () {
+    return {
+      title: 'Over Melle Wijnia'
+    }
+  },
   async asyncData () {
     const artikel = await import(`!!json-loader!front-matter-loader!./over.md`)
 

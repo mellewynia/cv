@@ -65,6 +65,11 @@ export default {
     SectionQuote,
     SectionUpdate
   },
+  head () {
+    return {
+      title: 'CV Front-end developer Melle Wijnia'
+    }
+  },
   data () {
     return {
       date: new Date(...process.env.dateUpdate),

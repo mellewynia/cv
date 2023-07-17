@@ -14,6 +14,11 @@ export default {
       artikel: null
     }
   },
+  head () {
+    return {
+      title: 'Disclaimer mellewynia.nl'
+    }
+  },
   async asyncData () {
     const artikel = await import(`!!json-loader!front-matter-loader!./disclaimer.md`)
 
