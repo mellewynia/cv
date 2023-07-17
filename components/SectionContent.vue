@@ -20,6 +20,10 @@ export default {
     padding: 0 4rem;
   }
 
+  @media print {
+    margin: 4rem auto;
+  }
+
   &.___compact-spacing-top {
     margin-top: 2rem;
   }
@@ -40,7 +44,7 @@ export default {
 .content {
   font-size: var(--font--medium--mobile);
   padding: 0 4rem;
-  line-height: 162%;
+  line-height: var(--font--large);
   background: var(--color);
 
   &:empty {

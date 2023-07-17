@@ -2,12 +2,6 @@
 <template>
   <article class="client">
 
-    <ul class="references">
-      <li v-for="(reference, i) of client.references" :key="i" class="reference">
-        <a :href="reference.url">Referentie: {{ reference.name }} – {{ reference.jobTitle }}</a>
-      </li>
-    </ul>
-
     <h3 class="client__title">{{client.name}}</h3>
 
     <p class="client__meta">{{client.jobTitle}}</p>
@@ -24,6 +18,12 @@
 
       <a v-if="client.url" class="btn-goto" :href="client.url" target="_blank"><u>Website</u><i class="icon-link-out"></i></a>
     </p>
+
+    <ul v-if="client.references && client.references.length > 0" class="references">
+      <li v-for="(reference, i) of client.references" :key="i" class="reference">
+        <a :href="reference.url">Referentie: {{ reference.name }} – {{ reference.jobTitle }}</a>
+      </li>
+    </ul>
 
     <p class="client__description">
       {{client.body}}
@@ -48,10 +48,14 @@ export default {
 
 <style lang="scss">
 
+.references {
+  margin-top: 10px;
+}
+
 .reference {
-  margin: 0.6rem 0;
+  margin: 4px 0 0;
   font-size: 1.2rem;
-  line-height: 1.4rem;
+  line-height: 162%;
   color: hsla(222, 16%, 55%, 1);
 
   > a {
@@ -104,9 +108,9 @@ export default {
 }
 
 .client__meta {
-  line-height: 1.38;
-  margin: 0.4rem 0;
+  margin: 2px 0;
   font-size: 1.2rem;
+  line-height: 138%;
 
   span.now {
     color: hsl(222, 100%, 61%);
@@ -134,6 +138,7 @@ export default {
   position: relative;
   padding: 2.8rem 0 0 0;
   list-style: disc;
+  line-height: 100%;
 
   @media print {
     padding-top: 1.6rem;

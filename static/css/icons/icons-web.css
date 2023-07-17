@@ -23,6 +23,11 @@
     line-height: 1;
 }
 
+
+.icon-margin-right {
+  margin-right: 0.4rem;
+}
+
 .icon-code:before {
     content: "\E001";
 }

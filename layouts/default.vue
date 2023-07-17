@@ -45,7 +45,7 @@ export default {
 @import '../static/css/fonts/open-sans';
 
 html {
-  font-family: "Open Sans Web", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Open Sans Web", Calibri, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 10px;
   /* TODO
   -ms-text-size-adjust: 100%;

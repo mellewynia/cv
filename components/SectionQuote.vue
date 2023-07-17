@@ -31,10 +31,10 @@ export default {
 .quote {
     max-width: 111.8rem;
     padding: 0 1.6rem;
-    margin: calc(10vh + 3.8rem) auto calc(10vh + 3.8rem) auto;
+    margin: 62px auto;
 
     font-family: Raleway Web, Helvetica, Arial, sans-serif;
-    font-size: 1.8rem;
+    font-size: 18px;
     font-style: italic;
     font-weight: 400;
     line-height: 138%;
@@ -42,11 +42,11 @@ export default {
 
     @media (min-width: 768px) {
         padding: 0 8.4rem;
-        font-size: 2.4rem;
+        font-size: 20px;
 
         &.___large {
             font-family: Raleway Web, Helvetica, Arial, sans-serif;
-            font-size: 4.1rem;
+            font-size: 32px;
             font-style: italic;
             font-weight: 300;
             line-height: 124%;
