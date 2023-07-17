@@ -148,6 +148,7 @@ export default {
 
     &.___text-small {
       font-size: 80%;
+      line-height: 100%;
     }
   }
 
@@ -160,11 +161,15 @@ export default {
 
   .image.___left {
     float: left;
-    width: 200px;
+    width: 162px;
     margin-left: -16%;
     margin-top: 3.2rem;
     margin-right: 3.3rem;
     margin-bottom: 2rem;
+
+    @media print {
+      width: 126px;
+    }
 
     > img {
       display: block;

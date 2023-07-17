@@ -24,6 +24,10 @@
   background: hsla(222,26%,61%,0.1);
   padding: 6.2rem 0;
   margin: 10vh 0 0;
+
+  @media print {
+    display: none;
+  }
 }
 
 .footer-next__center {
@@ -60,6 +64,10 @@
   padding: 1.2rem 2rem 1.2rem 3.8rem;
   font-size: var(--font--x-small);
   color: #b6bac3;
+
+  @media print {
+    display: none;
+  }
 
   > span {
     margin: 0 1.2rem 0 0;

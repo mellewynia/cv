@@ -53,6 +53,11 @@ export default {
         }
     }
 
+    @media print {
+      page-break-inside: avoid;
+      margin: 5rem 7rem 5rem 7rem;
+    }
+
     cite {
         display: block;
         margin: 0.7rem 0 0 1.6rem;

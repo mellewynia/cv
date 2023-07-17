@@ -87,6 +87,10 @@ export default {
     font-size: var(--font--medium);
   }
 
+  @media print {
+    display: none;
+  }
+
   @supports ( backdrop-filter: blur(5px) ) {
     backdrop-filter: blur(5px);
     background: rgba(255, 255, 255, 0.97);
@@ -102,9 +106,16 @@ export default {
   align-self: center;
   font-size: inherit;
   font-weight: inherit;
+  padding: 0.6rem 0 0;
 
   @media ( min-width: 568px ) {
     display: inline;
+    padding: 0;
+  }
+
+  @media print {
+    display: inline;
+    padding: 0;
   }
 }
 
@@ -189,32 +200,15 @@ export default {
     }
 }
 
-.site-header__nav {
-  flex: 1 1;
-
-  justify-content: flex-end;
-
-  margin: 0 0 0 1rem;
-  color: hsla(222,16%,55%,1);
-
-  animation: SLIDE-NAV-IN 1.38s;
-
-  ul {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-
-    li {
-
-    }
-  }
-}
-
 .site-header__contact {
   flex: 1 1 auto;
 
   list-style: none;
-  padding: 0.7rem 0 0 0;
+  padding: 00;
+
+  @media print {
+    display: none;
+  }
 
   @media (min-width: 768px) {
     padding: 0;
@@ -225,7 +219,7 @@ export default {
   ul {
     display: flex;
     list-style: none;
-    margin: 0 0 0 -0.6rem;
+    margin: 0 0 0 -0.9rem;
 
     > li {
       display: flex;
@@ -239,8 +233,8 @@ export default {
         font-size: var(--font-small);
 
         @media (min-width: 768px) {
-          margin: 1px 0 0 0;
-          padding: .8rem 0.1rem 0.8rem 0.1rem;
+          margin: 0 0 0 0;
+          padding: .8rem 0.1rem;
         }
 
         > span {

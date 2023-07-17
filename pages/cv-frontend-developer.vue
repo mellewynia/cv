@@ -1,7 +1,6 @@
 
 <template>
   <main>
-    <nuxt-link to="/artikelen"></nuxt-link>
     <article class="content ___little-spacing-bottom">
       <h1>
         Melle Wijnia

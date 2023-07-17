@@ -69,6 +69,11 @@ export default {
   margin: calc(10vh + 3.8rem) auto calc(10vh + 3.8rem) auto;
   font-size: var(--font--medium--mobile);
 
+  @media print {
+    page-break-inside: avoid;
+    margin: 3rem auto 3rem auto;
+  }
+
   @media (min-width: 568px) {
     padding: 0 4rem;
   }
@@ -117,19 +122,28 @@ export default {
   margin: 1.3rem 0 1.3rem -2.2rem;
 
   @media (min-width: 568px) {
-    margin: 0rem 0 1.6rem;
+    margin: 0rem 0 1.6rem 3rem;
+  }
+
+  @media print {
+    margin: 0 0 0 3rem;
   }
 }
 
 .client-project {
   position: relative;
   padding: 2.8rem 0 0 0;
+  list-style: disc;
+
+  @media print {
+    padding-top: 1.6rem;
+  }
 
   &:before {
     content: '';
     position: absolute;
     top: 1.6rem;
-    left: 0;
+    left: -3rem;
     right: 0;
     display: block;
     height: 0.1rem;

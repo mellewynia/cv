@@ -1,26 +1,50 @@
 <template>
   <div>
+    <article class="content ___little-spacing-bottom">
+      <h1>
+        Melle Wijnia
+      </h1>
+    </article>
 
-    <!-- <section-intro /> -->
-
-    <!--<section-update />-->
+    <div class="">
+      <div class="content ___little-spacing-top ___little-spacing-bottom">
+        <h2>Front-end developer / consultant</h2>
+        <p>{{ artikel.attributes.intro }}</p>
+        <p class="image ___left">
+          <img :src="artikel.attributes.image" alt="Melle Wijnia" />
+        </p>
+        <h3 class="content-h4">
+          Vrijetijdsbesteding
+        </h3>
+        <p>
+          {{ artikel.attributes.hobbies }}
+        </p>
+        <h3 class="content-h4">
+          Mobiliteit
+        </h3>
+        <p>
+          {{ artikel.attributes.mobility }}
+        </p>
+        <h3 class="content-h4">
+          Talen
+        </h3>
+        <p>
+          {{ artikel.attributes.languages }}
+        </p>
+        <h3 class="content-h4">
+          Omschrijving
+        </h3>
+        <p>
+          {{ artikel.attributes.profileKeywords }}
+        </p>
+      </div>
+    </div>
 
     <template v-for="item of timeline">
       <section-quote :key="item.body" v-if="item.type === 'quote'" v-bind:quote="item.item" />
       <section-client :key="item.body" v-if="item.type === 'client'" v-bind:client="item.item" />
-      <div v-else-if="item.type === 'artikel'" :key="item.body">
-        <nuxt-link :to="'/artikelen/' + item.item.slug">
-          {{ item.item.title }}
-        </nuxt-link>
-      </div>
     </template>
-
-    <section class="meta">
-        <span>© 2007–2023 Melle Wijnia</span>
-        <span>KvK {{ $store.state.general.organisation.kvk }} / {{ $store.state.general.organisation.name }}</span>
-        <span>{{ $store.state.general.address.streetAddress }} {{ $store.state.general.address.postalCode }} {{ $store.state.general.address.addressLocality }}</span>
-    </section>
-
+    <section-content />
   </div>
 </template>
 
@@ -29,9 +53,13 @@ import SectionIntro from '~/components/SectionIntro'
 import SectionClient from '~/components/SectionClient'
 import SectionQuote from '~/components/SectionQuote'
 import SectionUpdate from '~/components/SectionUpdate'
+import SectionContent from '~/components/SectionContent'
+
+import { cleanNewLinesMarkdownBody } from '~/plugins/utils'
 
 export default {
   components: {
+    SectionContent,
     SectionIntro,
     SectionClient,
     SectionQuote,
@@ -42,19 +70,18 @@ export default {
       date: new Date(...process.env.dateUpdate),
       timeline: process.env.contents.timeline
     }
+  },
+  async asyncData () {
+    const artikel = await import(`!!json-loader!front-matter-loader!./over.md`)
+
+    if (artikel) {
+      artikel.body = cleanNewLinesMarkdownBody(artikel.body)
+    }
+
+    return { artikel }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-
-.meta {
-  padding: 1rem 1.4rem 0;
-  font-size: var(--font--x-small);
-  color: hsla(222, 10%, 74%, 1);
-
-  > span {
-    margin: 0 1.2rem 0 0;
-  }
-}
 </style>
