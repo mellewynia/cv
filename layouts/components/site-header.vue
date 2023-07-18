@@ -108,8 +108,7 @@ export default {
   font-weight: inherit;
   padding: 0.6rem 0 0;
 
-  @media ( min-width: 568px ) {
-    display: inline;
+  @media ( min-width: 768px ) {
     padding: 0;
   }
 
