@@ -81,6 +81,11 @@ function getContents () {
   ]
 
   timeline.sort((a, b) => {
+    if (a.item && a.item.sortIndex !== undefined && b.item && b.item.sortIndex !== undefined) {
+      if (a.item.sortIndex < b.item.sortIndex) return -1
+      if (a.item.sortIndex > b.item.sortIndex) return 1
+    }
+
     if (a.date < b.date) return 1
     if (a.date > b.date) return -1
 

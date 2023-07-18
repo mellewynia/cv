@@ -157,9 +157,11 @@ export default {
   }
 
   ul {
+    margin: 0.7rem 0 0 0;
+
     li {
       list-style: disc;
-      margin: 0 0 0 2rem;
+      margin: 0.3rem 0 0 2rem;
     }
   }
 

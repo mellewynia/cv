@@ -1,8 +1,9 @@
 ---
 
-name: Coronamelder website voor Ministerie voor VWS
-id: coronamelder-website
+name: Ministerie van VWS
+id: ministerie-van-vws
 
+sortIndex: 2
 date: [2020,2,1, 8,15,0]
 endDate: [2022,4,1, 8,15,0]
 
@@ -13,6 +14,11 @@ location: Nederland
 references:
 
 projects:
+  -
+    name: Website Coronamelder.nl
+    skills: [Accessibility, JavaScript, Cybersecurity, OWASP, DevOps]
+  - name: Ondersteuning bij community
+    skills: [Lead, JavaScript]
 
 number_of_projects: 1
 
