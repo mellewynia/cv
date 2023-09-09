@@ -8,11 +8,16 @@
 
     <div class="">
       <div class="content ___little-spacing-top ___little-spacing-bottom">
-        <h2>Front-end developer / consultant</h2>
-        <p>{{ artikel.attributes.intro }}</p>
+        <h2>{{ $store.state.general.jobTitle }}</h2>
         <p class="image ___left">
           <img :src="artikel.attributes.image" alt="Melle Wijnia" />
         </p>
+        <p>
+          {{ artikel.attributes.profileKeywords }}
+        </p>
+        <div>
+          <div v-html="$md.render(artikel.attributes.intro)"></div>
+        </div>
         <p>
           <small>Vrijetijdsbesteding</small><br />
           {{ artikel.attributes.hobbies }}
@@ -24,35 +29,6 @@
         <p>
           <small>Talen</small><br />
           {{ artikel.attributes.languages }}
-        </p>
-        <p>
-          <small>Kernwoorden</small><br />
-          {{ artikel.attributes.profileKeywords }}
-        </p>
-        <h2>Contact</h2>
-        <p>
-          Ik ben Melle B.V.<br />
-          KvK 75849844
-        </p>
-        <p>
-          Leuvensbroek 1019<br />
-          6546 XA NIJMEGEN
-        </p>
-        <p>
-          <a :href="'tel: ' + $store.state.general.telephone.replace(/ /g, '')">
-            <i class="icon-telephone icon-margin-right"></i>{{ $store.state.general.telephone }}
-          </a><br />
-          <a :href="'mailto: ' + $store.state.general.email">
-            <i class="icon-envelope icon-margin-right"></i>{{ $store.state.general.email }}
-          </a>
-        </p>
-        <p>
-          <a :href="$store.state.general.linkedin" target="_blank" title="“Join the great link”">
-            <i class="icon-link icon-margin-right"></i>LinkedIn
-          </a><br />
-          <a :href="$store.state.general.github" target="_blank">
-            <i class="icon-code icon-margin-right"></i>Github: @MelleWynia
-          </a>
         </p>
       </div>
     </div>

@@ -9,8 +9,16 @@
 
     <div class="">
       <div class="content ___little-spacing-top ___little-spacing-bottom">
-        <h2>Front-end developer / consultant</h2>
-        <p>{{ artikel.attributes.intro }}</p>
+        <h2>{{ $store.state.general.jobTitle }}</h2>
+        <p class="image ___left">
+          <img :src="artikel.attributes.image" alt="Melle Wijnia" />
+        </p>
+        <p>
+          {{ artikel.attributes.profileKeywords }}
+        </p>
+        <div>
+          <div v-html="$md.render(artikel.attributes.intro)"></div>
+        </div>
       </div>
 
       <div class="content ___little-spacing-top ___little-spacing-bottom">
@@ -31,12 +39,6 @@
         </h3>
         <p>
           {{ artikel.attributes.languages }}
-        </p>
-        <h3 class="content-h4">
-          Omschrijving
-        </h3>
-        <p>
-          {{ artikel.attributes.profileKeywords }}
         </p>
       </div>
     </div>

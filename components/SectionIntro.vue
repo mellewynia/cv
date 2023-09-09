@@ -80,7 +80,7 @@ section {
   position: relative;
   overflow: hidden;
   margin: 0;
-  padding: 6.2vh 4rem 2.2rem;
+  padding: 6.2vh 4rem 4.2rem;
   color: #fff;
   // TODO: color: hsla($color-primary-hue, 10%, 98%, 1);
   font-size: 1.42rem;

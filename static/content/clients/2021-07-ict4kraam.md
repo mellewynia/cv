@@ -5,7 +5,7 @@ id: ict-4kraam
 
 sortIndex: 3
 date: [2021,6,1, 8,15,0]
-endDate: null
+endDate: [2023,0,1, 8,15,0]
 
 jobTitle: Freelance lead front-end Angular consultant
 skills: [Angular, Angular Material, Angular CDK Whitelabel, SSO (Microsoft O365)]

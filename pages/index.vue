@@ -14,7 +14,11 @@
           Elke dag betrokkenheid als senior developer, lead en architect in één of meerdere teams.
         </p>
         <p>
-          <nuxt-link to="/over" class="cta-link"><u>Leer meer over Melle (en CV)</u></nuxt-link>
+          <nuxt-link to="/over" class="cta-link"><u>Meer over Melle</u></nuxt-link>
+          &nbsp;
+          <nuxt-link to="/cv-frontend-developer" class="cta-link"><u>CV</u></nuxt-link>
+          &nbsp;
+          <nuxt-link to="/contact-frontend-developer" class="cta-link"><u>Contact</u></nuxt-link>
         </p>
       </div>
       <div class="cta-block">
@@ -134,7 +138,7 @@ export default {
     display: -ms-flexbox;
     display: flex;
     gap: 3.8rem;
-    margin: -52px auto 0 auto;
+    margin: -56px auto 0 auto;
     position: relative;
   }
 }

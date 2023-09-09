@@ -25,9 +25,7 @@
       </li>
     </ul>
 
-    <p class="client__description">
-      {{client.body}}
-    </p>
+    <div class="client__description" v-html="$md.render(client.body)"></div>
 
     <ul v-if="client.projects" class="client__projects">
       <li v-for="(project, i) of client.projects" :key="i" class="client-project">
@@ -46,7 +44,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 .references {
   margin-top: 10px;
@@ -106,6 +104,10 @@ export default {
 .client__description {
   margin: 1.6rem 0 0;
   line-height: 1.38;
+
+  > p {
+    margin-top: 1rem;
+  }
 }
 
 .client__meta {
