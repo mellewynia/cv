@@ -7,6 +7,9 @@
         <h1>
           Contact
         </h1>
+        <h2>
+          Melle Wijnia
+        </h2>
         <p>
           <a class="___block" :href="'tel: ' + $store.state.general.telephone.replace(/ /g, '')">
             <i class="icon-telephone"></i>
@@ -38,7 +41,8 @@
         </p>
         <p>
           Leuvensbroek 1019<br />
-          6546 XA NIJMEGEN
+          6546 XA NIJMEGEN<br />
+          <small>Werkzaam in heel Nederland</small>
         </p>
       </div>
       <!-- <div class="content-container">

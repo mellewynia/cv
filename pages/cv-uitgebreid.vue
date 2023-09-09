@@ -26,7 +26,7 @@
           {{ artikel.attributes.languages }}
         </p>
         <p>
-          <small>Omschrijving</small><br />
+          <small>Kernwoorden</small><br />
           {{ artikel.attributes.profileKeywords }}
         </p>
         <h2>Contact</h2>

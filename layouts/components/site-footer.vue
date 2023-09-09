@@ -21,7 +21,7 @@
 
 <style lang="scss" scoped>
 .footer-next {
-  background: hsla(222,26%,61%,0.1);
+  background: #f5f8ff;
   padding: 6.2rem 0;
   margin: 10vh 0 0;
 

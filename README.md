@@ -11,3 +11,8 @@ Go to [mellewynia.nl](https://mellewynia.nl) for the results so far. The /public
 - ☑️ Static website with a nuxt
 - ◻️ Implement Schema.org: `application/ld+json`
 - ☑️🍒 Google Pagespeed 90_+_/100 ([run Google Pagespeed now](https://developers.google.com/speed/pagespeed/insights/?url=mellewynia.nl&tab=desktop))
+
+### Dev
+
+1. `nvm use 14`
+2. `npm run dev`

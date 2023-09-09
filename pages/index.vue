@@ -5,34 +5,34 @@
 
     <section class="cta-blocks">
       <div class="cta-block">
-        <h2>Inhuur</h2>
+        <h2>Freelance</h2>
         <p class="meta-info">
           Beschikbaar per november 2023<br>
-          v.a. €110,00 / uur (i.o. 32-40u zzp inhuur)
+          v.a. €105,00 / uur (i.o. 32-40u zzp inhuur)
         </p>
         <p>
-          Elke dag betrokkenheid als lead developer, architect in één of meerdere teams.
+          Elke dag betrokkenheid als senior developer, lead en architect in één of meerdere teams.
         </p>
         <p>
           <nuxt-link to="/over" class="cta-link"><u>Leer meer over Melle (en CV)</u></nuxt-link>
         </p>
       </div>
       <div class="cta-block">
-        <h2>Versterking (consultancy)</h2>
+        <h2>Project</h2>
         <p class="meta-info">
           Beschikbaar in herst 2023<br>
-          v.a. €1.500 / maand (i.o. abonnement)
+          v.a. €125,00 / uur (i.o.)
         </p>
         <p>
-          Hands-on bij vernieuwing, outsourcing, (cybersec/a11y) audits.
           Beperkte inzet, blijvend resultaat.
+          Nieuwe projecten opstarten, hulp bij vernieuwing, outsourcing, (cybersec/a11y) audits en kleinere opdrachten.
         </p>
         <p>
-          <nuxt-link to="/frontend-versterking-consultancy" class="cta-link"><u>Bekijk de mogelijkheden</u></nuxt-link>
+          <nuxt-link to="/contact-frontend-developer" class="cta-link"><u>Neem contact op voor de mogelijkheden</u></nuxt-link>
         </p>
       </div>
-      <div class="cta-block">
-        <h2 class="cta-block__">Workshops</h2>
+      <!-- <div class="cta-block">
+        <h2 class="cta-block__">Heb je iets anders nodig?</h2>
         <p class="meta-info">
           Beschikbaarheid: informeer<br>
           Kosten: informeer
@@ -41,12 +41,12 @@
           Geef jouw team in één dagdeel nieuwe energie, inzichten en tools.
         </p>
         <p>
-          <nuxt-link to="/frontend-workshops" class="cta-link"><u>Zet Melle &amp; Co power-up in</u></nuxt-link>
+          <nuxt-link to="/contact" class="cta-link"><u>Neem contact op</u></nuxt-link>
         </p>
-      </div>
+      </div> -->
     </section>
 
-    <div class="content ___little-spacing-top ___little-spacing-bottom">
+    <!-- <div class="content ___little-spacing-top ___little-spacing-bottom">
       <h2>Recent</h2>
     </div>
 
@@ -76,7 +76,7 @@
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <section-content />
   </main>
@@ -133,8 +133,8 @@ export default {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 1.6rem;
-    margin: -62px auto 0 auto;
+    gap: 3.8rem;
+    margin: -52px auto 0 auto;
     position: relative;
   }
 }
@@ -150,24 +150,23 @@ export default {
 }
 @media screen and (min-width: 768px) {
   .cta-blocks > * {
-    width: 33%;
+    width: 50%;
     min-height: 138px;
+    padding: 32px 42px;
     -webkit-box-shadow: 0 2px 6px rgba(0, 0, 10, .1);
             box-shadow: 0 2px 6px rgba(0, 0, 10, .1);
   }
 }
 .cta-block {
-  font-size: var(--font--small);
+  font-size: var(--font--medium--mobile);
 }
 .cta-block > h2 {
     font-weight: 400;
     margin: 0 0 12.8px 0;
-    margin: 0 0 0.8rem 0;
-    font-size: var(--font--medium);
+    font-size: var(--font--large);
 }
 .cta-block p {
-    margin: 0 0 9.6px 0;
-    margin: 0 0 0.6rem 0;
+    margin: 0 0 1rem 0;
 }
 
 </style>
