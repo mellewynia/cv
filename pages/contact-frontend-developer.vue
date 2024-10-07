@@ -40,9 +40,9 @@
           KvK 75849844
         </p>
         <p>
-          Leuvensbroek 1019<br />
-          6546 XA NIJMEGEN<br />
-          <small>Werkzaam in heel Nederland</small>
+          Swifterbantstraat 8<br />
+          4012 ES KERK-AVAZAATH<br />
+          <small>Dorp in de buurt van Utrecht</small>
         </p>
       </div>
       <!-- <div class="content-container">

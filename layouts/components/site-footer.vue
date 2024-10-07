@@ -10,7 +10,7 @@
       </div>
     </section>
     <section class="meta">
-      <span>© 2007–2023 Melle Wijnia</span>
+      <span>© 2007–2024 Melle Wijnia</span>
       <nuxt-link to="disclaimer">Disclaimer</nuxt-link>
     </section>
   </footer>

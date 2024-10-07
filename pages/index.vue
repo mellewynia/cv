@@ -5,13 +5,14 @@
 
     <section class="cta-blocks">
       <div class="cta-block">
-        <h2>Freelance</h2>
+        <h2>Freelance (zzp inhuur)</h2>
         <p class="meta-info">
-          Beschikbaar per november 2023<br>
-          v.a. €105,00 / uur (i.o. 32-40u zzp inhuur)
+          Beschikbaar per november 2024<br>
+          v.a. €105,00 – 135,00 / uur (i.o. afh. van duur)
         </p>
         <p>
           Elke dag betrokkenheid als senior developer, lead en architect in één of meerdere teams.
+          Meters maken. Milestones halen. Itereren. Kwaliteit leveren.
         </p>
         <p>
           <nuxt-link to="/over" class="cta-link"><u>Meer over Melle</u></nuxt-link>
@@ -22,33 +23,76 @@
         </p>
       </div>
       <div class="cta-block">
-        <h2>Project</h2>
+        <h2>Projectmatig</h2>
         <p class="meta-info">
-          Beschikbaar in herst 2023<br>
-          v.a. €125,00 / uur (i.o.)
+          Beschikbaar in winter 2024<br>
+          Budget / offerte vooraf overeengekomen
         </p>
         <p>
           Beperkte inzet, blijvend resultaat.
-          Nieuwe projecten opstarten, hulp bij vernieuwing, outsourcing, (cybersec/a11y) audits en kleinere opdrachten.
+          Ondersteuning bij projectteams met specifieke problemen.
+          Vaste offerte voor zekerheid is mogelijk.
         </p>
         <p>
           <nuxt-link to="/contact-frontend-developer" class="cta-link"><u>Neem contact op voor de mogelijkheden</u></nuxt-link>
         </p>
       </div>
-      <!-- <div class="cta-block">
-        <h2 class="cta-block__">Heb je iets anders nodig?</h2>
-        <p class="meta-info">
-          Beschikbaarheid: informeer<br>
-          Kosten: informeer
-        </p>
-        <p>
-          Geef jouw team in één dagdeel nieuwe energie, inzichten en tools.
-        </p>
-        <p>
-          <nuxt-link to="/contact" class="cta-link"><u>Neem contact op</u></nuxt-link>
-        </p>
-      </div> -->
     </section>
+
+    <div class="content ___little-spacing-top ___little-spacing-bottom">
+      <h2 class="meta-info">Ondersteuning bij onderwerpen</h2>
+    </div>
+
+    <div class="content ___little-spacing-top ___little-spacing-bottom">
+      <h2 class="___little-margin-top">
+        Pega Constellation (DX)
+      </h2>
+      <p>
+        Pega Constellation DX is een platform voor het beheren van de digitale ervaring van jouw klanten.
+        Ik help jouw organisatie graag met het opzetten van dit platform en het inrichten van de processen.
+      </p>
+    </div>
+
+    <div class="content ___little-spacing-top ___little-spacing-bottom">
+      <h2 class="___little-margin-top">
+        Pentest (cybersecurity)
+      </h2>
+      <p>
+        Soms kan het overweldigend zijn om een pentest rapport te ontvangen.
+        Ik help je organisatie graag met het oppakken van de bevindingen en het implementeren van de oplossingen.
+      </p>
+    </div>
+
+    <div class="content ___little-spacing-top ___little-spacing-bottom">
+      <h2 class="___little-margin-top">
+        Ervaring in team inbrengen
+      </h2>
+      <p>
+        Als senior developer, lead en architect heb ik ervaring in het inbrengen van kennis en kunde in een team.
+        Ik help graag bij het opzetten van een team, het inwerken van nieuwe collega's en het verbeteren van de samenwerking,
+        alsmede het verbeteren van de kwaliteit van de code.
+      </p>
+    </div>
+
+    <div class="content ___little-spacing-top ___little-spacing-bottom">
+      <h2 class="___little-margin-top">
+        Innoveren en ontwikkelen
+      </h2>
+      <p>
+        Een van de lastigste dingen in een team is om nieuwe architectuur en daarop volgende ontwikkelingen in gang te zetten.
+        Zit je vast? Ik help jou en jouw organisatie graag verder.
+      </p>
+    </div>
+
+    <div class="content ___little-spacing-top ___little-spacing-bottom">
+      <h2 class=" ___little-margin-top">
+        Toegankelijkheid (a11y) audit
+      </h2>
+      <p>
+        Dikke rapporten met bevindingen over toegankelijkheid kunnen overweldigend zijn.
+        Vlot en vaardig ondersteun ik jouw organisatie met het verwerken van de bevindingen en het implementeren van de oplossingen.
+      </p>
+    </div>
 
     <!-- <div class="content ___little-spacing-top ___little-spacing-bottom">
       <h2>Recent</h2>

@@ -16,11 +16,11 @@
   "address": {
     "@type": "PostalAddress",
     "addressCounty": "NL",
-    "addressLocality": "NIJMEGEN",
+    "addressLocality": "KERK-AVEZAATH",
     "addressRegion": "Gelderland",
-    "postalCode": "6546XA",
-    "streetAddress": "Leuvensbroek 1019",
-    "url": "https://goo.gl/maps/g5raMz3YYwP2"
+    "postalCode": "4012 ES",
+    "streetAddress": "Swifterbantstraat 8",
+    "url": "https://maps.app.goo.gl/j3ys1E7VW8ujWPL76"
   },
 
   "organisation": {

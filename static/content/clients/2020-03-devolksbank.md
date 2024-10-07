@@ -5,7 +5,7 @@ id: de-volksbank
 
 sortIndex: 1
 date: [2020,2,1, 8,15,0]
-endDate: null
+endDate: [2023,11,1, 8,15,0]
 
 jobTitle: Freelance senior, lead front-end javascript (Angular) developer
 skills: []
@@ -16,7 +16,7 @@ references:
 projects:
   -
     name: Omnichannel, multibrand Pega starter app
-    skills: [DX API v1, Angular, Angular CLI, e2e (Webdriver.io), Unit tests, DX API, Microservices, Design systems]
+    skills: [Pega Constellation DX, Pega DX v1, Angular, Angular CLI, e2e (Webdriver.io), Unit tests, DX API, Microservices, Design systems]
 
 number_of_projects: 1
 

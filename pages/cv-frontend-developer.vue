@@ -102,7 +102,12 @@ export default {
   data () {
     return {
       date: new Date(...process.env.dateUpdate),
-      timeline: process.env.contents.timeline
+      timeline: [
+        process.env.contents.timeline[0],
+        process.env.contents.timeline[1],
+        process.env.contents.timeline[2],
+        process.env.contents.timeline[3]
+      ]
     }
   },
   async asyncData () {
