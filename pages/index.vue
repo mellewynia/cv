@@ -7,8 +7,11 @@
       <div class="cta-block">
         <h2>Freelance (zzp inhuur)</h2>
         <p class="meta-info">
-          Beschikbaar per november 2024<br>
-          v.a. €105,00 – 135,00 / uur (i.o. afh. van duur)
+          Momenteel: Lead frontend developer bij Achmea
+        </p>
+        <p class="meta-info">
+          <span style="padding: 0 3px; color: #fff; border-radius: 3px; background: rgb(0, 185, 0);">Binnenkort beschikbaar</span> per november 2025<br>
+          v.a. €110,00 – 150,00 / uur ex. btw (i.o.)
         </p>
         <p>
           Elke dag betrokkenheid als senior developer, lead en architect in één of meerdere teams.
@@ -25,7 +28,10 @@
       <div class="cta-block">
         <h2>Projectmatig</h2>
         <p class="meta-info">
-          Beschikbaar in winter 2024<br>
+          Momenteel: betrokken bij start-up
+        </p>
+        <p class="meta-info">
+          <span style="padding: 0 3px; color: #fff; border-radius: 3px; background: rgb(0, 185, 0);">Beschikbaar per direct</span><br>
           Budget / offerte vooraf overeengekomen
         </p>
         <p>
