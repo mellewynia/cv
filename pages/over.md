@@ -11,8 +11,8 @@ profile: |
   Melle is een toegewijd front-end developer met uitgebreide Javascript kennis.
   Hij staat je bij zodat je projecten op tijd en naar wens live gaan. Melle werkt nauwkeurig en schakelt snel.
 profileKeywords: Strategisch, communicatief, nauwgezet
-hobbies: Koken, fietsen, meetups en start-ups
-mobility: Vanuit Nijmegen, rijbewijs B + Auto, NS Business Card
+hobbies: Koken, kinderen, oldtimers / sleutelen
+mobility: Vanuit Tiel (nabij Utrecht), rijbewijs B + Auto, NS Business Card
 languages: Uitstekend Nederlands en Engels, spreken en schrijven
 ---
 
