@@ -10,11 +10,11 @@
           Momenteel: Lead frontend / Pega developer bij Achmea
         </p>
         <p class="meta-info">
-          <span style="padding: 0 3px; color: #fff; border-radius: 3px; background: rgb(0, 185, 0);">Binnenkort beschikbaar</span> per mei 2026<br>
-          v.a. €110,00 – 150,00 / uur ex. btw (i.o.)
+          <span style="padding: 0 3px; color: #fff; border-radius: 3px; background: rgb(0, 185, 0);">Beschikbaar per direct</span><!-- per mei 2026--><br>
+          <!-- v.a. €110,00 – 150,00 / uur ex. btw (i.o.) -->
         </p>
         <p>
-          Elke dag betrokkenheid als senior developer, lead en architect in één of meerdere teams.
+          Elke dag betrokkenheid als senior developer, lead of architect in één of meerdere teams.
           Meters maken. Milestones halen. Itereren. Kwaliteit leveren.
         </p>
         <p>
